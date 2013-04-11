@@ -1,0 +1,40 @@
+#include "NBCCommon.h"
+#include "NXCDefs.h"
+
+int x;
+int pwr = 10;                                  //pwr should be anywhere between 0 and 100
+void Touch_Init(int Port){
+ SetSensorType(Port, SENSOR_TYPE_TOUCH);
+ SetSensorMode(Port, SENSOR_MODE_BOOL);
+}
+
+void Range_Sens_Init(int Port){
+ SetSensorUltrasonic(Port);
+ SetSensorMode(Port, SENSOR_MODE_RAW);
+}
+
+void Light_Sens_Init(int Port){
+ SetSensorLight(Port);
+ SetSensorMode(Port, SENSOR_MODE_RAW);
+}
+
+void Turn(int deg){
+ RotateMotor(OUT_A, pwr, deg);
+ RotateMotor(OUT_B, pwr, -deg);
+}
+
+void Stop_Driving(){
+Off(OUT_A);
+Off(OUT_B);
+}
+
+
+
+task main()
+{
+Touch_Init(IN_1);
+Range_Sens_Init(IN_2);
+Light_Sens_Init(IN_3);
+
+}
+}
