@@ -1,8 +1,17 @@
+#define SENSOR_TOUCH_IN IN_1
+#define ULTRASONIC_IN IN_2
+
+#define MOTOR_LEFT_OUT OUT_A
+#define MOTOR_RIGHT_OUT OUT_B
+#define MOTOR_TURRET_OUT OUT_C
+
+#define MOTOR_TURRET_PWR 30
+
 task read_touch_sensor() {
-    SetSensorTouch(IN_1);
+    SetSensorTouch(SENSOR_TOUCH_IN);
 
     while(true){
-        if(Sensor(IN_1) == 1) {
+        if(Sensor(SENSOR_TOUCH_IN) == 1) {
             OnFwd(OUT_AC, 100);
         }
         else {
@@ -10,28 +19,56 @@ task read_touch_sensor() {
         }
     }
 }
+
+// Note: before starting the robot, the turret has to be set manually by the
+// user to point straight ahead.
+task ultrasonic_scan() {
+    int currentRotation = 0;
+    int turnAmount = 10;
+    int sensorValue = 0;
+    SetSensorUltrasonic(ULTRASONIC_IN);
+    
+    // Turn turret completely to the left
+    RotateMotor(MOTOR_TURRET_OUT, MOTOR_TURRET_PWR, -180);
+    currentRotation += -180;
+    
+    while(currentRotation < 180){
+        // Turn turret 10 degrees to the right
+        RotateMotor(MOTOR_TURRET_OUT, MOTOR_TURRET_PWR, 10);
+        currentRotation += 10;
+        
+        // Wait for turret to rotate and the sensor to get a value
+        Wait(500);
+        
+        // Measure distance with the sensor
+        sensorValue SensorUS(ULTRASONIC_IN);
+        
+        // (for testing) Print the value on the LCD
+        ClearScreen();
+        NumOut(0, 0, SensorUS(ULTRASONIC_IN));
+    }
+}
+
 task read_ultrasonic_sensor() {
-    SetSensorUltrasonic(IN_2);
+    SetSensorUltrasonic(ULTRASONIC_IN);
     
     while(true){
         //the ultrasonic sensor needs time to read the values
         //that is why we have the wait
         Wait(500);
         ClearScreen();
-        NumOut(0, 0, SensorUS(IN_2));
+        NumOut(0, 0, SensorUS(ULTRASONIC_IN));
     }
 }
 
 task tone() {
      int i = 0;
      while(true) {
-         PlayTone(i++, 50);
-         Wait(50);
+         PlayTone(i++, 200);
+         Wait(200);
      }
 }
 
 task main() {
-     start read_ultrasonic_sensor;
-     start read_touch_sensor;
-     start tone;
+     start ultrasonic_scan;
 }
