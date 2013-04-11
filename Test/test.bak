@@ -1,0 +1,37 @@
+task read_touch_sensor() {
+    SetSensorTouch(IN_1);
+
+    while(true){
+        if(Sensor(IN_1) == 1) {
+            OnFwd(OUT_AC, 100);
+        }
+        else {
+            Off(OUT_AC);
+        }
+    }
+}
+task read_ultrasonic_sensor() {
+    SetSensorUltrasonic(IN_2);
+    
+    while(true){
+        //the ultrasonic sensor needs time to read the values
+        //that is why we have the wait
+        Wait(500);
+        ClearScreen();
+        NumOut(0, 0, SensorUS(IN_2));
+    }
+}
+
+task tone() {
+     int i = 0;
+     while(true) {
+         PlayTone(i++, 50);
+         Wait(50);
+     }
+}
+
+task main() {
+     start read_ultrasonic_sensor;
+     start read_touch_sensor;
+     start tone;
+}
