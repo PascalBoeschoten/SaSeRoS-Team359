@@ -7,6 +7,9 @@
 
 #define MOTOR_TURRET_PWR 30
 
+#define ULTRASONIC_THRESHOLD 30
+
+// Task for testing the touch sensor readout
 task read_touch_sensor() {
     SetSensorTouch(SENSOR_TOUCH_IN);
 
@@ -20,9 +23,15 @@ task read_touch_sensor() {
     }
 }
 
+// Just empty for now. Should turn a certain amount of degrees.
+void turnDegrees(int degrees) {
+    ;
+}
+
+// Procedure for testing the scanning
 // Note: before starting the robot, the turret has to be set manually by the
 // user to point straight ahead.
-task ultrasonic_scan() {
+void ultrasonic_scan() {
     int currentRotation = 0;
     int turnAmount = 10;
     int sensorValue = 0;
@@ -41,14 +50,22 @@ task ultrasonic_scan() {
         Wait(500);
         
         // Measure distance with the sensor
-        sensorValue SensorUS(ULTRASONIC_IN);
+        sensorValue = SensorUS(ULTRASONIC_IN);
         
         // (for testing) Print the value on the LCD
         ClearScreen();
         NumOut(0, 0, SensorUS(ULTRASONIC_IN));
+
+        // Check if the value is above the threshold
+        if (sensorValue > ULTRASONIC_THRESHOLD) {
+            // Found a clear direction, turn and stop scanning
+            turnDegrees(currentRotation);
+            break;
+        }
     }
 }
 
+// Task for testing ultrasonic sensor readout
 task read_ultrasonic_sensor() {
     SetSensorUltrasonic(ULTRASONIC_IN);
     
@@ -61,6 +78,7 @@ task read_ultrasonic_sensor() {
     }
 }
 
+// Task for testing the beeper
 task tone() {
      int i = 0;
      while(true) {
@@ -70,5 +88,11 @@ task tone() {
 }
 
 task main() {
-     start ultrasonic_scan;
+     while(true) {
+
+        ClearScreen();
+        TextOut(0,0,"Starting scan...");
+        Wait(300);
+        ultrasonic_scan();
+     }
 }

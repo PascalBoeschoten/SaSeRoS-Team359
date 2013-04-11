@@ -1,114 +1,179 @@
 #SYMBOLS
 Index	Identifier	Type	Flag	Data	Size	RefCount
-0	__D0ultrasonic_scan	6	1	0	4	9
-1	__TextOutMutex	9	0	4	4	2
-2	__D0SetSensorLowspeed_inline_SetSensorUltrasonic	6	1	8	4	3
-3	__ResetSensorMutex	9	0	12	4	2
-4	__rotate_theAngle2	5	1	16	4	2
-5	__RLSBmutex1	9	0	20	4	2
-6	__PointOutMutex	9	0	24	4	2
-7	__DU0SetSensorLowspeed_inline_SetSensorUltrasonic	5	1	28	4	2
-8	__rotate_angle2	6	1	32	4	5
-9	__CLSWMutex1	9	0	36	4	2
-10	__rotateMutex2	9	0	40	4	2
-11	__CLSCSMutex1	9	0	44	4	2
-12	__CLSRMutex1	9	0	48	4	2
-13	__signed_stack_001ultrasonic_scan	6	1	52	4	4
-14	__signed_stack_002ultrasonic_scan	6	1	56	4	2
-15	__rotate_RotCount2	4	1	60	2	4
-16	__rotate_OldRotCount2	4	1	62	2	2
-17	__constVal200	4	0	64	2	2
-18	__ultrasonic_scan_7qG2_sensorValue_7qG2_000	4	1	66	2	3
-19	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_ultrasonic_scan	1	1	68	1	2
-20	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_ultrasonic_scan	1	1	69	1	2
-21	__PFTmp	1	1	70	1	1
-22	__constVal96	2	0	71	1	1
-23	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_ultrasonic_scan	1	1	72	1	2
-24	__zfultrasonic_scan	1	1	73	1	2
-25	__zfSetSensorLowspeed_inline_SetSensorUltrasonic	1	1	74	1	2
-26	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_ultrasonic_scan	1	1	75	1	4
-27	__RLSBResult1	2	1	76	1	7
-28	__RLSBIterations1	1	1	77	1	4
-29	__RLSBytesCount1	1	1	78	1	7
-30	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_SetSensorUltrasonic_inline_ultrasonic_scan	1	1	79	1	2
-31	__constVal15	2	0	80	1	4
-32	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_ultrasonic_scan	1	1	81	1	2
-33	__constVal2	2	0	82	1	1
-34	____ReadLSBytes1_return	1	1	83	1	3
-35	__rotate_theRS2	1	1	84	1	3
-36	__rotate_theRM2	1	1	85	1	4
-37	__rotate_theOM2	1	1	86	1	7
-38	__rotate_theRVD2	1	1	87	1	2
-39	__rotate_theRVI2	1	1	88	1	2
-40	__rotate_theRVP2	1	1	89	1	2
-41	__rotate_theUF2	1	1	90	1	6
-42	__rotate_firstPort2	1	1	91	1	5
-43	__ultrasonic_scan_Spawner_return	1	1	92	1	1
-44	__rotate_power2	1	1	93	1	4
-45	__rotate_turnpct2	2	1	94	1	3
-46	__rotate_stop2	1	1	95	1	2
-47	__rotate_sync2	1	1	96	1	2
-48	__rotate_rs2	1	1	97	1	2
-49	__ResetSensorTmp	1	1	98	1	2
-50	__ResetSensorPort	1	1	99	1	3
-51	____RotateMotor2_sign_tmp	2	1	100	1	4
-52	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_ultrasonic_scan	1	1	101	1	2
-53	____initialize_global_data_return	1	1	102	1	3
-54	____ResetSensorSubroutine_return	1	1	103	1	3
-55	____RotateMotor2_return	1	1	104	1	3
-56	__constVal32	2	0	105	1	4
-57	__rotate_theTurnPct2	2	1	106	1	4
-58	__rotate_thePower2	2	1	107	1	4
-59	__constVal50	2	0	108	1	1
-60	__constVal0	2	1	109	1	7
-61	__constVal1	2	0	110	1	8
-62	__CLSRArgs1	8	0	4	12	5
-63	__CLSRArgs1.Result	2	1	112	1	5
-64	__CLSRArgs1.Port	1	1	113	1	5
-65	__CLSRArgs1.Buffer	7	0	114	4	5
-66	__CLSRArgs1.Buffer.Buffer_type	1	0	0	1	0
-67	__CLSRArgs1.BufferLen	1	1	116	1	5
-68	__TextOutArgs	8	0	4	16	6
-69	__TextOutArgs.Result	2	1	120	1	6
-70	__TextOutArgs.Location	8	0	2	4	6
-71	__TextOutArgs.Location.X	4	1	124	2	6
-72	__TextOutArgs.Location.Y	4	1	126	2	6
-73	__TextOutArgs.Text	7	0	128	4	6
-74	__TextOutArgs.Text.Text_type	1	0	0	1	0
-75	__TextOutArgs.Options	5	1	132	4	6
-76	__CLSCSArgs1	8	0	3	4	4
-77	__CLSCSArgs1.Result	2	1	136	1	4
-78	__CLSCSArgs1.Port	1	1	137	1	4
-79	__CLSCSArgs1.BytesReady	1	1	138	1	4
-80	__CLSWArgs1	8	0	4	12	5
-81	__CLSWArgs1.Result	2	1	140	1	5
-82	__CLSWArgs1.Port	1	1	141	1	5
-83	__CLSWArgs1.Buffer	7	0	142	4	5
-84	__CLSWArgs1.Buffer.Buffer_type	1	0	0	1	0
-85	__CLSWArgs1.ReturnLen	1	1	144	1	5
-86	__PointOutArgs	8	0	3	12	4
-87	__PointOutArgs.Result	2	1	148	1	4
-88	__PointOutArgs.Location	8	0	2	4	4
-89	__PointOutArgs.Location.X	4	1	152	2	4
-90	__PointOutArgs.Location.Y	4	1	154	2	4
-91	__PointOutArgs.Options	5	1	156	4	4
-92	__RLSReadBuf1	7	0	160	4	8
-93	__RLSReadBuf1.__RLSReadBuf1_type	1	0	0	1	0
-94	__rotate_ports2	7	0	162	4	6
-95	__rotate_ports2.__rotate_ports2_type	1	0	0	1	0
-96	__RLSBbufLSWrite1	7	0	164	4	1
-97	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
-98	__RLSLastGoodRead1	7	0	166	4	2
-99	__RLSLastGoodRead1.__RLSLastGoodRead1_type	1	0	0	1	0
+0	__TextOutMutex	9	0	0	4	4
+1	__CLSRMutex1	9	0	4	4	2
+2	__RLSBmutex1	9	0	8	4	4
+3	__PointOutMutex	9	0	12	4	4
+4	__ResetSensorMutex	9	0	16	4	2
+5	__rotate_theAngle2	5	1	20	4	2
+6	__CLSWMutex1	9	0	24	4	2
+7	__CLSCSMutex1	9	0	28	4	2
+8	__Wait_7qG2_ms_7qG2_000_inline_ultrasonic_scan	5	1	32	4	2
+9	__signed_stack_002main	6	1	36	4	2
+10	__signed_stack_001main	6	1	40	4	2
+11	__signed_stack_002ultrasonic_scan	6	1	44	4	2
+12	__signed_stack_001ultrasonic_scan	6	1	48	4	10
+13	__D0ultrasonic_scan	6	1	52	4	15
+14	__D0main	6	1	56	4	3
+15	__DU0SetSensorLowspeed_inline_SetSensorUltrasonic	5	1	60	4	2
+16	__D0SetSensorLowspeed_inline_SetSensorUltrasonic	6	1	64	4	3
+17	__rotate_angle2	6	1	68	4	6
+18	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	72	4	2
+19	__rotate_OldRotCount2	4	1	76	2	2
+20	__rotate_RotCount2	4	1	78	2	4
+21	__constValNeg180	4	0	80	2	2
+22	__constVal200	4	0	82	2	4
+23	__ultrasonic_scan_7qG2_currentRotation_7qG2_000	4	1	84	2	6
+24	__ultrasonic_scan_7qG2_sensorValue_7qG2_000	4	1	86	2	3
+25	__PFTmp	1	1	88	1	1
+26	__zfmain	1	1	89	1	2
+27	__rotate_theUF2	1	1	90	1	6
+28	__constVal10	2	0	91	1	1
+29	__constVal2	2	0	92	1	2
+30	__rotate_theOM2	1	1	93	1	7
+31	__RLSBIterations1	1	1	94	1	4
+32	__RLSBResult1	2	1	95	1	7
+33	__RLSBytesCount1	1	1	96	1	8
+34	__constVal96	2	0	97	1	2
+35	__rotate_power2	1	1	98	1	5
+36	__turnDegrees_return	1	1	99	1	3
+37	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_ultrasonic_scan	1	1	100	1	4
+38	__ultrasonic_scan_return	1	1	101	1	3
+39	__rotate_firstPort2	1	1	102	1	5
+40	__zfultrasonic_scan	1	1	103	1	6
+41	__rotate_turnpct2	2	1	104	1	4
+42	__rotate_stop2	1	1	105	1	3
+43	__zfSetSensorLowspeed_inline_SetSensorUltrasonic	1	1	106	1	2
+44	__rotate_sync2	1	1	107	1	3
+45	__ResetSensorTmp	1	1	108	1	2
+46	__ResetSensorPort	1	1	109	1	3
+47	____RotateMotor2_sign_tmp	2	1	110	1	4
+48	__rotate_rs2	1	1	111	1	2
+49	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_ultrasonic_scan	1	1	112	1	2
+50	____ResetSensorSubroutine_return	1	1	113	1	3
+51	____RotateMotor2_return	1	1	114	1	4
+52	__constVal32	2	0	115	1	5
+53	__rotate_theTurnPct2	2	1	116	1	4
+54	__rotate_thePower2	2	1	117	1	4
+55	__constVal50	2	0	118	1	1
+56	__constVal0	2	1	119	1	10
+57	__constVal1	2	0	120	1	10
+58	__constVal15	2	0	121	1	6
+59	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_SetSensorUltrasonic_inline_ultrasonic_scan	1	1	122	1	2
+60	__rotate_theRS2	1	1	123	1	3
+61	____initialize_global_data_return	1	1	124	1	3
+62	__rotate_theRM2	1	1	125	1	4
+63	____ReadLSBytes1_return	1	1	126	1	4
+64	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_ultrasonic_scan	1	1	127	1	2
+65	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_ultrasonic_scan	1	1	128	1	2
+66	__rotate_theRVD2	1	1	129	1	3
+67	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_ultrasonic_scan	1	1	130	1	2
+68	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_ultrasonic_scan	1	1	131	1	2
+69	__rotate_theRVP2	1	1	132	1	3
+70	__rotate_theRVI2	1	1	133	1	3
+71	__CLSRArgs1	8	0	4	12	5
+72	__CLSRArgs1.Result	2	1	136	1	5
+73	__CLSRArgs1.Port	1	1	137	1	5
+74	__CLSRArgs1.Buffer	7	0	138	4	5
+75	__CLSRArgs1.Buffer.Buffer_type	1	0	0	1	0
+76	__CLSRArgs1.BufferLen	1	1	140	1	5
+77	__CLSWArgs1	8	0	4	12	5
+78	__CLSWArgs1.Result	2	1	144	1	5
+79	__CLSWArgs1.Port	1	1	145	1	5
+80	__CLSWArgs1.Buffer	7	0	146	4	5
+81	__CLSWArgs1.Buffer.Buffer_type	1	0	0	1	0
+82	__CLSWArgs1.ReturnLen	1	1	148	1	5
+83	__CLSCSArgs1	8	0	3	4	4
+84	__CLSCSArgs1.Result	2	1	152	1	4
+85	__CLSCSArgs1.Port	1	1	153	1	4
+86	__CLSCSArgs1.BytesReady	1	1	154	1	4
+87	__PointOutArgs	8	0	3	12	8
+88	__PointOutArgs.Result	2	1	156	1	8
+89	__PointOutArgs.Location	8	0	2	4	8
+90	__PointOutArgs.Location.X	4	1	160	2	8
+91	__PointOutArgs.Location.Y	4	1	162	2	8
+92	__PointOutArgs.Options	5	1	164	4	8
+93	__TextOutArgs	8	0	4	16	12
+94	__TextOutArgs.Result	2	1	168	1	12
+95	__TextOutArgs.Location	8	0	2	4	12
+96	__TextOutArgs.Location.X	4	1	172	2	12
+97	__TextOutArgs.Location.Y	4	1	174	2	12
+98	__TextOutArgs.Text	7	0	176	4	12
+99	__TextOutArgs.Text.Text_type	1	0	0	1	0
+100	__TextOutArgs.Options	5	1	180	4	12
+101	__constStr0009	7	0	184	4	1
+102	__constStr0009.__constStr0009_type	1	1	0	1	0
+103	__RLSBbufLSWrite1	7	0	186	4	2
+104	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
+105	__rotate_ports2	7	0	188	4	7
+106	__rotate_ports2.__rotate_ports2_type	1	0	0	1	0
+107	__RLSLastGoodRead1	7	0	190	4	2
+108	__RLSLastGoodRead1.__RLSLastGoodRead1_type	1	0	0	1	0
+109	__strbufmain	7	0	192	4	2
+110	__strbufmain.__strbufmain_type	1	0	0	1	0
+111	__RLSReadBuf1	7	0	194	4	10
+112	__RLSReadBuf1.__RLSReadBuf1_type	1	0	0	1	0
 #SOURCES
 Clump	Line	PC	Source
-0	52	0	#line 52 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	53	0		subcall __initialize_global_data, ____initialize_global_data_return
-0	52	2	#line 52 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	53	2	#line 53 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	54	2		subcall __ultrasonic_scan_Spawner, __ultrasonic_scan_Spawner_return
-0	53	4	#line 53 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	54	4		exit -1, -1
+0	90	0	#line 90 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	91	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	90	2	#line 90 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	90	2	#line 90 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	91	2		set __D0main, 1
+0	92	5	#line 92 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	93	5		tst 5, __zfmain, __D0main
+0	92	8	#line 92 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	93	8		brtst 4, __NXC_Label_571, __zfmain
+0	6069	11	#line 6069 "NXCDefs.h"
+0	6070	11	#pragma macro 6
+0	6070	11		acquire __PointOutMutex
+0	6070	12		mov __PointOutArgs.Location.X, __constVal200
+0	6070	14		mov __PointOutArgs.Location.Y, __constVal200
+0	6070	16		mov __PointOutArgs.Options, __constVal1
+0	6070	18		syscall 14, __PointOutArgs
+0	6070	21		release __PointOutMutex
+0	4732	22	#line 4732 "NXCDefs.h"
+0	6069	22	#line 6069 "NXCDefs.h"
+0	93	22	#line 93 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	93	22	#line 93 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	94	22		set __signed_stack_001main, 0
+0	93	25	#line 93 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	93	25	#line 93 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	94	25		set __signed_stack_002main, 0
+0	93	28	#line 93 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	93	28	#line 93 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	94	28		strcat __strbufmain, __constStr0009
+0	94	32	#line 94 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	95	32		acquire __TextOutMutex
+0	94	33	#line 94 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	95	33		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	94	35	#line 94 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	95	35		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	94	37	#line 94 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	95	37		set __TextOutArgs.Options, 0
+0	94	40	#line 94 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	95	40		mov __TextOutArgs.Text, __strbufmain
+0	94	42	#line 94 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	95	42		syscall 13, __TextOutArgs
+0	94	45	#line 94 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	95	45		mov __D0main, __TextOutArgs.Result
+0	94	47	#line 94 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	95	47		release __TextOutMutex
+0	94	48	#line 94 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	94	48	#line 94 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	95	48		set __Wait_7qG2_ms_7qG2_000_inline_main, 300
+0	94	51	#line 94 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	7921	51	#line 7921 "NXCDefs.h"
+0	7922	51		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	54	#line 7921 "NXCDefs.h"
+0	95	54	#line 95 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	96	54	#line 96 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	97	54		subcall ultrasonic_scan, __ultrasonic_scan_return
+0	96	56	#line 96 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	99	56	#line 99 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	100	56		jmp __NXC_Label_570
+0	99	58	#line 99 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	100	58		exit -1, -1
 1	4582	0		brtst 4, __rotate_Done2, __rotate_angle2
 1	4583	3		set ____RotateMotor2_sign_tmp, 0
 1	4583	6		brtst EQ, __sign_2, __rotate_angle2
@@ -196,155 +261,225 @@ Clump	Line	PC	Source
 3	5731	78		mov __RLSReadBuf1, __RLSLastGoodRead1
 3	5733	80		arrsize __RLSBytesCount1, __RLSReadBuf1
 3	5735	83		subret ____ReadLSBytes1_return
-4	20	0	#line 20 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-4	20	0	#line 20 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-4	21	0	#line 21 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-4	22	0		set __ultrasonic_scan_7qG2_sensorValue_7qG2_000, 0
-4	21	3	#line 21 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-4	21	3	#line 21 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-4	21	3	#line 21 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-4	3768	3	#line 3768 "NXCDefs.h"
-4	3769	3		mov __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_ultrasonic_scan, __constVal1
-4	3768	5	#line 3768 "NXCDefs.h"
-4	3768	5	#line 3768 "NXCDefs.h"
-4	3769	5		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_SetSensorUltrasonic_inline_ultrasonic_scan, __constVal1
-4	3758	7	#line 3758 "NXCDefs.h"
-4	3759	7		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_ultrasonic_scan, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_ultrasonic_scan
-4	3758	9	#line 3758 "NXCDefs.h"
-4	3758	9	#line 3758 "NXCDefs.h"
-4	3759	9		mov __DU0SetSensorLowspeed_inline_SetSensorUltrasonic, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_SetSensorUltrasonic_inline_ultrasonic_scan
-4	3758	11	#line 3758 "NXCDefs.h"
-4	3759	11		tst 5, __zfSetSensorLowspeed_inline_SetSensorUltrasonic, __DU0SetSensorLowspeed_inline_SetSensorUltrasonic
-4	3758	14	#line 3758 "NXCDefs.h"
-4	3759	14		brtst 4, __001__001__NXC_Label_36, __zfSetSensorLowspeed_inline_SetSensorUltrasonic
-4	3758	17	#line 3758 "NXCDefs.h"
-4	3759	17		set __D0SetSensorLowspeed_inline_SetSensorUltrasonic, 11
-4	3758	20	#line 3758 "NXCDefs.h"
-4	3759	20		jmp __001__001__NXC_Label_37
-4	3758	22	#line 3758 "NXCDefs.h"
-4	3759	22		set __D0SetSensorLowspeed_inline_SetSensorUltrasonic, 10
-4	3758	25	#line 3758 "NXCDefs.h"
-4	3759	25		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_ultrasonic_scan, __D0SetSensorLowspeed_inline_SetSensorUltrasonic
-4	3663	27	#line 3663 "NXCDefs.h"
-4	3664	27		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_ultrasonic_scan, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_ultrasonic_scan, 0
-4	3663	31	#line 3663 "NXCDefs.h"
-4	3759	31	#line 3759 "NXCDefs.h"
-4	3759	31	#line 3759 "NXCDefs.h"
-4	3760	31		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_ultrasonic_scan, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_ultrasonic_scan
-4	3759	33	#line 3759 "NXCDefs.h"
-4	3759	33	#line 3759 "NXCDefs.h"
-4	3760	33		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_ultrasonic_scan, 0
-4	3759	36	#line 3759 "NXCDefs.h"
-4	3676	36	#line 3676 "NXCDefs.h"
-4	3677	36		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_ultrasonic_scan, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_ultrasonic_scan, 1
-4	3676	40	#line 3676 "NXCDefs.h"
-4	3760	40	#line 3760 "NXCDefs.h"
-4	3760	40	#line 3760 "NXCDefs.h"
-4	3761	40		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_ultrasonic_scan, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_ultrasonic_scan
-4	3760	42	#line 3760 "NXCDefs.h"
-4	3694	42	#line 3694 "NXCDefs.h"
-4	3695	42	#pragma macro 4
-4	3695	42		acquire __ResetSensorMutex
-4	3695	43		mov __ResetSensorPort, __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_ultrasonic_scan
-4	3695	45		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-4	3695	47		release __ResetSensorMutex
-4	4118	48	#line 4118 "NXCDefs.h"
-4	3694	48	#line 3694 "NXCDefs.h"
-4	3761	48	#line 3761 "NXCDefs.h"
-4	3768	48	#line 3768 "NXCDefs.h"
-4	23	48	#line 23 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-4	23	48	#line 23 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-4	24	48		set __D0ultrasonic_scan, 1
-4	24	51	#line 24 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-4	25	51		tst 5, __zfultrasonic_scan, __D0ultrasonic_scan
-4	24	54	#line 24 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-4	25	54		brtst 4, __NXC_Label_508, __zfultrasonic_scan
-4	24	57	#line 24 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-4	25	57		set __signed_stack_001ultrasonic_scan, 10
-4	24	60	#line 24 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-4	24	60	#line 24 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-4	25	60		set __D0ultrasonic_scan, 10
-4	25	63	#line 25 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-4	26	63	#pragma macro 33
-4	26	63		acquire __rotateMutex2
-4	26	64		arrbuild __rotate_ports2, __constVal2
-4	26	68		mov __rotate_power2, __signed_stack_001ultrasonic_scan
-4	26	70		mov __rotate_angle2, __D0ultrasonic_scan
-4	26	72		mov __rotate_turnpct2, __constVal0
-4	26	74		mov __rotate_sync2, __constVal0
-4	26	76		mov __rotate_stop2, __constVal1
-4	26	78		mov __rotate_theRVP2, __constVal32
-4	26	80		mov __rotate_theRVI2, __constVal0
-4	26	82		mov __rotate_theRVD2, __constVal96
-4	26	84		subcall __RotateMotor2, ____RotateMotor2_return
-4	26	86		release __rotateMutex2
-4	4143	87	#line 4143 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-4	25	87	#line 25 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-4	25	87	#line 25 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-4	26	87	#pragma macro 26
-4	26	87		acquire __RLSBmutex1
-4	26	88		mov __RLSReadBuf1, __RLSBbufLSWrite1
-4	26	90		set __RLSBytesCount1, 1
-4	26	93		wait2 NA, __constVal15
-4	26	96		subcall __ReadLSBytes1, ____ReadLSBytes1_return
-4	26	98		index __D0ultrasonic_scan, __RLSReadBuf1, 65535
-4	26	102		release __RLSBmutex1
-4	4146	103	#line 4146 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-4	25	103	#line 25 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-4	26	103		mov __ultrasonic_scan_7qG2_sensorValue_7qG2_000, __D0ultrasonic_scan
-4	25	105	#line 25 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-4	25	105	#line 25 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-4	6069	105	#line 6069 "NXCDefs.h"
-4	6070	105	#pragma macro 6
-4	6070	105		acquire __PointOutMutex
-4	6070	106		mov __PointOutArgs.Location.X, __constVal200
-4	6070	108		mov __PointOutArgs.Location.Y, __constVal200
-4	6070	110		mov __PointOutArgs.Options, __constVal1
-4	6070	112		syscall 14, __PointOutArgs
-4	6070	115		release __PointOutMutex
-4	4154	116	#line 4154 "NXCDefs.h"
-4	6069	116	#line 6069 "NXCDefs.h"
-4	27	116	#line 27 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-4	27	116	#line 27 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-4	28	116		set __signed_stack_001ultrasonic_scan, 0
-4	27	119	#line 27 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-4	27	119	#line 27 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-4	28	119		set __signed_stack_002ultrasonic_scan, 0
-4	27	122	#line 27 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-4	27	122	#line 27 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-4	28	122		mov __D0ultrasonic_scan, __ultrasonic_scan_7qG2_sensorValue_7qG2_000
-4	28	124	#line 28 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-4	29	124		acquire __TextOutMutex
-4	28	125	#line 28 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-4	29	125		mov __TextOutArgs.Location.X, __signed_stack_001ultrasonic_scan
-4	28	127	#line 28 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-4	29	127		mov __TextOutArgs.Location.Y, __signed_stack_002ultrasonic_scan
-4	28	129	#line 28 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-4	29	129		set __TextOutArgs.Options, 0
-4	28	132	#line 28 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-4	29	132		numtostr __TextOutArgs.Text, __D0ultrasonic_scan
-4	28	135	#line 28 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-4	29	135		syscall 13, __TextOutArgs
-4	28	138	#line 28 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-4	29	138		mov __D0ultrasonic_scan, __TextOutArgs.Result
-4	28	140	#line 28 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-4	29	140		release __TextOutMutex
-4	28	141	#line 28 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-4	31	141	#line 31 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-4	32	141		jmp __NXC_Label_507
-4	31	143	#line 31 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-4	32	143		exit -1, -1
-5	0	0		subret __ultrasonic_scan_Spawner_return
-6	0	0		exit 0, 1
-7	56	0	#line 56 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-7	57	0		subret ____initialize_global_data_return
+4	28	0	#line 28 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+4	33	0	#line 33 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+4	34	0		subret __turnDegrees_return
+5	35	0	#line 35 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	36	0		set __ultrasonic_scan_7qG2_currentRotation_7qG2_000, 0
+5	35	3	#line 35 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	36	3	#line 36 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	36	3	#line 36 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	37	3	#line 37 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	38	3		set __ultrasonic_scan_7qG2_sensorValue_7qG2_000, 0
+5	37	6	#line 37 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	37	6	#line 37 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	37	6	#line 37 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	3768	6	#line 3768 "NXCDefs.h"
+5	3769	6		mov __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_ultrasonic_scan, __constVal1
+5	3768	8	#line 3768 "NXCDefs.h"
+5	3768	8	#line 3768 "NXCDefs.h"
+5	3769	8		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_SetSensorUltrasonic_inline_ultrasonic_scan, __constVal1
+5	3758	10	#line 3758 "NXCDefs.h"
+5	3759	10		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_ultrasonic_scan, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_ultrasonic_scan
+5	3758	12	#line 3758 "NXCDefs.h"
+5	3758	12	#line 3758 "NXCDefs.h"
+5	3759	12		mov __DU0SetSensorLowspeed_inline_SetSensorUltrasonic, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_SetSensorUltrasonic_inline_ultrasonic_scan
+5	3758	14	#line 3758 "NXCDefs.h"
+5	3759	14		tst 5, __zfSetSensorLowspeed_inline_SetSensorUltrasonic, __DU0SetSensorLowspeed_inline_SetSensorUltrasonic
+5	3758	17	#line 3758 "NXCDefs.h"
+5	3759	17		brtst 4, __001__001__NXC_Label_36, __zfSetSensorLowspeed_inline_SetSensorUltrasonic
+5	3758	20	#line 3758 "NXCDefs.h"
+5	3759	20		set __D0SetSensorLowspeed_inline_SetSensorUltrasonic, 11
+5	3758	23	#line 3758 "NXCDefs.h"
+5	3759	23		jmp __001__001__NXC_Label_37
+5	3758	25	#line 3758 "NXCDefs.h"
+5	3759	25		set __D0SetSensorLowspeed_inline_SetSensorUltrasonic, 10
+5	3758	28	#line 3758 "NXCDefs.h"
+5	3759	28		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_ultrasonic_scan, __D0SetSensorLowspeed_inline_SetSensorUltrasonic
+5	3663	30	#line 3663 "NXCDefs.h"
+5	3664	30		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_ultrasonic_scan, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_ultrasonic_scan, 0
+5	3663	34	#line 3663 "NXCDefs.h"
+5	3759	34	#line 3759 "NXCDefs.h"
+5	3759	34	#line 3759 "NXCDefs.h"
+5	3760	34		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_ultrasonic_scan, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_ultrasonic_scan
+5	3759	36	#line 3759 "NXCDefs.h"
+5	3759	36	#line 3759 "NXCDefs.h"
+5	3760	36		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_ultrasonic_scan, 0
+5	3759	39	#line 3759 "NXCDefs.h"
+5	3676	39	#line 3676 "NXCDefs.h"
+5	3677	39		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_ultrasonic_scan, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_ultrasonic_scan, 1
+5	3676	43	#line 3676 "NXCDefs.h"
+5	3760	43	#line 3760 "NXCDefs.h"
+5	3760	43	#line 3760 "NXCDefs.h"
+5	3761	43		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_ultrasonic_scan, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_ultrasonic_scan
+5	3760	45	#line 3760 "NXCDefs.h"
+5	3694	45	#line 3694 "NXCDefs.h"
+5	3695	45	#pragma macro 4
+5	3695	45		acquire __ResetSensorMutex
+5	3695	46		mov __ResetSensorPort, __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_ultrasonic_scan
+5	3695	48		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+5	3695	50		release __ResetSensorMutex
+5	4306	51	#line 4306 "NXCDefs.h"
+5	3694	51	#line 3694 "NXCDefs.h"
+5	3761	51	#line 3761 "NXCDefs.h"
+5	3768	51	#line 3768 "NXCDefs.h"
+5	40	51	#line 40 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	40	51	#line 40 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	41	51		set __signed_stack_001ultrasonic_scan, 30
+5	40	54	#line 40 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	40	54	#line 40 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	41	54		mov __D0ultrasonic_scan, __constValNeg180
+5	41	56	#line 41 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	42	56	#pragma macro 33
+5	42	56		arrbuild __rotate_ports2, __constVal2
+5	42	60		mov __rotate_power2, __signed_stack_001ultrasonic_scan
+5	42	62		mov __rotate_angle2, __D0ultrasonic_scan
+5	42	64		mov __rotate_turnpct2, __constVal0
+5	42	66		mov __rotate_sync2, __constVal0
+5	42	68		mov __rotate_stop2, __constVal1
+5	42	70		mov __rotate_theRVP2, __constVal32
+5	42	72		mov __rotate_theRVI2, __constVal0
+5	42	74		mov __rotate_theRVD2, __constVal96
+5	42	76		subcall __RotateMotor2, ____RotateMotor2_return
+5	4322	78	#line 4322 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	41	78	#line 41 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	43	78	#line 43 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	43	78	#line 43 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	44	78		add __ultrasonic_scan_7qG2_currentRotation_7qG2_000, __ultrasonic_scan_7qG2_currentRotation_7qG2_000, __constValNeg180
+5	43	82	#line 43 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	43	82	#line 43 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	44	82		mov __signed_stack_001ultrasonic_scan, __ultrasonic_scan_7qG2_currentRotation_7qG2_000
+5	43	84	#line 43 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	43	84	#line 43 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	44	84		set __D0ultrasonic_scan, 180
+5	43	87	#line 43 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	44	87		cmp 0, __zfultrasonic_scan, __signed_stack_001ultrasonic_scan, __D0ultrasonic_scan
+5	43	91	#line 43 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	44	91		mov __D0ultrasonic_scan, __zfultrasonic_scan
+5	45	93	#line 45 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	46	93		brtst 4, __NXC_Label_516, __zfultrasonic_scan
+5	45	96	#line 45 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	46	96		set __signed_stack_001ultrasonic_scan, 30
+5	45	99	#line 45 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	45	99	#line 45 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	46	99		set __D0ultrasonic_scan, 10
+5	46	102	#line 46 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	47	102	#pragma macro 33
+5	47	102		arrbuild __rotate_ports2, __constVal2
+5	47	106		mov __rotate_power2, __signed_stack_001ultrasonic_scan
+5	47	108		mov __rotate_angle2, __D0ultrasonic_scan
+5	47	110		mov __rotate_turnpct2, __constVal0
+5	47	112		mov __rotate_sync2, __constVal0
+5	47	114		mov __rotate_stop2, __constVal1
+5	47	116		mov __rotate_theRVP2, __constVal32
+5	47	118		mov __rotate_theRVI2, __constVal0
+5	47	120		mov __rotate_theRVD2, __constVal96
+5	47	122		subcall __RotateMotor2, ____RotateMotor2_return
+5	4357	124	#line 4357 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	46	124	#line 46 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	49	124	#line 49 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	49	124	#line 49 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	50	124		add __ultrasonic_scan_7qG2_currentRotation_7qG2_000, __ultrasonic_scan_7qG2_currentRotation_7qG2_000, __constVal10
+5	49	128	#line 49 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	49	128	#line 49 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	50	128		set __Wait_7qG2_ms_7qG2_000_inline_ultrasonic_scan, 500
+5	49	131	#line 49 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	7921	131	#line 7921 "NXCDefs.h"
+5	7922	131		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_ultrasonic_scan
+5	7921	134	#line 7921 "NXCDefs.h"
+5	52	134	#line 52 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	52	134	#line 52 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	53	134	#pragma macro 26
+5	53	134		acquire __RLSBmutex1
+5	53	135		mov __RLSReadBuf1, __RLSBbufLSWrite1
+5	53	137		set __RLSBytesCount1, 1
+5	53	140		wait2 NA, __constVal15
+5	53	143		subcall __ReadLSBytes1, ____ReadLSBytes1_return
+5	53	145		index __D0ultrasonic_scan, __RLSReadBuf1, 65535
+5	53	149		release __RLSBmutex1
+5	4381	150	#line 4381 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	52	150	#line 52 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	53	150		mov __ultrasonic_scan_7qG2_sensorValue_7qG2_000, __D0ultrasonic_scan
+5	52	152	#line 52 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	52	152	#line 52 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	6069	152	#line 6069 "NXCDefs.h"
+5	6070	152	#pragma macro 6
+5	6070	152		acquire __PointOutMutex
+5	6070	153		mov __PointOutArgs.Location.X, __constVal200
+5	6070	155		mov __PointOutArgs.Location.Y, __constVal200
+5	6070	157		mov __PointOutArgs.Options, __constVal1
+5	6070	159		syscall 14, __PointOutArgs
+5	6070	162		release __PointOutMutex
+5	4389	163	#line 4389 "NXCDefs.h"
+5	6069	163	#line 6069 "NXCDefs.h"
+5	56	163	#line 56 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	56	163	#line 56 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	57	163		set __signed_stack_001ultrasonic_scan, 0
+5	56	166	#line 56 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	56	166	#line 56 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	57	166		set __signed_stack_002ultrasonic_scan, 0
+5	56	169	#line 56 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	56	169	#line 56 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	57	169	#pragma macro 26
+5	57	169		acquire __RLSBmutex1
+5	57	170		mov __RLSReadBuf1, __RLSBbufLSWrite1
+5	57	172		set __RLSBytesCount1, 1
+5	57	175		wait2 NA, __constVal15
+5	57	178		subcall __ReadLSBytes1, ____ReadLSBytes1_return
+5	57	180		index __D0ultrasonic_scan, __RLSReadBuf1, 65535
+5	57	184		release __RLSBmutex1
+5	4405	185	#line 4405 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	59	185	#line 59 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	60	185		acquire __TextOutMutex
+5	59	186	#line 59 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	60	186		mov __TextOutArgs.Location.X, __signed_stack_001ultrasonic_scan
+5	59	188	#line 59 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	60	188		mov __TextOutArgs.Location.Y, __signed_stack_002ultrasonic_scan
+5	59	190	#line 59 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	60	190		set __TextOutArgs.Options, 0
+5	59	193	#line 59 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	60	193		numtostr __TextOutArgs.Text, __D0ultrasonic_scan
+5	59	196	#line 59 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	60	196		syscall 13, __TextOutArgs
+5	59	199	#line 59 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	60	199		mov __D0ultrasonic_scan, __TextOutArgs.Result
+5	59	201	#line 59 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	60	201		release __TextOutMutex
+5	59	202	#line 59 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	59	202	#line 59 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	59	202	#line 59 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	60	202		mov __signed_stack_001ultrasonic_scan, __ultrasonic_scan_7qG2_sensorValue_7qG2_000
+5	59	204	#line 59 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	59	204	#line 59 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	60	204		set __D0ultrasonic_scan, 30
+5	59	207	#line 59 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	60	207		cmp 1, __zfultrasonic_scan, __signed_stack_001ultrasonic_scan, __D0ultrasonic_scan
+5	59	211	#line 59 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	60	211		mov __D0ultrasonic_scan, __zfultrasonic_scan
+5	61	213	#line 61 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	62	213		brtst 4, __NXC_Label_537, __zfultrasonic_scan
+5	61	216	#line 61 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	61	216	#line 61 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	62	216	#line 62 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	63	216		subcall turnDegrees, __turnDegrees_return
+5	62	218	#line 62 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	63	218	#line 63 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	64	218		jmp __NXC_Label_516
+5	63	220	#line 63 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	65	220	#line 65 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	68	220	#line 68 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	69	220		jmp __NXC_Label_515
+5	68	222	#line 68 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	68	222	#line 68 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+5	69	222		subret __ultrasonic_scan_return
+6	100	0	#line 100 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+6	101	0		subret ____initialize_global_data_return
 #CLUMPS
 Clump	Name	Offset	File
 0	main	0	C:\Users\Pascal\AppData\Local\Temp\temp.nxc
-1	__RotateMotor2	7	NXTDefs.h
-2	__ResetSensorSubroutine	176	NXTDefs.h
-3	__ReadLSBytes1	189	NXTDefs.h
-4	ultrasonic_scan	274	C:\Users\Pascal\AppData\Local\Temp\temp.nxc
-5	__ultrasonic_scan_Returner	420	C:\Users\Pascal\AppData\Local\Temp\temp.nxc
-6	__ultrasonic_scan_Spawner	422	C:\Users\Pascal\AppData\Local\Temp\temp.nxc
-7	__initialize_global_data	425	C:\Users\Pascal\AppData\Local\Temp\temp.nxc
+1	__RotateMotor2	61	NXTDefs.h
+2	__ResetSensorSubroutine	230	NXTDefs.h
+3	__ReadLSBytes1	243	NXTDefs.h
+4	turnDegrees	328	C:\Users\Pascal\AppData\Local\Temp\temp.nxc
+5	ultrasonic_scan	330	C:\Users\Pascal\AppData\Local\Temp\temp.nxc
+6	__initialize_global_data	554	C:\Users\Pascal\AppData\Local\Temp\temp.nxc
