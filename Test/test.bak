@@ -89,7 +89,6 @@ task tone() {
 
 task main() {
      while(true) {
-
         ClearScreen();
         TextOut(0,0,"Starting scan...");
         Wait(300);
