@@ -1,14 +1,9 @@
 #define SENSOR_TOUCH_FRONT IN_1
 #define LIGHT_SENSOR IN_2
 #define SENSOR_TOUCH_BACK IN_3
-#define ULTRASONIC_IN IN_4
 
 #define MOTOR_RIGHT_OUT OUT_A
 #define MOTOR_LEFT_OUT OUT_B
-#define MOTOR_TURRET_OUT OUT_C
-
-#define MOTOR_TURRET_PWR 30
-
 #define ULTRASONIC_THRESHOLD 30
 
 #include "../basic_functions/functions.h"
@@ -16,10 +11,10 @@
 
 // Task for testing the touch sensor readout
 task read_touch_sensor() {
-    SetSensorTouch(SENSOR_TOUCH_IN);
+    SetSensorTouch(SENSOR_TOUCH_FRONT);
 
     while(true){
-        if(Sensor(SENSOR_TOUCH_IN) == 1) {
+        if(Sensor(SENSOR_TOUCH_FRONT) == 1) {
             OnFwd(OUT_AC, 100);
         }
         else {
@@ -46,26 +41,18 @@ task read_ultrasonic_sensor() {
     }
 }
 
-// Task for testing the beeper
-task tone() {
-     int i = 0;
-     while(true) {
-         PlayTone(i++, 200);
-         Wait(200);
-     }
-}
-
 // Task that beeps every second so you know the system
 // is running
 task heartbeat() {
     while(true) {
         PlayTone(500, 100);
-        Wait(1000);
+        Wait(5000);
     }
 }
 
 task main() {
      start heartbeat;
+
      while(true) {
         ClearScreen();
         TextOut(0,0,"Starting scan...");

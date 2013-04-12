@@ -17,7 +17,12 @@ void Light_Sens_Init(int Port){
 }
 
 void Turn(int deg, int pwr){              //pwr should be anywhere between 0 and 100
-	RotateMotorEx(OUT_AB, pwr, deg, -100, true, true);
+	if (deg < 0) {
+		RotateMotorEx(OUT_AB, -pwr, deg, -100, true, true);
+	}
+	else {
+		RotateMotorEx(OUT_AB, -pwr, deg, 100, true, true);
+	}
 }
 
 void Stop_Driving(){
@@ -26,11 +31,11 @@ Off(OUT_B);
 }
 
 void Drive_Forward(int pwr){
- OnFwd(OUT_A, pwr);
- OnFwd(OUT_B, pwr);
+ OnFwd(OUT_A, -pwr);
+ OnFwd(OUT_B, -pwr);
 }
 
 void Drive_Backward(int pwr){
- OnRev(OUT_A, pwr);
- OnRev(OUT_B, pwr);
+ OnRev(OUT_A, -pwr);
+ OnRev(OUT_B, -pwr);
 }
