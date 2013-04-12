@@ -1,13 +1,16 @@
 #define SENSOR_TOUCH_IN IN_1
 #define ULTRASONIC_IN IN_2
 
-#define MOTOR_LEFT_OUT OUT_A
-#define MOTOR_RIGHT_OUT OUT_B
+#define MOTOR_RIGHT_OUT OUT_A
+#define MOTOR_LEFT_OUT OUT_B
 #define MOTOR_TURRET_OUT OUT_C
 
 #define MOTOR_TURRET_PWR 30
 
 #define ULTRASONIC_THRESHOLD 30
+
+#include "../basic_functions/functions.h"
+#include "../scanner.h"
 
 // Task for testing the touch sensor readout
 task read_touch_sensor() {
@@ -26,43 +29,6 @@ task read_touch_sensor() {
 // Just empty for now. Should turn a certain amount of degrees.
 void turnDegrees(int degrees) {
     ;
-}
-
-// Procedure for testing the scanning
-// Note: before starting the robot, the turret has to be set manually by the
-// user to point straight ahead.
-void ultrasonic_scan() {
-    int currentRotation = 0;
-    int turnAmount = 10;
-    int sensorValue = 0;
-    SetSensorUltrasonic(ULTRASONIC_IN);
-    
-    // Turn turret completely to the left
-    RotateMotor(MOTOR_TURRET_OUT, MOTOR_TURRET_PWR, -180);
-    currentRotation += -180;
-    
-    while(currentRotation < 180){
-        // Turn turret 10 degrees to the right
-        RotateMotor(MOTOR_TURRET_OUT, MOTOR_TURRET_PWR, 10);
-        currentRotation += 10;
-        
-        // Wait for turret to rotate and the sensor to get a value
-        Wait(500);
-        
-        // Measure distance with the sensor
-        sensorValue = SensorUS(ULTRASONIC_IN);
-        
-        // (for testing) Print the value on the LCD
-        ClearScreen();
-        NumOut(0, 0, SensorUS(ULTRASONIC_IN));
-
-        // Check if the value is above the threshold
-        if (sensorValue > ULTRASONIC_THRESHOLD) {
-            // Found a clear direction, turn and stop scanning
-            turnDegrees(currentRotation);
-            break;
-        }
-    }
 }
 
 // Task for testing ultrasonic sensor readout
@@ -87,7 +53,17 @@ task tone() {
      }
 }
 
+// Task that beeps every second so you know the system
+// is running
+task heartbeat() {
+    while(true) {
+        PlayTone(500, 100);
+        Wait(1000);
+    }
+}
+
 task main() {
+     start heartbeat;
      while(true) {
         ClearScreen();
         TextOut(0,0,"Starting scan...");
