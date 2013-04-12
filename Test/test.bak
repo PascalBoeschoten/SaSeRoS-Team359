@@ -51,17 +51,14 @@ task heartbeat() {
 }
 
 task main() {
+     int scan_value = 0;
      start heartbeat;
 
      while(true) {
-/*        ClearScreen();
+        ClearScreen();
         TextOut(0,0,"Starting scan...");
         Wait(300);
-        ultrasonic_scan(); */
-        
-        TurnRobot(90, 20);
-        Wait(200);
-        TurnRobot(-90, 20);
-        Wait(200);
+        scan_value = UltrasonicScan();
+        TurnRobot(scan_value, 100);
      }
 }

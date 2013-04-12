@@ -11,12 +11,12 @@
 
 int scanner_currentRotation = 0;
 
-void turnTurret(int deg) {
+void TurnTurret(int deg) {
     RotateMotor(MOTOR_TURRET_OUT, MOTOR_TURRET_PWR, deg);
     scanner_currentRotation += deg;
 }
 
-void centerTurret() {
+void CenterTurret() {
     RotateMotor(MOTOR_TURRET_OUT, MOTOR_TURRET_PWR,
      -scanner_currentRotation);
     scanner_currentRotation = 0;
@@ -25,36 +25,36 @@ void centerTurret() {
 // Procedure for making a full scan
 // Returns an angle where the free direction is, or 0 if there was no
 // direction found.
-int ultrasonic_scan() {
-    int sensorValue = 0;
+int UltrasonicScan() {
+    int sensor_value = 0;
     SetSensorUltrasonic(ULTRASONIC_IN);
     
     // Turn turret completely to the left
-    turnTurret(-180);
+    TurnTurret(-180);
     
     while(scanner_currentRotation < 180){
         // Turn turret a little to the right
-        turnTurret(TURRET_ROTATION_AMOUNT);
+        TurnTurret(TURRET_ROTATION_AMOUNT);
 
         // Wait for turret to rotate and the sensor to get a value
         Wait(TURRET_ROTATION_DELAY);
         
         // Measure distance with the sensor
-        sensorValue = SensorUS(ULTRASONIC_IN);
+        sensor_value = SensorUS(ULTRASONIC_IN);
         
         // (for testing) Print the value on the LCD
         ClearScreen();
         NumOut(0, 0, SensorUS(ULTRASONIC_IN));
 
         // Check if the value is above the threshold
-        if (sensorValue > ULTRASONIC_THRESHOLD) {
+        if (sensor_value > ULTRASONIC_THRESHOLD) {
             // Return the found direction
-            return sensorValue;
+            return sensor_value;
         }
     }
 
     // No free direction was found
     // Turn the turret back to its original position
-    centerTurret();
+    CenterTurret();
     return 0;
 }
