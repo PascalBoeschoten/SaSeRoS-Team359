@@ -17,8 +17,7 @@ void Light_Sens_Init(int Port){
 }
 
 void Turn(int deg, int pwr){              //pwr should be anywhere between 0 and 100
- RotateMotor(OUT_A, pwr, deg);
- RotateMotor(OUT_B, pwr, -deg);
+	RotateMotorEx(OUT_AB, pwr, deg, -100, true, true);
 }
 
 void Stop_Driving(){
