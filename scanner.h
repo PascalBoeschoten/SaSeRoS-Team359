@@ -1,6 +1,12 @@
 // Note: For the scanner to work, the turret has to be set manually by the
 // user to point straight ahead before starting the robot.
 
+#define TURRET_ROTATION_DELAY 300
+
+#define ULTRASONIC_IN IN_4
+#define MOTOR_TURRET_OUT OUT_C
+#define MOTOR_TURRET_PWR 30
+
 // Procedure for making a full scan
 void ultrasonic_scan() {
     int currentRotation = 0;
@@ -18,7 +24,7 @@ void ultrasonic_scan() {
         currentRotation += 10;
         
         // Wait for turret to rotate and the sensor to get a value
-        Wait(500);
+        Wait(TURRET_ROTATION_DELAY);
         
         // Measure distance with the sensor
         sensorValue = SensorUS(ULTRASONIC_IN);
@@ -34,4 +40,7 @@ void ultrasonic_scan() {
             break;
         }
     }
+    // No free direction was found
+    // Turn the turret back to its original position
+    RotateMotor(MOTOR_TURRET_OUT, MOTOR_TURRET_PWR, -currentRotation);
 }
