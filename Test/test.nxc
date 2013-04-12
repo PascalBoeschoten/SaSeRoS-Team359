@@ -54,9 +54,14 @@ task main() {
      start heartbeat;
 
      while(true) {
-        ClearScreen();
+/*        ClearScreen();
         TextOut(0,0,"Starting scan...");
         Wait(300);
-        ultrasonic_scan();
+        ultrasonic_scan(); */
+        
+        TurnRobot(45, 50);
+        Wait(200);
+        TurnRobot(-45, 50);
+        Wait(200);
      }
 }

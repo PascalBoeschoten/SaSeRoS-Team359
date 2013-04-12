@@ -38,7 +38,7 @@ void ultrasonic_scan() {
         // Check if the value is above the threshold
         if (sensorValue > ULTRASONIC_THRESHOLD) {
             // Found a clear direction, turn and stop scanning
-            Turn(currentRotation, 50);
+            TurnRobot(currentRotation, 50);
 
             // Test message
             ClearScreen();
