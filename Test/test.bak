@@ -3,6 +3,8 @@
 #define SENSOR_TOUCH_BACK_IN IN_3
 #define SENSOR_LIGHT_EDGE_IN IN_4
 
+#define SENSOR_LIGHT_EDGE SENSOR_2
+
 #define MOTOR_RIGHT_OUT OUT_A
 #define MOTOR_LEFT_OUT OUT_B
 #define ULTRASONIC_THRESHOLD 30
@@ -23,11 +25,6 @@ task read_touch_sensor() {
             Off(OUT_AC);
         }
     }
-}
-
-// Just empty for now. Should turn a certain amount of degrees.
-void turnDegrees(int degrees) {
-    ;
 }
 
 // Task for testing ultrasonic sensor readout
@@ -52,18 +49,6 @@ task heartbeat() {
     }
 }
 
-// Task for testing the light sensor
-task light_sensor() {
-    Light_Sens_Init(SENSOR_LIGHT_EDGE_IN);
-        
-    while(true){
-        Wait(300);
-        ClearScreen();
-
-        NumOut(0,0, SENSOR_4);
-    }
-}
-
 // Task for testing scanning
 task scanning() {
      int scan_value = 0;
@@ -72,12 +57,27 @@ task scanning() {
         TextOut(0,0,"Starting scan...");
         Wait(300);
         scan_value = UltrasonicScan();
-        TurnRobot(scan_value, 50);
+        //TurnRobot(scan_value, 50);
+     }
+}
+
+// Task for testing edge detection
+task edge_detection() {
+     Light_Sens_Init(LIGHT_SENSOR_IN);
+     while(true) {
+     ClearScreen();
+     NumOut(0, 0, SENSOR_LIGHT_EDGE);
+           if(DetectEdge()) {
+               TextOut(0,0,"Edge detected!!!");
+           }
+           else {
+               TextOut(0,0,"No edge...");
+           }
+           Wait(200);
      }
 }
 
 task main() {
-
      start heartbeat;
-
+     start edge_detection;
 }
