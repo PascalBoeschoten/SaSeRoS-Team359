@@ -49,6 +49,7 @@ int UltrasonicScan() {
         // Check if the value is above the threshold
         if (sensor_value > ULTRASONIC_THRESHOLD) {
             // Return the found direction
+            CenterTurret();
             return sensor_value;
         }
     }
