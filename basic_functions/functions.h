@@ -16,9 +16,19 @@ void Light_Sens_Init(int Port){
  SetSensorMode(Port, SENSOR_MODE_RAW);
 }
 
-void Turn(int deg, int pwr){              //pwr should be anywhere between 0 and 100
- RotateMotor(OUT_A, pwr, deg);
- RotateMotor(OUT_B, pwr, -deg);
+// Turns the motors a certain amount of degrees
+void TurnMotor(int deg, int pwr){              //pwr should be anywhere between 0 and 100
+	if (deg < 0) {
+		RotateMotorEx(OUT_AB, -pwr, deg, -100, true, true);
+	}
+	else {
+		RotateMotorEx(OUT_AB, -pwr, deg, 100, true, true);
+	}
+}
+
+// Turns the robot approximately a certain amount of degrees
+void TurnRobot(int deg, int pwr) {
+	TurnMotor(deg*4, pwr);
 }
 
 void Stop_Driving(){
@@ -27,11 +37,19 @@ Off(OUT_B);
 }
 
 void Drive_Forward(int pwr){
- OnFwd(OUT_A, pwr);
- OnFwd(OUT_B, pwr);
+ OnFwd(OUT_A, -pwr);
+ OnFwd(OUT_B, -pwr);
 }
 
 void Drive_Backward(int pwr){
- OnRev(OUT_A, pwr);
- OnRev(OUT_B, pwr);
+ OnRev(OUT_A, -pwr);
+ OnRev(OUT_B, -pwr);
+}
+
+void ShortBeep() {
+	PlayTone(500,100);
+}
+
+void LongBeep() {
+    PlayTone(500,1000);
 }

@@ -1,552 +1,363 @@
 #SYMBOLS
 Index	Identifier	Type	Flag	Data	Size	RefCount
-0	__signed_stack_002heartbeat	6	1	0	4	2
-1	__signed_stack_003heartbeat	6	1	4	4	2
-2	__signed_stack_001heartbeat	6	1	8	4	2
-3	__DU0SetSensorLowspeed_inline_SetSensorUltrasonic	5	1	12	4	2
-4	__CLSCSMutex1	9	0	16	4	2
-5	__signed_stack_001ultrasonic_scan	6	1	20	4	10
-6	__signed_stack_002ultrasonic_scan	6	1	24	4	2
-7	__signed_stack_002main	6	1	28	4	2
-8	__ResetSensorMutex	9	0	32	4	2
-9	__signed_stack_001main	6	1	36	4	2
-10	__D0main	6	1	40	4	3
-11	__PointOutMutex	9	0	44	4	4
-12	__RLSBmutex1	9	0	48	4	4
-13	__SPTArgsMutex	9	0	52	4	2
-14	__D0heartbeat	6	1	56	4	5
-15	__D0SetSensorLowspeed_inline_SetSensorUltrasonic	6	1	60	4	3
-16	__CLSWMutex1	9	0	64	4	2
-17	__CLSRMutex1	9	0	68	4	2
-18	__D0ultrasonic_scan	6	1	72	4	15
-19	__TextOutMutex	9	0	76	4	4
-20	__rotate_angle2	6	1	80	4	6
-21	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	84	4	2
-22	__Wait_7qG2_ms_7qG2_000_inline_ultrasonic_scan	5	1	88	4	2
-23	__Wait_7qG2_ms_7qG2_000_inline_heartbeat	5	1	92	4	2
-24	__rotate_theAngle2	5	1	96	4	2
-25	__ultrasonic_scan_7qG2_currentRotation_7qG2_000	4	1	100	2	6
-26	__constVal200	4	0	102	2	4
-27	__constValNeg180	4	0	104	2	2
-28	__rotate_RotCount2	4	1	106	2	4
-29	__rotate_OldRotCount2	4	1	108	2	2
-30	__ultrasonic_scan_7qG2_sensorValue_7qG2_000	4	1	110	2	3
-31	__PFTmp	1	1	112	1	1
-32	__constVal10	2	0	113	1	1
-33	__zfmain	1	1	114	1	2
-34	__heartbeat_Spawner_return	1	1	115	1	1
-35	__zfheartbeat	1	1	116	1	2
-36	____initialize_global_data_return	1	1	117	1	3
-37	__zfultrasonic_scan	1	1	118	1	6
-38	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_ultrasonic_scan	1	1	119	1	4
-39	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_SetSensorUltrasonic_inline_ultrasonic_scan	1	1	120	1	2
-40	__ultrasonic_scan_return	1	1	121	1	3
-41	__turnDegrees_return	1	1	122	1	3
-42	__constVal96	2	0	123	1	2
-43	__zfSetSensorLowspeed_inline_SetSensorUltrasonic	1	1	124	1	2
-44	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_ultrasonic_scan	1	1	125	1	2
-45	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_ultrasonic_scan	1	1	126	1	2
-46	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_ultrasonic_scan	1	1	127	1	2
-47	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_ultrasonic_scan	1	1	128	1	2
-48	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_ultrasonic_scan	1	1	129	1	2
-49	__constVal2	2	0	130	1	2
-50	__rotate_rs2	1	1	131	1	2
-51	__rotate_thePower2	2	1	132	1	4
-52	__rotate_theRVI2	1	1	133	1	3
-53	__rotate_theRVD2	1	1	134	1	3
-54	__rotate_theTurnPct2	2	1	135	1	4
-55	__constVal0	2	1	136	1	10
-56	__constVal50	2	0	137	1	1
-57	__constVal32	2	0	138	1	5
-58	__constVal1	2	0	139	1	10
-59	__rotate_theRVP2	1	1	140	1	3
-60	__rotate_sync2	1	1	141	1	3
-61	__rotate_stop2	1	1	142	1	3
-62	__rotate_power2	1	1	143	1	5
-63	__rotate_firstPort2	1	1	144	1	5
-64	__rotate_turnpct2	2	1	145	1	4
-65	__rotate_theRM2	1	1	146	1	4
-66	__rotate_theRS2	1	1	147	1	3
-67	__rotate_theUF2	1	1	148	1	6
-68	__rotate_theOM2	1	1	149	1	7
-69	____RotateMotor2_return	1	1	150	1	4
-70	__RLSBResult1	2	1	151	1	7
-71	__RLSBytesCount1	1	1	152	1	8
-72	__constVal15	2	0	153	1	6
-73	____ReadLSBytes1_return	1	1	154	1	4
-74	__RLSBIterations1	1	1	155	1	4
-75	__ResetSensorPort	1	1	156	1	3
-76	____RotateMotor2_sign_tmp	2	1	157	1	4
-77	__ResetSensorTmp	1	1	158	1	2
-78	____ResetSensorSubroutine_return	1	1	159	1	3
-79	__SPTArgs	8	0	5	8	6
-80	__SPTArgs.Result	2	1	160	1	6
-81	__SPTArgs.Frequency	3	1	162	2	6
-82	__SPTArgs.Duration	3	1	164	2	6
-83	__SPTArgs.Loop	1	1	166	1	6
-84	__SPTArgs.Volume	1	1	167	1	6
-85	__CLSRArgs1	8	0	4	12	5
-86	__CLSRArgs1.Result	2	1	168	1	5
-87	__CLSRArgs1.Port	1	1	169	1	5
-88	__CLSRArgs1.Buffer	7	0	170	4	5
-89	__CLSRArgs1.Buffer.Buffer_type	1	0	0	1	0
-90	__CLSRArgs1.BufferLen	1	1	172	1	5
-91	__TextOutArgs	8	0	4	16	12
-92	__TextOutArgs.Result	2	1	176	1	12
-93	__TextOutArgs.Location	8	0	2	4	12
-94	__TextOutArgs.Location.X	4	1	180	2	12
-95	__TextOutArgs.Location.Y	4	1	182	2	12
-96	__TextOutArgs.Text	7	0	184	4	12
-97	__TextOutArgs.Text.Text_type	1	0	0	1	0
-98	__TextOutArgs.Options	5	1	188	4	12
-99	__PointOutArgs	8	0	3	12	8
-100	__PointOutArgs.Result	2	1	192	1	8
-101	__PointOutArgs.Location	8	0	2	4	8
-102	__PointOutArgs.Location.X	4	1	196	2	8
-103	__PointOutArgs.Location.Y	4	1	198	2	8
-104	__PointOutArgs.Options	5	1	200	4	8
-105	__CLSCSArgs1	8	0	3	4	4
-106	__CLSCSArgs1.Result	2	1	204	1	4
-107	__CLSCSArgs1.Port	1	1	205	1	4
-108	__CLSCSArgs1.BytesReady	1	1	206	1	4
-109	__CLSWArgs1	8	0	4	12	5
-110	__CLSWArgs1.Result	2	1	208	1	5
-111	__CLSWArgs1.Port	1	1	209	1	5
-112	__CLSWArgs1.Buffer	7	0	210	4	5
-113	__CLSWArgs1.Buffer.Buffer_type	1	0	0	1	0
-114	__CLSWArgs1.ReturnLen	1	1	212	1	5
-115	__constStr0009	7	0	214	4	1
-116	__constStr0009.__constStr0009_type	1	1	0	1	0
-117	__RLSReadBuf1	7	0	216	4	10
-118	__RLSReadBuf1.__RLSReadBuf1_type	1	0	0	1	0
-119	__rotate_ports2	7	0	218	4	7
-120	__rotate_ports2.__rotate_ports2_type	1	0	0	1	0
-121	__strbufmain	7	0	220	4	2
-122	__strbufmain.__strbufmain_type	1	0	0	1	0
-123	__RLSBbufLSWrite1	7	0	222	4	2
-124	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
-125	__RLSLastGoodRead1	7	0	224	4	2
-126	__RLSLastGoodRead1.__RLSLastGoodRead1_type	1	0	0	1	0
+0	__signed_stack_001edge_detection	6	1	0	4	6
+1	__SPTArgsMutex	9	0	4	4	2
+2	__signed_stack_002edge_detection	6	1	8	4	6
+3	__DU0SetSensorLight_inline_Light_Sens_Init	5	1	12	4	2
+4	__D0DetectEdge	6	1	16	4	3
+5	__D0edge_detection	6	1	20	4	7
+6	__DU0edge_detection	5	1	24	4	2
+7	__DU0DetectEdge	5	1	28	4	3
+8	__signed_stack_001DetectEdge	6	1	32	4	2
+9	__signed_stack_001heartbeat	6	1	36	4	2
+10	__D0heartbeat	6	1	40	4	5
+11	__signed_stack_003heartbeat	6	1	44	4	2
+12	__D0SetSensorLight_inline_Light_Sens_Init	6	1	48	4	3
+13	__ResetSensorMutex	9	0	52	4	2
+14	__Wait_7qG2_ms_7qG2_000_inline_edge_detection	5	1	56	4	2
+15	__signed_stack_002heartbeat	6	1	60	4	2
+16	__PointOutMutex	9	0	64	4	2
+17	__TextOutMutex	9	0	68	4	6
+18	__Wait_7qG2_ms_7qG2_000_inline_heartbeat	5	1	72	4	2
+19	__Light_Sens_Init_7qG2_Port_7qG2_000	4	1	76	2	3
+20	__constVal200	4	0	78	2	2
+21	__SetSensorLight_7qG2_port_7qG2_000_inline_Light_Sens_Init	1	1	80	1	4
+22	__SetSensorLight_7qG2_bActive_7qG2_000_inline_Light_Sens_Init	1	1	81	1	2
+23	__DetectEdge_return	1	1	82	1	5
+24	__SetSensorMode_7qG2_mode_7qG2_000_inline_Light_Sens_Init	1	1	83	1	2
+25	____initialize_global_data_return	1	1	84	1	3
+26	__edge_detection_Spawner_return	1	1	85	1	1
+27	__heartbeat_Spawner_return	1	1	86	1	1
+28	__SetSensorMode_7qG2_port_7qG2_000_inline_Light_Sens_Init	1	1	87	1	2
+29	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_Light_Sens_Init	1	1	88	1	2
+30	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_Light_Sens_Init	1	1	89	1	2
+31	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_Light_Sens_Init	1	1	90	1	2
+32	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_Light_Sens_Init	1	1	91	1	2
+33	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_Light_Sens_Init	1	1	92	1	2
+34	____ResetSensorSubroutine_return	1	1	93	1	3
+35	__constVal15	2	0	94	1	3
+36	__PFTmp	1	1	95	1	1
+37	__constVal1	2	0	96	1	5
+38	__ResetSensorPort	1	1	97	1	3
+39	__ResetSensorTmp	1	1	98	1	2
+40	__zfSetSensorLight_inline_Light_Sens_Init	1	1	99	1	2
+41	__Light_Sens_Init_return	1	1	100	1	3
+42	__zfedge_detection	1	1	101	1	4
+43	__zfheartbeat	1	1	102	1	2
+44	__zfDetectEdge	1	1	103	1	3
+45	__SPTArgs	8	0	5	8	6
+46	__SPTArgs.Result	2	1	104	1	6
+47	__SPTArgs.Frequency	3	1	106	2	6
+48	__SPTArgs.Duration	3	1	108	2	6
+49	__SPTArgs.Loop	1	1	110	1	6
+50	__SPTArgs.Volume	1	1	111	1	6
+51	__PointOutArgs	8	0	3	12	4
+52	__PointOutArgs.Result	2	1	112	1	4
+53	__PointOutArgs.Location	8	0	2	4	4
+54	__PointOutArgs.Location.X	4	1	116	2	4
+55	__PointOutArgs.Location.Y	4	1	118	2	4
+56	__PointOutArgs.Options	5	1	120	4	4
+57	__TextOutArgs	8	0	4	16	18
+58	__TextOutArgs.Result	2	1	124	1	18
+59	__TextOutArgs.Location	8	0	2	4	18
+60	__TextOutArgs.Location.X	4	1	128	2	18
+61	__TextOutArgs.Location.Y	4	1	130	2	18
+62	__TextOutArgs.Text	7	0	132	4	18
+63	__TextOutArgs.Text.Text_type	1	0	0	1	0
+64	__TextOutArgs.Options	5	1	136	4	18
+65	__constStr0010	7	0	140	4	1
+66	__constStr0010.__constStr0010_type	1	1	0	1	0
+67	__constStr0011	7	0	142	4	1
+68	__constStr0011.__constStr0011_type	1	1	0	1	0
+69	__strbufedge_detection	7	0	144	4	4
+70	__strbufedge_detection.__strbufedge_detection_type	1	0	0	1	0
 #SOURCES
 Clump	Line	PC	Source
-0	99	0	#line 99 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	100	0		subcall __initialize_global_data, ____initialize_global_data_return
-0	99	2	#line 99 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	100	2	#line 100 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	101	2		subcall __heartbeat_Spawner, __heartbeat_Spawner_return
-0	100	4	#line 100 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	100	4	#line 100 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	101	4		set __D0main, 1
-0	101	7	#line 101 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	102	7		tst 5, __zfmain, __D0main
-0	101	10	#line 101 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	102	10		brtst 4, __NXC_Label_585, __zfmain
-0	6069	13	#line 6069 "NXCDefs.h"
-0	6070	13	#pragma macro 6
-0	6070	13		acquire __PointOutMutex
-0	6070	14		mov __PointOutArgs.Location.X, __constVal200
-0	6070	16		mov __PointOutArgs.Location.Y, __constVal200
-0	6070	18		mov __PointOutArgs.Options, __constVal1
-0	6070	20		syscall 14, __PointOutArgs
-0	6070	23		release __PointOutMutex
-0	4888	24	#line 4888 "NXCDefs.h"
-0	6069	24	#line 6069 "NXCDefs.h"
-0	102	24	#line 102 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	102	24	#line 102 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	103	24		set __signed_stack_001main, 0
-0	102	27	#line 102 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	102	27	#line 102 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	103	27		set __signed_stack_002main, 0
-0	102	30	#line 102 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	102	30	#line 102 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	103	30		strcat __strbufmain, __constStr0009
-0	103	34	#line 103 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	104	34		acquire __TextOutMutex
-0	103	35	#line 103 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	104	35		mov __TextOutArgs.Location.X, __signed_stack_001main
-0	103	37	#line 103 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	104	37		mov __TextOutArgs.Location.Y, __signed_stack_002main
-0	103	39	#line 103 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	104	39		set __TextOutArgs.Options, 0
-0	103	42	#line 103 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	104	42		mov __TextOutArgs.Text, __strbufmain
-0	103	44	#line 103 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	104	44		syscall 13, __TextOutArgs
-0	103	47	#line 103 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	104	47		mov __D0main, __TextOutArgs.Result
-0	103	49	#line 103 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	104	49		release __TextOutMutex
-0	103	50	#line 103 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	103	50	#line 103 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	104	50		set __Wait_7qG2_ms_7qG2_000_inline_main, 300
-0	103	53	#line 103 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	7921	53	#line 7921 "NXCDefs.h"
-0	7922	53		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
-0	7921	56	#line 7921 "NXCDefs.h"
-0	104	56	#line 104 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	105	56	#line 105 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	106	56		subcall ultrasonic_scan, __ultrasonic_scan_return
-0	105	58	#line 105 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	108	58	#line 108 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	109	58		jmp __NXC_Label_584
-0	108	60	#line 108 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	109	60		exit -1, -1
-1	4582	0		brtst 4, __rotate_Done2, __rotate_angle2
-1	4583	3		set ____RotateMotor2_sign_tmp, 0
-1	4583	6		brtst EQ, __sign_2, __rotate_angle2
-1	4583	9		set ____RotateMotor2_sign_tmp, -1
-1	4583	12		brtst LT, __sign_2, __rotate_angle2
-1	4583	15		set ____RotateMotor2_sign_tmp, 1
-1	4583	18	__sign_2:	mov __rotate_thePower2, ____RotateMotor2_sign_tmp
-1	4584	20		abs __rotate_theAngle2, __rotate_angle2
-1	4585	23		mul __rotate_thePower2, __rotate_thePower2, __rotate_power2
-1	4587	27		set __rotate_theUF2, 23
-1	4588	30		brtst 4, __rotate_NoSync2, __rotate_sync2
-1	4589	33		set __rotate_theOM2, 7
-1	4590	36		set __rotate_theRM2, 2
-1	4591	39		mov __rotate_theTurnPct2, __rotate_turnpct2
-1	4592	41		brtst 4, __rotate_Start2, __rotate_theTurnPct2
-1	4593	44		add __rotate_theUF2, __rotate_theUF2, __constVal32
-1	4594	48		jmp __rotate_Start2
-1	4596	50		set __rotate_theOM2, 3
-1	4597	53		set __rotate_theRM2, 0
-1	4598	56		set __rotate_theTurnPct2, 0
-1	4600	59		set __rotate_theRS2, 32
-1	4601	62		setout __rotate_ports2, 1, __rotate_theOM2, 8, __rotate_theRM2, 5, __rotate_theAngle2, 6, __rotate_theRS2, 10, __rotate_theRVP2, 11, __rotate_theRVI2, 12, __rotate_theRVD2, 2, __rotate_thePower2, 7, __rotate_turnpct2, 0, __rotate_theUF2
-1	4604	85		index __rotate_firstPort2, __rotate_ports2, 65535
-1	4606	89		getout __rotate_power2, __rotate_firstPort2, 2
-1	4607	93		brtst 4, __rotate_doneRunning2, __rotate_power2
-1	4608	96		getout __rotate_rs2, __rotate_firstPort2, 6
-1	4609	100		brcmp 4, __rotate_Running2, __rotate_rs2, __constVal32
-1	4611	104		brtst 4, __rotate_Reset2, __rotate_stop2
-1	4613	107		set __rotate_theOM2, 7
-1	4614	110		set __rotate_theUF2, 7
-1	4615	113		setout __rotate_ports2, 1, __rotate_theOM2, 8, __constVal1, 6, __rotate_theRS2, 2, __constVal0, 5, __constVal0, 0, __rotate_theUF2
-1	4617	128		getout __rotate_RotCount2, __rotate_firstPort2, 14
-1	4619	132		mov __rotate_OldRotCount2, __rotate_RotCount2
-1	4620	134		wait2 NA, __constVal50
-1	4622	137		getout __rotate_RotCount2, __rotate_firstPort2, 14
-1	4623	141		brcmp 5, __rotate_Stabilize2, __rotate_OldRotCount2, __rotate_RotCount2
-1	4624	145		set __rotate_theOM2, 4
-1	4625	148		setout __rotate_ports2, 8, __rotate_theRM2, 6, __constVal0, 1, __rotate_theOM2, 0, __constVal1
-1	4628	159		brtst 4, __rotate_Done2, __rotate_theTurnPct2
-1	4629	162		setout __rotate_ports2, 0, __constVal32
-1	4631	167		subret ____RotateMotor2_return
-2	4885	0		setin __constVal1, __ResetSensorPort, 5
-2	4887	4		getin __ResetSensorTmp, __ResetSensorPort, 5
-2	4888	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
-2	4889	11		subret ____ResetSensorSubroutine_return
-3	5710	0	#pragma macro 25
-3	5710	0		acquire __CLSWMutex1
-3	5710	1		set __CLSWArgs1.Port, 1
-3	5710	4		mov __CLSWArgs1.ReturnLen, __RLSBytesCount1
-3	5710	6		mov __CLSWArgs1.Buffer, __RLSReadBuf1
-3	5710	8		syscall 21, __CLSWArgs1
-3	5710	11		mov __RLSBResult1, __CLSWArgs1.Result
-3	5710	13		release __CLSWMutex1
-3	5710	14	#line 5710 "NXTDefs.h"
-3	5711	14		brtst 4, __RLSBReturn1, __RLSBytesCount1
-3	5712	17		arrinit __RLSReadBuf1, __constVal0, __RLSBytesCount1
-3	5713	21		brtst 5, __RLSBError1, __RLSBResult1
-3	5714	24		set __RLSBIterations1, 4
-3	5716	27	#pragma macro 23
-3	5716	27		acquire __CLSCSMutex1
-3	5716	28		set __CLSCSArgs1.Port, 1
-3	5716	31		syscall 23, __CLSCSArgs1
-3	5716	34		mov __RLSBytesCount1, __CLSCSArgs1.BytesReady
-3	5716	36		mov __RLSBResult1, __CLSCSArgs1.Result
-3	5716	38		release __CLSCSMutex1
-3	5716	39	#line 5716 "NXTDefs.h"
-3	5717	39		sub __RLSBIterations1, __RLSBIterations1, __constVal1
-3	5718	43		brtst 2, __RLSBError1, __RLSBIterations1
-3	5719	46		brtst 0, __RLSBError1, __RLSBResult1
-3	5720	49		brtst 4, __RLSBReadyToRead1, __RLSBResult1
-3	5722	52		wait2 NA, __constVal15
-3	5723	55		jmp __RLSBDoCheckStatus1
-3	5726	57	#pragma macro 25
-3	5726	57		acquire __CLSRMutex1
-3	5726	58		set __CLSRArgs1.Port, 1
-3	5726	61		mov __CLSRArgs1.BufferLen, __RLSBytesCount1
-3	5726	63		syscall 22, __CLSRArgs1
-3	5726	66		mov __RLSReadBuf1, __CLSRArgs1.Buffer
-3	5726	68		mov __RLSBResult1, __CLSRArgs1.Result
-3	5726	70		release __CLSRMutex1
-3	5726	71	#line 5726 "NXTDefs.h"
-3	5727	71		brtst 5, __RLSBError1, __RLSBResult1
-3	5728	74		mov __RLSLastGoodRead1, __RLSReadBuf1
-3	5729	76		jmp __RLSBDone1
-3	5731	78		mov __RLSReadBuf1, __RLSLastGoodRead1
-3	5733	80		arrsize __RLSBytesCount1, __RLSReadBuf1
-3	5735	83		subret ____ReadLSBytes1_return
-4	28	0	#line 28 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-4	33	0	#line 33 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-4	34	0		subret __turnDegrees_return
-5	35	0	#line 35 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	36	0		set __ultrasonic_scan_7qG2_currentRotation_7qG2_000, 0
-5	35	3	#line 35 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	36	3	#line 36 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	36	3	#line 36 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	37	3	#line 37 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	38	3		set __ultrasonic_scan_7qG2_sensorValue_7qG2_000, 0
-5	37	6	#line 37 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	37	6	#line 37 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	37	6	#line 37 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	3768	6	#line 3768 "NXCDefs.h"
-5	3769	6		mov __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_ultrasonic_scan, __constVal1
-5	3768	8	#line 3768 "NXCDefs.h"
-5	3768	8	#line 3768 "NXCDefs.h"
-5	3769	8		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_SetSensorUltrasonic_inline_ultrasonic_scan, __constVal1
-5	3758	10	#line 3758 "NXCDefs.h"
-5	3759	10		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_ultrasonic_scan, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_ultrasonic_scan
-5	3758	12	#line 3758 "NXCDefs.h"
-5	3758	12	#line 3758 "NXCDefs.h"
-5	3759	12		mov __DU0SetSensorLowspeed_inline_SetSensorUltrasonic, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_SetSensorUltrasonic_inline_ultrasonic_scan
-5	3758	14	#line 3758 "NXCDefs.h"
-5	3759	14		tst 5, __zfSetSensorLowspeed_inline_SetSensorUltrasonic, __DU0SetSensorLowspeed_inline_SetSensorUltrasonic
-5	3758	17	#line 3758 "NXCDefs.h"
-5	3759	17		brtst 4, __001__001__NXC_Label_36, __zfSetSensorLowspeed_inline_SetSensorUltrasonic
-5	3758	20	#line 3758 "NXCDefs.h"
-5	3759	20		set __D0SetSensorLowspeed_inline_SetSensorUltrasonic, 11
-5	3758	23	#line 3758 "NXCDefs.h"
-5	3759	23		jmp __001__001__NXC_Label_37
-5	3758	25	#line 3758 "NXCDefs.h"
-5	3759	25		set __D0SetSensorLowspeed_inline_SetSensorUltrasonic, 10
-5	3758	28	#line 3758 "NXCDefs.h"
-5	3759	28		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_ultrasonic_scan, __D0SetSensorLowspeed_inline_SetSensorUltrasonic
-5	3663	30	#line 3663 "NXCDefs.h"
-5	3664	30		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_ultrasonic_scan, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_ultrasonic_scan, 0
-5	3663	34	#line 3663 "NXCDefs.h"
-5	3759	34	#line 3759 "NXCDefs.h"
-5	3759	34	#line 3759 "NXCDefs.h"
-5	3760	34		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_ultrasonic_scan, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_ultrasonic_scan
-5	3759	36	#line 3759 "NXCDefs.h"
-5	3759	36	#line 3759 "NXCDefs.h"
-5	3760	36		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_ultrasonic_scan, 0
-5	3759	39	#line 3759 "NXCDefs.h"
-5	3676	39	#line 3676 "NXCDefs.h"
-5	3677	39		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_ultrasonic_scan, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_ultrasonic_scan, 1
-5	3676	43	#line 3676 "NXCDefs.h"
-5	3760	43	#line 3760 "NXCDefs.h"
-5	3760	43	#line 3760 "NXCDefs.h"
-5	3761	43		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_ultrasonic_scan, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_ultrasonic_scan
-5	3760	45	#line 3760 "NXCDefs.h"
-5	3694	45	#line 3694 "NXCDefs.h"
-5	3695	45	#pragma macro 4
-5	3695	45		acquire __ResetSensorMutex
-5	3695	46		mov __ResetSensorPort, __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_ultrasonic_scan
-5	3695	48		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-5	3695	50		release __ResetSensorMutex
-5	4390	51	#line 4390 "NXCDefs.h"
-5	3694	51	#line 3694 "NXCDefs.h"
-5	3761	51	#line 3761 "NXCDefs.h"
-5	3768	51	#line 3768 "NXCDefs.h"
-5	40	51	#line 40 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	40	51	#line 40 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	41	51		set __signed_stack_001ultrasonic_scan, 30
-5	40	54	#line 40 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	40	54	#line 40 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	41	54		mov __D0ultrasonic_scan, __constValNeg180
-5	41	56	#line 41 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	42	56	#pragma macro 33
-5	42	56		arrbuild __rotate_ports2, __constVal2
-5	42	60		mov __rotate_power2, __signed_stack_001ultrasonic_scan
-5	42	62		mov __rotate_angle2, __D0ultrasonic_scan
-5	42	64		mov __rotate_turnpct2, __constVal0
-5	42	66		mov __rotate_sync2, __constVal0
-5	42	68		mov __rotate_stop2, __constVal1
-5	42	70		mov __rotate_theRVP2, __constVal32
-5	42	72		mov __rotate_theRVI2, __constVal0
-5	42	74		mov __rotate_theRVD2, __constVal96
-5	42	76		subcall __RotateMotor2, ____RotateMotor2_return
-5	4406	78	#line 4406 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	41	78	#line 41 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	43	78	#line 43 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	43	78	#line 43 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	44	78		add __ultrasonic_scan_7qG2_currentRotation_7qG2_000, __ultrasonic_scan_7qG2_currentRotation_7qG2_000, __constValNeg180
-5	43	82	#line 43 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	43	82	#line 43 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	44	82		mov __signed_stack_001ultrasonic_scan, __ultrasonic_scan_7qG2_currentRotation_7qG2_000
-5	43	84	#line 43 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	43	84	#line 43 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	44	84		set __D0ultrasonic_scan, 180
-5	43	87	#line 43 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	44	87		cmp 0, __zfultrasonic_scan, __signed_stack_001ultrasonic_scan, __D0ultrasonic_scan
-5	43	91	#line 43 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	44	91		mov __D0ultrasonic_scan, __zfultrasonic_scan
-5	45	93	#line 45 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	46	93		brtst 4, __NXC_Label_516, __zfultrasonic_scan
-5	45	96	#line 45 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	46	96		set __signed_stack_001ultrasonic_scan, 30
-5	45	99	#line 45 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	45	99	#line 45 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	46	99		set __D0ultrasonic_scan, 10
-5	46	102	#line 46 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	47	102	#pragma macro 33
-5	47	102		arrbuild __rotate_ports2, __constVal2
-5	47	106		mov __rotate_power2, __signed_stack_001ultrasonic_scan
-5	47	108		mov __rotate_angle2, __D0ultrasonic_scan
-5	47	110		mov __rotate_turnpct2, __constVal0
-5	47	112		mov __rotate_sync2, __constVal0
-5	47	114		mov __rotate_stop2, __constVal1
-5	47	116		mov __rotate_theRVP2, __constVal32
-5	47	118		mov __rotate_theRVI2, __constVal0
-5	47	120		mov __rotate_theRVD2, __constVal96
-5	47	122		subcall __RotateMotor2, ____RotateMotor2_return
-5	4441	124	#line 4441 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	46	124	#line 46 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	49	124	#line 49 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	49	124	#line 49 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	50	124		add __ultrasonic_scan_7qG2_currentRotation_7qG2_000, __ultrasonic_scan_7qG2_currentRotation_7qG2_000, __constVal10
-5	49	128	#line 49 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	49	128	#line 49 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	50	128		set __Wait_7qG2_ms_7qG2_000_inline_ultrasonic_scan, 500
-5	49	131	#line 49 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	7921	131	#line 7921 "NXCDefs.h"
-5	7922	131		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_ultrasonic_scan
-5	7921	134	#line 7921 "NXCDefs.h"
-5	52	134	#line 52 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	52	134	#line 52 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	53	134	#pragma macro 26
-5	53	134		acquire __RLSBmutex1
-5	53	135		mov __RLSReadBuf1, __RLSBbufLSWrite1
-5	53	137		set __RLSBytesCount1, 1
-5	53	140		wait2 NA, __constVal15
-5	53	143		subcall __ReadLSBytes1, ____ReadLSBytes1_return
-5	53	145		index __D0ultrasonic_scan, __RLSReadBuf1, 65535
-5	53	149		release __RLSBmutex1
-5	4465	150	#line 4465 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	52	150	#line 52 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	53	150		mov __ultrasonic_scan_7qG2_sensorValue_7qG2_000, __D0ultrasonic_scan
-5	52	152	#line 52 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	52	152	#line 52 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	6069	152	#line 6069 "NXCDefs.h"
-5	6070	152	#pragma macro 6
-5	6070	152		acquire __PointOutMutex
-5	6070	153		mov __PointOutArgs.Location.X, __constVal200
-5	6070	155		mov __PointOutArgs.Location.Y, __constVal200
-5	6070	157		mov __PointOutArgs.Options, __constVal1
-5	6070	159		syscall 14, __PointOutArgs
-5	6070	162		release __PointOutMutex
-5	4473	163	#line 4473 "NXCDefs.h"
-5	6069	163	#line 6069 "NXCDefs.h"
-5	56	163	#line 56 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	56	163	#line 56 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	57	163		set __signed_stack_001ultrasonic_scan, 0
-5	56	166	#line 56 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	56	166	#line 56 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	57	166		set __signed_stack_002ultrasonic_scan, 0
-5	56	169	#line 56 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	56	169	#line 56 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	57	169	#pragma macro 26
-5	57	169		acquire __RLSBmutex1
-5	57	170		mov __RLSReadBuf1, __RLSBbufLSWrite1
-5	57	172		set __RLSBytesCount1, 1
-5	57	175		wait2 NA, __constVal15
-5	57	178		subcall __ReadLSBytes1, ____ReadLSBytes1_return
-5	57	180		index __D0ultrasonic_scan, __RLSReadBuf1, 65535
-5	57	184		release __RLSBmutex1
-5	4489	185	#line 4489 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	59	185	#line 59 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	60	185		acquire __TextOutMutex
-5	59	186	#line 59 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	60	186		mov __TextOutArgs.Location.X, __signed_stack_001ultrasonic_scan
-5	59	188	#line 59 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	60	188		mov __TextOutArgs.Location.Y, __signed_stack_002ultrasonic_scan
-5	59	190	#line 59 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	60	190		set __TextOutArgs.Options, 0
-5	59	193	#line 59 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	60	193		numtostr __TextOutArgs.Text, __D0ultrasonic_scan
-5	59	196	#line 59 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	60	196		syscall 13, __TextOutArgs
-5	59	199	#line 59 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	60	199		mov __D0ultrasonic_scan, __TextOutArgs.Result
-5	59	201	#line 59 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	60	201		release __TextOutMutex
-5	59	202	#line 59 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	59	202	#line 59 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	59	202	#line 59 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	60	202		mov __signed_stack_001ultrasonic_scan, __ultrasonic_scan_7qG2_sensorValue_7qG2_000
-5	59	204	#line 59 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	59	204	#line 59 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	60	204		set __D0ultrasonic_scan, 30
-5	59	207	#line 59 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	60	207		cmp 1, __zfultrasonic_scan, __signed_stack_001ultrasonic_scan, __D0ultrasonic_scan
-5	59	211	#line 59 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	60	211		mov __D0ultrasonic_scan, __zfultrasonic_scan
-5	61	213	#line 61 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	62	213		brtst 4, __NXC_Label_537, __zfultrasonic_scan
-5	61	216	#line 61 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	61	216	#line 61 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	62	216	#line 62 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	63	216		subcall turnDegrees, __turnDegrees_return
-5	62	218	#line 62 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	63	218	#line 63 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	64	218		jmp __NXC_Label_516
-5	63	220	#line 63 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	65	220	#line 65 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	68	220	#line 68 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	69	220		jmp __NXC_Label_515
-5	68	222	#line 68 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	68	222	#line 68 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-5	69	222		subret __ultrasonic_scan_return
-6	92	0	#line 92 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-6	93	0		set __D0heartbeat, 1
-6	93	3	#line 93 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-6	94	3		tst 5, __zfheartbeat, __D0heartbeat
-6	93	6	#line 93 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-6	94	6		brtst 4, __NXC_Label_571, __zfheartbeat
-6	93	9	#line 93 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-6	94	9		set __signed_stack_001heartbeat, 500
-6	93	12	#line 93 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-6	93	12	#line 93 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-6	94	12		set __signed_stack_002heartbeat, 100
-6	93	15	#line 93 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-6	93	15	#line 93 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-6	94	15		set __signed_stack_003heartbeat, 4
-6	93	18	#line 93 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-6	93	18	#line 93 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-6	94	18		set __D0heartbeat, 0
-6	94	21	#line 94 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-6	95	21		acquire __SPTArgsMutex
-6	94	22	#line 94 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-6	95	22		mov __SPTArgs.Frequency, __signed_stack_001heartbeat
-6	94	24	#line 94 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-6	95	24		mov __SPTArgs.Duration, __signed_stack_002heartbeat
-6	94	26	#line 94 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-6	95	26		mov __SPTArgs.Volume, __signed_stack_003heartbeat
-6	94	28	#line 94 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-6	95	28		mov __SPTArgs.Loop, __D0heartbeat
-6	94	30	#line 94 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-6	95	30		syscall 10, __SPTArgs
-6	94	33	#line 94 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-6	95	33		mov __D0heartbeat, __SPTArgs.Result
-6	94	35	#line 94 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-6	95	35		release __SPTArgsMutex
-6	94	36	#line 94 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-6	94	36	#line 94 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-6	95	36		set __Wait_7qG2_ms_7qG2_000_inline_heartbeat, 1000
-6	94	39	#line 94 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-6	7921	39	#line 7921 "NXCDefs.h"
-6	7922	39		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_heartbeat
-6	7921	42	#line 7921 "NXCDefs.h"
-6	95	42	#line 95 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-6	98	42	#line 98 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-6	99	42		jmp __NXC_Label_570
-6	98	44	#line 98 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-6	99	44		exit -1, -1
-7	0	0		subret __heartbeat_Spawner_return
-8	0	0		exit 0, 1
-9	109	0	#line 109 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-9	110	0		subret ____initialize_global_data_return
+0	80	0	#line 80 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+0	81	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	80	2	#line 80 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+0	81	2	#line 81 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+0	82	2		subcall __heartbeat_Spawner, __heartbeat_Spawner_return
+0	81	4	#line 81 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+0	82	4	#line 82 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+0	83	4		subcall __edge_detection_Spawner, __edge_detection_Spawner_return
+0	82	6	#line 82 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+0	83	6		exit -1, -1
+1	4885	0		setin __constVal1, __ResetSensorPort, 5
+1	4887	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	4888	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	4889	11		subret ____ResetSensorSubroutine_return
+2	14	0	#line 14 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\.\../basic_functions/functions.h"
+2	15	0		mov __SetSensorLight_7qG2_port_7qG2_000_inline_Light_Sens_Init, __Light_Sens_Init_7qG2_Port_7qG2_000
+2	14	2	#line 14 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\.\../basic_functions/functions.h"
+2	15	2	#line 15 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\.\../basic_functions/functions.h"
+2	16	2		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_Light_Sens_Init, __constVal1
+2	3729	4	#line 3729 "NXCDefs.h"
+2	3730	4		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_Light_Sens_Init, __SetSensorLight_7qG2_port_7qG2_000_inline_Light_Sens_Init
+2	3729	6	#line 3729 "NXCDefs.h"
+2	3729	6	#line 3729 "NXCDefs.h"
+2	3730	6		mov __DU0SetSensorLight_inline_Light_Sens_Init, __SetSensorLight_7qG2_bActive_7qG2_000_inline_Light_Sens_Init
+2	3729	8	#line 3729 "NXCDefs.h"
+2	3730	8		tst 5, __zfSetSensorLight_inline_Light_Sens_Init, __DU0SetSensorLight_inline_Light_Sens_Init
+2	3729	11	#line 3729 "NXCDefs.h"
+2	3730	11		brtst 4, __001__NXC_Label_4, __zfSetSensorLight_inline_Light_Sens_Init
+2	3729	14	#line 3729 "NXCDefs.h"
+2	3730	14		set __D0SetSensorLight_inline_Light_Sens_Init, 5
+2	3729	17	#line 3729 "NXCDefs.h"
+2	3730	17		jmp __001__NXC_Label_5
+2	3729	19	#line 3729 "NXCDefs.h"
+2	3730	19		set __D0SetSensorLight_inline_Light_Sens_Init, 6
+2	3729	22	#line 3729 "NXCDefs.h"
+2	3730	22		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_Light_Sens_Init, __D0SetSensorLight_inline_Light_Sens_Init
+2	3663	24	#line 3663 "NXCDefs.h"
+2	3664	24		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_Light_Sens_Init, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_Light_Sens_Init, 0
+2	3663	28	#line 3663 "NXCDefs.h"
+2	3730	28	#line 3730 "NXCDefs.h"
+2	3730	28	#line 3730 "NXCDefs.h"
+2	3731	28		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_Light_Sens_Init, __SetSensorLight_7qG2_port_7qG2_000_inline_Light_Sens_Init
+2	3730	30	#line 3730 "NXCDefs.h"
+2	3730	30	#line 3730 "NXCDefs.h"
+2	3731	30		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_Light_Sens_Init, 128
+2	3730	33	#line 3730 "NXCDefs.h"
+2	3676	33	#line 3676 "NXCDefs.h"
+2	3677	33		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_Light_Sens_Init, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_Light_Sens_Init, 1
+2	3676	37	#line 3676 "NXCDefs.h"
+2	3731	37	#line 3731 "NXCDefs.h"
+2	3731	37	#line 3731 "NXCDefs.h"
+2	3732	37		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_Light_Sens_Init, __SetSensorLight_7qG2_port_7qG2_000_inline_Light_Sens_Init
+2	3731	39	#line 3731 "NXCDefs.h"
+2	3694	39	#line 3694 "NXCDefs.h"
+2	3695	39	#pragma macro 4
+2	3695	39		acquire __ResetSensorMutex
+2	3695	40		mov __ResetSensorPort, __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_Light_Sens_Init
+2	3695	42		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+2	3695	44		release __ResetSensorMutex
+2	5731	45	#line 5731 "NXCDefs.h"
+2	3694	45	#line 3694 "NXCDefs.h"
+2	3732	45	#line 3732 "NXCDefs.h"
+2	15	45	#line 15 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\.\../basic_functions/functions.h"
+2	15	45	#line 15 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\.\../basic_functions/functions.h"
+2	16	45		mov __SetSensorMode_7qG2_port_7qG2_000_inline_Light_Sens_Init, __Light_Sens_Init_7qG2_Port_7qG2_000
+2	15	47	#line 15 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\.\../basic_functions/functions.h"
+2	15	47	#line 15 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\.\../basic_functions/functions.h"
+2	16	47		set __SetSensorMode_7qG2_mode_7qG2_000_inline_Light_Sens_Init, 0
+2	15	50	#line 15 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\.\../basic_functions/functions.h"
+2	3676	50	#line 3676 "NXCDefs.h"
+2	3677	50		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_Light_Sens_Init, __SetSensorMode_7qG2_port_7qG2_000_inline_Light_Sens_Init, 1
+2	3676	54	#line 3676 "NXCDefs.h"
+2	16	54	#line 16 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\.\../basic_functions/functions.h"
+2	19	54	#line 19 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\.\../basic_functions/functions.h"
+2	20	54		subret __Light_Sens_Init_return
+3	4	0	#line 4 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\.\../edge_detection.h"
+3	5	0		getin __signed_stack_001DetectEdge, __constVal1, 4
+3	4	4	#line 4 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\.\../edge_detection.h"
+3	4	4	#line 4 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\.\../edge_detection.h"
+3	5	4		set __D0DetectEdge, 300
+3	4	7	#line 4 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\.\../edge_detection.h"
+3	5	7		cmp 3, __zfDetectEdge, __signed_stack_001DetectEdge, __D0DetectEdge
+3	4	11	#line 4 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\.\../edge_detection.h"
+3	5	11		mov __D0DetectEdge, __zfDetectEdge
+3	6	13	#line 6 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\.\../edge_detection.h"
+3	7	13		brtst 4, __NXC_Label_588, __zfDetectEdge
+3	7	16	#line 7 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\.\../edge_detection.h"
+3	8	16		set __DU0DetectEdge, 0
+3	7	19	#line 7 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\.\../edge_detection.h"
+3	7	19	#line 7 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\.\../edge_detection.h"
+3	8	19		subret __DetectEdge_return
+3	7	21	#line 7 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\.\../edge_detection.h"
+3	9	21	#line 9 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\.\../edge_detection.h"
+3	10	21		jmp __NXC_Label_591
+3	10	23	#line 10 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\.\../edge_detection.h"
+3	11	23		set __DU0DetectEdge, 1
+3	10	26	#line 10 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\.\../edge_detection.h"
+3	10	26	#line 10 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\.\../edge_detection.h"
+3	11	26		subret __DetectEdge_return
+3	10	28	#line 10 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\.\../edge_detection.h"
+3	12	28	#line 12 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\.\../edge_detection.h"
+3	12	28	#line 12 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\.\../edge_detection.h"
+3	13	28		subret __DetectEdge_return
+4	45	0	#line 45 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+4	46	0		set __D0heartbeat, 1
+4	46	3	#line 46 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+4	47	3		tst 5, __zfheartbeat, __D0heartbeat
+4	46	6	#line 46 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+4	47	6		brtst 4, __NXC_Label_621, __zfheartbeat
+4	46	9	#line 46 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+4	47	9		set __signed_stack_001heartbeat, 500
+4	46	12	#line 46 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+4	46	12	#line 46 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+4	47	12		set __signed_stack_002heartbeat, 100
+4	46	15	#line 46 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+4	46	15	#line 46 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+4	47	15		set __signed_stack_003heartbeat, 4
+4	46	18	#line 46 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+4	46	18	#line 46 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+4	47	18		set __D0heartbeat, 0
+4	47	21	#line 47 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+4	48	21		acquire __SPTArgsMutex
+4	47	22	#line 47 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+4	48	22		mov __SPTArgs.Frequency, __signed_stack_001heartbeat
+4	47	24	#line 47 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+4	48	24		mov __SPTArgs.Duration, __signed_stack_002heartbeat
+4	47	26	#line 47 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+4	48	26		mov __SPTArgs.Volume, __signed_stack_003heartbeat
+4	47	28	#line 47 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+4	48	28		mov __SPTArgs.Loop, __D0heartbeat
+4	47	30	#line 47 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+4	48	30		syscall 10, __SPTArgs
+4	47	33	#line 47 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+4	48	33		mov __D0heartbeat, __SPTArgs.Result
+4	47	35	#line 47 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+4	48	35		release __SPTArgsMutex
+4	47	36	#line 47 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+4	47	36	#line 47 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+4	48	36		set __Wait_7qG2_ms_7qG2_000_inline_heartbeat, 5000
+4	47	39	#line 47 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+4	7921	39	#line 7921 "NXCDefs.h"
+4	7922	39		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_heartbeat
+4	7921	42	#line 7921 "NXCDefs.h"
+4	48	42	#line 48 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+4	52	42	#line 52 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+4	53	42		jmp __NXC_Label_620
+4	52	44	#line 52 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+4	53	44		exit -1, -1
+5	65	0	#line 65 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	66	0		set __Light_Sens_Init_7qG2_Port_7qG2_000, 1
+5	65	3	#line 65 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	66	3	#line 66 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	67	3		subcall Light_Sens_Init, __Light_Sens_Init_return
+5	66	5	#line 66 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	66	5	#line 66 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	67	5		set __D0edge_detection, 1
+5	67	8	#line 67 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	68	8		tst 5, __zfedge_detection, __D0edge_detection
+5	67	11	#line 67 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	68	11		brtst 4, __NXC_Label_651, __zfedge_detection
+5	6069	14	#line 6069 "NXCDefs.h"
+5	6070	14	#pragma macro 6
+5	6070	14		acquire __PointOutMutex
+5	6070	15		mov __PointOutArgs.Location.X, __constVal200
+5	6070	17		mov __PointOutArgs.Location.Y, __constVal200
+5	6070	19		mov __PointOutArgs.Options, __constVal1
+5	6070	21		syscall 14, __PointOutArgs
+5	6070	24		release __PointOutMutex
+5	6760	25	#line 6760 "NXCDefs.h"
+5	6069	25	#line 6069 "NXCDefs.h"
+5	68	25	#line 68 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	68	25	#line 68 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	69	25		set __signed_stack_001edge_detection, 0
+5	68	28	#line 68 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	68	28	#line 68 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	69	28		set __signed_stack_002edge_detection, 0
+5	68	31	#line 68 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	68	31	#line 68 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	69	31		getin __D0edge_detection, __constVal1, 4
+5	69	35	#line 69 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	70	35		acquire __TextOutMutex
+5	69	36	#line 69 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	70	36		mov __TextOutArgs.Location.X, __signed_stack_001edge_detection
+5	69	38	#line 69 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	70	38		mov __TextOutArgs.Location.Y, __signed_stack_002edge_detection
+5	69	40	#line 69 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	70	40		set __TextOutArgs.Options, 0
+5	69	43	#line 69 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	70	43		numtostr __TextOutArgs.Text, __D0edge_detection
+5	69	46	#line 69 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	70	46		syscall 13, __TextOutArgs
+5	69	49	#line 69 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	70	49		mov __D0edge_detection, __TextOutArgs.Result
+5	69	51	#line 69 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	70	51		release __TextOutMutex
+5	69	52	#line 69 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	69	52	#line 69 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	69	52	#line 69 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	70	52		subcall DetectEdge, __DetectEdge_return
+5	69	54	#line 69 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	70	54		mov __DU0edge_detection, __DU0DetectEdge
+5	70	56	#line 70 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	71	56		tst 5, __zfedge_detection, __DU0edge_detection
+5	70	59	#line 70 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	71	59		brtst 4, __NXC_Label_662, __zfedge_detection
+5	70	62	#line 70 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	71	62		set __signed_stack_001edge_detection, 0
+5	70	65	#line 70 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	70	65	#line 70 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	71	65		set __signed_stack_002edge_detection, 0
+5	70	68	#line 70 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	70	68	#line 70 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	71	68		strcat __strbufedge_detection, __constStr0010
+5	71	72	#line 71 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	72	72		acquire __TextOutMutex
+5	71	73	#line 71 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	72	73		mov __TextOutArgs.Location.X, __signed_stack_001edge_detection
+5	71	75	#line 71 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	72	75		mov __TextOutArgs.Location.Y, __signed_stack_002edge_detection
+5	71	77	#line 71 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	72	77		set __TextOutArgs.Options, 0
+5	71	80	#line 71 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	72	80		mov __TextOutArgs.Text, __strbufedge_detection
+5	71	82	#line 71 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	72	82		syscall 13, __TextOutArgs
+5	71	85	#line 71 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	72	85		mov __D0edge_detection, __TextOutArgs.Result
+5	71	87	#line 71 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	72	87		release __TextOutMutex
+5	71	88	#line 71 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	73	88	#line 73 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	74	88		jmp __NXC_Label_667
+5	73	90	#line 73 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	74	90		set __signed_stack_001edge_detection, 0
+5	73	93	#line 73 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	73	93	#line 73 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	74	93		set __signed_stack_002edge_detection, 0
+5	73	96	#line 73 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	73	96	#line 73 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	74	96		strcat __strbufedge_detection, __constStr0011
+5	74	100	#line 74 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	75	100		acquire __TextOutMutex
+5	74	101	#line 74 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	75	101		mov __TextOutArgs.Location.X, __signed_stack_001edge_detection
+5	74	103	#line 74 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	75	103		mov __TextOutArgs.Location.Y, __signed_stack_002edge_detection
+5	74	105	#line 74 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	75	105		set __TextOutArgs.Options, 0
+5	74	108	#line 74 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	75	108		mov __TextOutArgs.Text, __strbufedge_detection
+5	74	110	#line 74 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	75	110		syscall 13, __TextOutArgs
+5	74	113	#line 74 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	75	113		mov __D0edge_detection, __TextOutArgs.Result
+5	74	115	#line 74 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	75	115		release __TextOutMutex
+5	74	116	#line 74 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	75	116	#line 75 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	75	116	#line 75 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	76	116		set __Wait_7qG2_ms_7qG2_000_inline_edge_detection, 500
+5	75	119	#line 75 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	7921	119	#line 7921 "NXCDefs.h"
+5	7922	119		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_edge_detection
+5	7921	122	#line 7921 "NXCDefs.h"
+5	76	122	#line 76 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	79	122	#line 79 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	80	122		jmp __NXC_Label_650
+5	79	124	#line 79 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+5	80	124		exit -1, -1
+6	0	0		subret __heartbeat_Spawner_return
+7	0	0		exit 0, 1
+8	0	0		subret __edge_detection_Spawner_return
+9	0	0		exit 0, 1
+10	85	0	#line 85 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc"
+10	86	0		subret ____initialize_global_data_return
 #CLUMPS
 Clump	Name	Offset	File
-0	main	0	C:\Users\Pascal\AppData\Local\Temp\temp.nxc
-1	__RotateMotor2	63	NXTDefs.h
-2	__ResetSensorSubroutine	232	NXTDefs.h
-3	__ReadLSBytes1	245	NXTDefs.h
-4	turnDegrees	330	C:\Users\Pascal\AppData\Local\Temp\temp.nxc
-5	ultrasonic_scan	332	C:\Users\Pascal\AppData\Local\Temp\temp.nxc
-6	heartbeat	556	C:\Users\Pascal\AppData\Local\Temp\temp.nxc
-7	__heartbeat_Returner	603	C:\Users\Pascal\AppData\Local\Temp\temp.nxc
-8	__heartbeat_Spawner	605	C:\Users\Pascal\AppData\Local\Temp\temp.nxc
-9	__initialize_global_data	608	C:\Users\Pascal\AppData\Local\Temp\temp.nxc
+0	main	0	C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc
+1	__ResetSensorSubroutine	9	NXTDefs.h
+2	Light_Sens_Init	22	C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\.\../basic_functions/functions.h
+3	DetectEdge	78	C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\.\../edge_detection.h
+4	heartbeat	108	C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc
+5	edge_detection	155	C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc
+6	__heartbeat_Returner	282	C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc
+7	__heartbeat_Spawner	284	C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc
+8	__edge_detection_Returner	287	C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc
+9	__edge_detection_Spawner	289	C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc
+10	__initialize_global_data	292	C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\test.nxc

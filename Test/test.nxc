@@ -1,66 +1,28 @@
-#define SENSOR_TOUCH_IN IN_1
-#define ULTRASONIC_IN IN_2
+#define SENSOR_TOUCH_FRONT_IN IN_1
+#define LIGHT_SENSOR_IN IN_2
+#define SENSOR_TOUCH_BACK_IN IN_3
+#define SENSOR_LIGHT_EDGE_IN IN_4
 
-#define MOTOR_LEFT_OUT OUT_A
-#define MOTOR_RIGHT_OUT OUT_B
-#define MOTOR_TURRET_OUT OUT_C
+#define SENSOR_LIGHT_EDGE SENSOR_2
 
-#define MOTOR_TURRET_PWR 30
-
+#define MOTOR_RIGHT_OUT OUT_A
+#define MOTOR_LEFT_OUT OUT_B
 #define ULTRASONIC_THRESHOLD 30
+
+#include "../basic_functions/functions.h"
+#include "../scanner.h"
+#include "../edge_detection.h"
 
 // Task for testing the touch sensor readout
 task read_touch_sensor() {
-    SetSensorTouch(SENSOR_TOUCH_IN);
+    SetSensorTouch(SENSOR_TOUCH_FRONT_IN);
 
     while(true){
-        if(Sensor(SENSOR_TOUCH_IN) == 1) {
+        if(Sensor(SENSOR_TOUCH_FRONT_IN) == 1) {
             OnFwd(OUT_AC, 100);
         }
         else {
             Off(OUT_AC);
-        }
-    }
-}
-
-// Just empty for now. Should turn a certain amount of degrees.
-void turnDegrees(int degrees) {
-    ;
-}
-
-// Procedure for testing the scanning
-// Note: before starting the robot, the turret has to be set manually by the
-// user to point straight ahead.
-void ultrasonic_scan() {
-    int currentRotation = 0;
-    int turnAmount = 10;
-    int sensorValue = 0;
-    SetSensorUltrasonic(ULTRASONIC_IN);
-    
-    // Turn turret completely to the left
-    RotateMotor(MOTOR_TURRET_OUT, MOTOR_TURRET_PWR, -180);
-    currentRotation += -180;
-    
-    while(currentRotation < 180){
-        // Turn turret 10 degrees to the right
-        RotateMotor(MOTOR_TURRET_OUT, MOTOR_TURRET_PWR, 10);
-        currentRotation += 10;
-        
-        // Wait for turret to rotate and the sensor to get a value
-        Wait(500);
-        
-        // Measure distance with the sensor
-        sensorValue = SensorUS(ULTRASONIC_IN);
-        
-        // (for testing) Print the value on the LCD
-        ClearScreen();
-        NumOut(0, 0, SensorUS(ULTRASONIC_IN));
-
-        // Check if the value is above the threshold
-        if (sensorValue > ULTRASONIC_THRESHOLD) {
-            // Found a clear direction, turn and stop scanning
-            turnDegrees(currentRotation);
-            break;
         }
     }
 }
@@ -78,30 +40,71 @@ task read_ultrasonic_sensor() {
     }
 }
 
-// Task for testing the beeper
-task tone() {
-     int i = 0;
-     while(true) {
-         PlayTone(i++, 200);
-         Wait(200);
-     }
-}
-
 // Task that beeps every second so you know the system
 // is running
 task heartbeat() {
     while(true) {
-        PlayTone(500, 100);
-        Wait(1000);
+        ShortBeep();
+        Wait(5000);
+    }
+}
+
+// Task for testing scanning
+task scanning() {
+     int scan_value = 0;
+     while(true) {
+        ClearScreen();
+        TextOut(0,0,"Starting scan...");
+        Wait(300);
+        scan_value = UltrasonicScan();
+        //TurnRobot(scan_value, 50);
+     }
+}
+
+// Task for testing edge detection
+task edge_detection() {
+     Light_Sens_Init(LIGHT_SENSOR_IN);
+     while(true) {
+     ClearScreen();
+     NumOut(0, 0, SENSOR_LIGHT_EDGE);
+           if(DetectEdge()) {
+               TextOut(0,0,"Edge detected!!!");
+           }
+           else {
+               TextOut(0,0,"No edge...");
+           }
+           Wait(500);
+     }
+}
+
+// Task for testing edge avoidance
+task edge_avoidance() {
+    Light_Sens_Init(LIGHT_SENSOR_IN);
+    while(true) {
+        if (DetectEdge()) {
+            // Edge detected, avoid it
+            Stop_Driving();
+            // Check behind the robot
+            if (!CheckDirection(180)) {
+                // There is something behind the robot.
+                // Beep to signal, hopefully the object
+                // will move out of the way.
+                LongBeep();
+                Wait(3000);
+            }
+            Drive_Backward(50);
+            Wait(300);
+            TurnRobot(90, 50);
+        }
+        else {
+            // No edge, keep driving
+            Drive_Forward(50);
+        }
+        Wait(50);
     }
 }
 
 task main() {
      start heartbeat;
-     while(true) {
-        ClearScreen();
-        TextOut(0,0,"Starting scan...");
-        Wait(300);
-        ultrasonic_scan();
-     }
+     start edge_avoidance;
 }
