@@ -31,6 +31,7 @@ bool CheckDirection(int dir) {
         return true;
     }
     else {
+        TurnTurret(-dir);
         return false;
     }
 }

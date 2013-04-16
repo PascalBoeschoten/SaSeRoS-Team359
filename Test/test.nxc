@@ -83,7 +83,7 @@ task edge_avoidance() {
     while(true) {
         if (DetectEdge()) {
             // Edge detected, avoid it
-            
+            Stop_Driving();
             // Check behind the robot
             if (!CheckDirection(180)) {
                 // There is something behind the robot.
