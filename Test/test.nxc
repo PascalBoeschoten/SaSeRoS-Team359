@@ -44,7 +44,7 @@ task read_ultrasonic_sensor() {
 // is running
 task heartbeat() {
     while(true) {
-        PlayTone(500, 100);
+        ShortBeep();
         Wait(5000);
     }
 }
@@ -77,7 +77,34 @@ task edge_detection() {
      }
 }
 
+// Task for testing edge avoidance
+task edge_avoidance() {
+    Light_Sens_Init(LIGHT_SENSOR_IN);
+    while(true) {
+        if (DetectEdge()) {
+            // Edge detected, avoid it
+            
+            // Check behind the robot
+            if (!CheckDirection(180)) {
+                // There is something behind the robot.
+                // Beep to signal, hopefully the object
+                // will move out of the way.
+                LongBeep();
+                Wait(3000);
+            }
+            Drive_Backward(50);
+            Wait(300);
+            TurnRobot(90, 50);
+        }
+        else {
+            // No edge, keep driving
+            Drive_Forward(50);
+        }
+        Wait(50);
+    }
+}
+
 task main() {
      start heartbeat;
-     start edge_detection;
+     start edge_avoidance;
 }

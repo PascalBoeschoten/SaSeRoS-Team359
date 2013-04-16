@@ -22,6 +22,19 @@ void CenterTurret() {
     scanner_currentRotation = 0;
 }
 
+// Procedure for checking a single direction
+bool CheckDirection(int dir) {
+    TurnTurret(dir);
+    Wait(TURRET_ROTATION_DELAY);
+    if (SensorUS(ULTRASONIC_IN) > ULTRASONIC_THRESHOLD) {
+        TurnTurret(-dir);
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
 // Procedure for making a full scan
 // Returns an angle where the free direction is, or 0 if there was no
 // direction found.
