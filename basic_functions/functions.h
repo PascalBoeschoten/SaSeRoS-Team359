@@ -45,3 +45,11 @@ void Drive_Backward(int pwr){
  OnRev(OUT_A, -pwr);
  OnRev(OUT_B, -pwr);
 }
+
+void ShortBeep() {
+	PlayTone(500,100);
+}
+
+void LongBeep() {
+    PlayTone(500,1000);
+}
