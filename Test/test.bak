@@ -1,6 +1,7 @@
-#define SENSOR_TOUCH_FRONT IN_1
-#define LIGHT_SENSOR IN_2
-#define SENSOR_TOUCH_BACK IN_3
+#define SENSOR_TOUCH_FRONT_IN IN_1
+#define LIGHT_SENSOR_IN IN_2
+#define SENSOR_TOUCH_BACK_IN IN_3
+#define SENSOR_LIGHT_EDGE_IN IN_4
 
 #define MOTOR_RIGHT_OUT OUT_A
 #define MOTOR_LEFT_OUT OUT_B
@@ -8,13 +9,14 @@
 
 #include "../basic_functions/functions.h"
 #include "../scanner.h"
+#include "../edge_detection.h"
 
 // Task for testing the touch sensor readout
 task read_touch_sensor() {
-    SetSensorTouch(SENSOR_TOUCH_FRONT);
+    SetSensorTouch(SENSOR_TOUCH_FRONT_IN);
 
     while(true){
-        if(Sensor(SENSOR_TOUCH_FRONT) == 1) {
+        if(Sensor(SENSOR_TOUCH_FRONT_IN) == 1) {
             OnFwd(OUT_AC, 100);
         }
         else {
@@ -50,15 +52,32 @@ task heartbeat() {
     }
 }
 
-task main() {
-     int scan_value = 0;
-     start heartbeat;
+// Task for testing the light sensor
+task light_sensor() {
+    Light_Sens_Init(SENSOR_LIGHT_EDGE_IN);
+        
+    while(true){
+        Wait(300);
+        ClearScreen();
 
+        NumOut(0,0, SENSOR_4);
+    }
+}
+
+// Task for testing scanning
+task scanning() {
+     int scan_value = 0;
      while(true) {
         ClearScreen();
         TextOut(0,0,"Starting scan...");
         Wait(300);
         scan_value = UltrasonicScan();
-        TurnRobot(scan_value, 100);
+        TurnRobot(scan_value, 50);
      }
+}
+
+task main() {
+
+     start heartbeat;
+
 }

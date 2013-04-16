@@ -165,21 +165,21 @@ Index	Identifier	Type	Flag	Data	Size	RefCount
 162	__rotate_ports3.__rotate_ports3_type	1	0	0	1	0
 #SOURCES
 Clump	Line	PC	Source
-0	53	0	#line 53 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	54	0		subcall __initialize_global_data, ____initialize_global_data_return
-0	53	2	#line 53 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	54	2	#line 54 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	55	2		set __main_7qG2_scan_value_7qG2_000, 0
-0	54	5	#line 54 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	56	5	#line 56 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	57	5		start heartbeat
-0	56	7	#line 56 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	56	7	#line 56 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	57	7		set __D0main, 1
-0	57	10	#line 57 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	58	10		tst 5, __zfmain, __D0main
-0	57	13	#line 57 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	58	13		brtst 4, __NXC_Label_744, __zfmain
+0	67	0	#line 67 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	68	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	67	2	#line 67 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	68	2	#line 68 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	69	2		set __main_7qG2_scan_value_7qG2_000, 0
+0	68	5	#line 68 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	70	5	#line 70 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	71	5		start heartbeat
+0	70	7	#line 70 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	70	7	#line 70 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	71	7		set __D0main, 1
+0	71	10	#line 71 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	72	10		tst 5, __zfmain, __D0main
+0	71	13	#line 71 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	72	13		brtst 4, __NXC_Label_770, __zfmain
 0	6069	16	#line 6069 "NXCDefs.h"
 0	6070	16	#pragma macro 6
 0	6070	16		acquire __PointOutMutex
@@ -188,59 +188,59 @@ Clump	Line	PC	Source
 0	6070	21		mov __PointOutArgs.Options, __constVal1
 0	6070	23		syscall 14, __PointOutArgs
 0	6070	26		release __PointOutMutex
-0	9328	27	#line 9328 "NXCDefs.h"
+0	9770	27	#line 9770 "NXCDefs.h"
 0	6069	27	#line 6069 "NXCDefs.h"
-0	58	27	#line 58 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	58	27	#line 58 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	59	27		set __signed_stack_001main, 0
-0	58	30	#line 58 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	58	30	#line 58 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	59	30		set __signed_stack_002main, 0
-0	58	33	#line 58 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	58	33	#line 58 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	59	33		strcat __strbufmain, __constStr0009
-0	59	37	#line 59 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	60	37		acquire __TextOutMutex
-0	59	38	#line 59 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	60	38		mov __TextOutArgs.Location.X, __signed_stack_001main
-0	59	40	#line 59 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	60	40		mov __TextOutArgs.Location.Y, __signed_stack_002main
-0	59	42	#line 59 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	60	42		set __TextOutArgs.Options, 0
-0	59	45	#line 59 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	60	45		mov __TextOutArgs.Text, __strbufmain
-0	59	47	#line 59 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	60	47		syscall 13, __TextOutArgs
-0	59	50	#line 59 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	60	50		mov __D0main, __TextOutArgs.Result
-0	59	53	#line 59 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	60	53		release __TextOutMutex
-0	59	54	#line 59 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	59	54	#line 59 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	59	54	#line 59 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	72	27	#line 72 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	72	27	#line 72 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	73	27		set __signed_stack_001main, 0
+0	72	30	#line 72 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	72	30	#line 72 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	73	30		set __signed_stack_002main, 0
+0	72	33	#line 72 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	72	33	#line 72 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	73	33		strcat __strbufmain, __constStr0009
+0	73	37	#line 73 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	74	37		acquire __TextOutMutex
+0	73	38	#line 73 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	74	38		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	73	40	#line 73 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	74	40		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	73	42	#line 73 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	74	42		set __TextOutArgs.Options, 0
+0	73	45	#line 73 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	74	45		mov __TextOutArgs.Text, __strbufmain
+0	73	47	#line 73 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	74	47		syscall 13, __TextOutArgs
+0	73	50	#line 73 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	74	50		mov __D0main, __TextOutArgs.Result
+0	73	53	#line 73 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	74	53		release __TextOutMutex
+0	73	54	#line 73 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	73	54	#line 73 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	73	54	#line 73 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
 0	7921	54	#line 7921 "NXCDefs.h"
 0	7922	54		wait 300
 0	7921	56	#line 7921 "NXCDefs.h"
-0	60	56	#line 60 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	61	56	#line 61 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	62	56		subcall UltrasonicScan, __UltrasonicScan_return
-0	61	58	#line 61 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	62	58		mov __main_7qG2_scan_value_7qG2_000, __D0UltrasonicScan
-0	61	60	#line 61 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	61	60	#line 61 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	61	60	#line 61 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	62	60		mov __TurnRobot_7qG2_deg_7qG2_000, __D0UltrasonicScan
-0	61	62	#line 61 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	61	62	#line 61 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	62	62		set __TurnRobot_7qG2_pwr_7qG2_000, 50
-0	61	65	#line 61 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	62	65	#line 62 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	63	65		subcall TurnRobot, __TurnRobot_return
-0	62	67	#line 62 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	65	67	#line 65 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	66	67		jmp __NXC_Label_743
-0	65	69	#line 65 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-0	66	69		exit -1, -1
+0	74	56	#line 74 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	75	56	#line 75 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	76	56		subcall UltrasonicScan, __UltrasonicScan_return
+0	75	58	#line 75 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	76	58		mov __main_7qG2_scan_value_7qG2_000, __D0UltrasonicScan
+0	75	60	#line 75 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	75	60	#line 75 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	75	60	#line 75 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	76	60		mov __TurnRobot_7qG2_deg_7qG2_000, __D0UltrasonicScan
+0	75	62	#line 75 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	75	62	#line 75 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	76	62		set __TurnRobot_7qG2_pwr_7qG2_000, 50
+0	75	65	#line 75 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	76	65	#line 76 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	77	65		subcall TurnRobot, __TurnRobot_return
+0	76	67	#line 76 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	79	67	#line 79 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	80	67		jmp __NXC_Label_769
+0	79	69	#line 79 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+0	80	69		exit -1, -1
 1	4582	0		brtst 4, __rotate_Done2, __rotate_angle2
 1	4583	3		sign __rotate_thePower2, __rotate_angle2
 1	4584	6		abs __rotate_theAngle2, __rotate_angle2
@@ -399,7 +399,7 @@ Clump	Line	PC	Source
 5	23	43		mov __rotate_theRVI3, __constVal0
 5	23	45		mov __rotate_theRVD3, __constVal96
 5	23	47		subcall __RotateMotor3, ____RotateMotor3_return
-5	8504	49	#line 8504 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\../basic_functions/functions.h"
+5	8816	49	#line 8816 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\../basic_functions/functions.h"
 5	22	49	#line 22 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\../basic_functions/functions.h"
 5	24	49	#line 24 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\../basic_functions/functions.h"
 5	25	49		jmp __NXC_Label_637
@@ -432,7 +432,7 @@ Clump	Line	PC	Source
 5	26	80		mov __rotate_theRVI3, __constVal0
 5	26	82		mov __rotate_theRVD3, __constVal96
 5	26	84		subcall __RotateMotor3, ____RotateMotor3_return
-5	8544	86	#line 8544 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\../basic_functions/functions.h"
+5	8856	86	#line 8856 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\../basic_functions/functions.h"
 5	25	86	#line 25 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\../basic_functions/functions.h"
 5	29	86	#line 29 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\../basic_functions/functions.h"
 5	29	86	#line 29 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\../basic_functions/functions.h"
@@ -470,7 +470,7 @@ Clump	Line	PC	Source
 7	16	24		mov __rotate_theRVD2, __constVal96
 7	16	26		subcall __RotateMotor2, ____RotateMotor2_return
 7	16	28		release __rotateMutex2
-7	8691	29	#line 8691 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\../scanner.h"
+7	9003	29	#line 9003 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\../scanner.h"
 7	15	29	#line 15 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\../scanner.h"
 7	16	29	#line 16 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\../scanner.h"
 7	16	29	#line 16 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\../scanner.h"
@@ -500,7 +500,7 @@ Clump	Line	PC	Source
 8	22	26		mov __rotate_theRVD2, __constVal96
 8	22	28		subcall __RotateMotor2, ____RotateMotor2_return
 8	22	30		release __rotateMutex2
-8	8722	31	#line 8722 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\../scanner.h"
+8	9034	31	#line 9034 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\../scanner.h"
 8	21	31	#line 21 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\../scanner.h"
 8	22	31	#line 22 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\../scanner.h"
 8	23	31		set scanner_currentRotation, 0
@@ -558,7 +558,7 @@ Clump	Line	PC	Source
 9	3695	43		mov __ResetSensorPort, __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_UltrasonicScan
 9	3695	45		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
 9	3695	47		release __ResetSensorMutex
-9	8847	48	#line 8847 "NXCDefs.h"
+9	9159	48	#line 9159 "NXCDefs.h"
 9	3694	48	#line 3694 "NXCDefs.h"
 9	3761	48	#line 3761 "NXCDefs.h"
 9	3768	48	#line 3768 "NXCDefs.h"
@@ -601,7 +601,7 @@ Clump	Line	PC	Source
 9	43	82		subcall __ReadLSBytes3, ____ReadLSBytes3_return
 9	43	84		index __D0UltrasonicScan, __RLSReadBuf3, 65535
 9	43	88		release __RLSBmutex3
-9	8900	89	#line 8900 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\../scanner.h"
+9	9212	89	#line 9212 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\../scanner.h"
 9	42	89	#line 42 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\../scanner.h"
 9	43	89		mov __UltrasonicScan_7qG2_sensor_value_7qG2_000, __D0UltrasonicScan
 9	42	91	#line 42 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\../scanner.h"
@@ -614,7 +614,7 @@ Clump	Line	PC	Source
 9	6070	96		mov __PointOutArgs.Options, __constVal1
 9	6070	98		syscall 14, __PointOutArgs
 9	6070	101		release __PointOutMutex
-9	8908	102	#line 8908 "NXCDefs.h"
+9	9220	102	#line 9220 "NXCDefs.h"
 9	6069	102	#line 6069 "NXCDefs.h"
 9	46	102	#line 46 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\../scanner.h"
 9	46	102	#line 46 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\../scanner.h"
@@ -632,7 +632,7 @@ Clump	Line	PC	Source
 9	47	116		subcall __ReadLSBytes3, ____ReadLSBytes3_return
 9	47	118		index __D0UltrasonicScan, __RLSReadBuf3, 65535
 9	47	122		release __RLSBmutex3
-9	8924	123	#line 8924 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\../scanner.h"
+9	9236	123	#line 9236 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\../scanner.h"
 9	49	123	#line 49 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\../scanner.h"
 9	50	123		acquire __TextOutMutex
 9	49	124	#line 49 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\../scanner.h"
@@ -681,52 +681,52 @@ Clump	Line	PC	Source
 9	59	168	#line 59 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\../scanner.h"
 9	60	168	#line 60 "C:\Users\Pascal\Documents\GitHub\SaSeRoS-Team359\Test\../scanner.h"
 9	61	168		subret __UltrasonicScan_return
-10	46	0	#line 46 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-10	47	0		set __D0heartbeat, 1
-10	47	3	#line 47 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-10	48	3		tst 5, __zfheartbeat, __D0heartbeat
-10	47	6	#line 47 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-10	48	6		brtst 4, __NXC_Label_728, __zfheartbeat
-10	47	9	#line 47 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-10	48	9		set __signed_stack_001heartbeat, 500
-10	47	12	#line 47 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-10	47	12	#line 47 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-10	48	12		set __signed_stack_002heartbeat, 100
-10	47	15	#line 47 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-10	47	15	#line 47 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-10	48	15		set __signed_stack_003heartbeat, 4
-10	47	18	#line 47 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-10	47	18	#line 47 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-10	48	18		set __D0heartbeat, 0
-10	48	21	#line 48 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-10	49	21		acquire __SPTArgsMutex
-10	48	22	#line 48 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-10	49	22		mov __SPTArgs.Frequency, __signed_stack_001heartbeat
-10	48	24	#line 48 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-10	49	24		mov __SPTArgs.Duration, __signed_stack_002heartbeat
-10	48	26	#line 48 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-10	49	26		mov __SPTArgs.Volume, __signed_stack_003heartbeat
-10	48	28	#line 48 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-10	49	28		mov __SPTArgs.Loop, __D0heartbeat
-10	48	30	#line 48 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-10	49	30		syscall 10, __SPTArgs
-10	48	33	#line 48 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-10	49	33		mov __D0heartbeat, __SPTArgs.Result
-10	48	35	#line 48 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-10	49	35		release __SPTArgsMutex
-10	48	36	#line 48 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-10	48	36	#line 48 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-10	48	36	#line 48 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+10	48	0	#line 48 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+10	49	0		set __D0heartbeat, 1
+10	49	3	#line 49 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+10	50	3		tst 5, __zfheartbeat, __D0heartbeat
+10	49	6	#line 49 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+10	50	6		brtst 4, __NXC_Label_740, __zfheartbeat
+10	49	9	#line 49 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+10	50	9		set __signed_stack_001heartbeat, 500
+10	49	12	#line 49 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+10	49	12	#line 49 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+10	50	12		set __signed_stack_002heartbeat, 100
+10	49	15	#line 49 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+10	49	15	#line 49 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+10	50	15		set __signed_stack_003heartbeat, 4
+10	49	18	#line 49 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+10	49	18	#line 49 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+10	50	18		set __D0heartbeat, 0
+10	50	21	#line 50 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+10	51	21		acquire __SPTArgsMutex
+10	50	22	#line 50 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+10	51	22		mov __SPTArgs.Frequency, __signed_stack_001heartbeat
+10	50	24	#line 50 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+10	51	24		mov __SPTArgs.Duration, __signed_stack_002heartbeat
+10	50	26	#line 50 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+10	51	26		mov __SPTArgs.Volume, __signed_stack_003heartbeat
+10	50	28	#line 50 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+10	51	28		mov __SPTArgs.Loop, __D0heartbeat
+10	50	30	#line 50 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+10	51	30		syscall 10, __SPTArgs
+10	50	33	#line 50 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+10	51	33		mov __D0heartbeat, __SPTArgs.Result
+10	50	35	#line 50 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+10	51	35		release __SPTArgsMutex
+10	50	36	#line 50 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+10	50	36	#line 50 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+10	50	36	#line 50 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
 10	7921	36	#line 7921 "NXCDefs.h"
 10	7922	36		wait 5000
 10	7921	38	#line 7921 "NXCDefs.h"
-10	49	38	#line 49 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-10	52	38	#line 52 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-10	53	38		jmp __NXC_Label_727
-10	52	40	#line 52 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-10	53	40		exit -1, -1
-11	66	0	#line 66 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
-11	67	0		subret ____initialize_global_data_return
+10	51	38	#line 51 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+10	55	38	#line 55 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+10	56	38		jmp __NXC_Label_739
+10	55	40	#line 55 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+10	56	40		exit -1, -1
+11	80	0	#line 80 "C:\Users\Pascal\AppData\Local\Temp\temp.nxc"
+11	81	0		subret ____initialize_global_data_return
 #CLUMPS
 Clump	Name	Offset	File
 0	main	0	C:\Users\Pascal\AppData\Local\Temp\temp.nxc
