@@ -1,13 +1,13 @@
 #define SENSOR_TOUCH_FRONT_IN IN_1
 #define LIGHT_SENSOR_IN IN_2
 #define SENSOR_TOUCH_BACK_IN IN_3
-#define SENSOR_LIGHT_EDGE_IN IN_4
+#define ULTRASONIC_IN IN_4
 
 #define SENSOR_LIGHT_EDGE SENSOR_2
 
 #define MOTOR_RIGHT_OUT OUT_A
 #define MOTOR_LEFT_OUT OUT_B
-#define ULTRASONIC_THRESHOLD 30
+#define MOTOR_TURRET_OUT OUT_C
 
 #include "../basic_functions/functions.h"
 #include "../scanner.h"
@@ -79,7 +79,9 @@ task edge_detection() {
 
 // Task for testing edge avoidance
 task edge_avoidance() {
-    Light_Sens_Init(LIGHT_SENSOR_IN);
+
+    
+    Wait(300);
     while(true) {
         if (DetectEdge()) {
             // Edge detected, avoid it
@@ -105,6 +107,8 @@ task edge_avoidance() {
 }
 
 task main() {
-     start heartbeat;
-     start edge_avoidance;
+    Light_Sens_Init(LIGHT_SENSOR_IN);
+    Range_Sens_Init(ULTRASONIC_IN);
+    start heartbeat;
+    start edge_avoidance;
 }

@@ -3,11 +3,11 @@
 
 #define TURRET_ROTATION_DELAY 300
 
-#define ULTRASONIC_IN IN_4
-#define MOTOR_TURRET_OUT OUT_C
 #define MOTOR_TURRET_PWR 30
 
 #define TURRET_ROTATION_AMOUNT 20
+
+#define ULTRASONIC_THRESHOLD 30
 
 int scanner_currentRotation = 0;
 
@@ -27,11 +27,15 @@ bool CheckDirection(int dir) {
     TurnTurret(dir);
     Wait(TURRET_ROTATION_DELAY);
     if (SensorUS(ULTRASONIC_IN) > ULTRASONIC_THRESHOLD) {
+        ClearScreen();
+        TextOut(0,0,"Direction is FREE!");
         TurnTurret(-dir);
         return true;
     }
     else {
         TurnTurret(-dir);
+        ClearScreen();
+        TextOut(0,0,"Direction is BLOCKED!");
         return false;
     }
 }
