@@ -28,7 +28,8 @@ void TurnMotor(int deg, int pwr){              //pwr should be anywhere between 
 
 // Turns the robot approximately a certain amount of degrees
 void TurnRobot(int deg, int pwr) {
-	TurnMotor(deg*4, pwr);
+	float degrees = deg;
+	TurnMotor(degrees*3.5, pwr);
 }
 
 void Stop_Driving(){
