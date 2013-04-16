@@ -1,0 +1,10 @@
+#include "NBCCommon.h"
+#include "NXCDefs.h"
+#include "initialise.h"
+
+
+task main()
+{
+initialise();
+while(TRUE){}
+}
