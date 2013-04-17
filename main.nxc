@@ -4,14 +4,58 @@
 #include "scanner.h"
 #include "basic_functions/functions.h"
 
+bool edge_detected = false;
+bool obstacle_detected = true;
 
-task move_random() {
+void handle_edge_detected() {
+// Edge detected, avoid it
+    Stop_Driving();
+    // Check behind the robot
+    if (!CheckDirection(180)) {
+        // There is something behind the robot.
+        // Beep to signal, hopefully the object
+        // will move out of the way.
+        LongBeep();
+        Wait(3000);
+    }
+    Drive_Backward(50);
+    Wait(300);
+    TurnRobot(90, 50);
+}
+
+void handle_obstacle_detected() {
+}
+
+task move() {
+    while(true) {
+        if(edge_detected) {
+            handle_edge_detected();
+        }
+        if(obstacle_detected) {
+            handle_obstacle_detected();
+        }
+    }
 }
 
 task detect_obstacles() {
+    while(true) {
+//        if(DetectObstacle()) {
+//
+//        }
+        Wait(100);
+    }
 }
 
 task detect_edges() {
+    while(true) {
+        if(DetectEdge()) {
+            edge_detected = true;
+        }
+        else {
+            edge_detected = false;
+        }
+        Wait(100);
+    }
 }
 
 task main() {
