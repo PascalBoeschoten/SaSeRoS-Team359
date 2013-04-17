@@ -1,13 +1,13 @@
 #define SENSOR_TOUCH_FRONT_IN IN_1
 #define LIGHT_SENSOR_IN IN_2
 #define SENSOR_TOUCH_BACK_IN IN_3
-#define SENSOR_LIGHT_EDGE_IN IN_4
+#define ULTRASONIC_IN IN_4
 
 #define SENSOR_LIGHT_EDGE SENSOR_2
 
 #define MOTOR_RIGHT_OUT OUT_A
 #define MOTOR_LEFT_OUT OUT_B
-#define ULTRASONIC_THRESHOLD 30
+#define MOTOR_TURRET_OUT OUT_C
 
 #include "../basic_functions/functions.h"
 #include "../scanner.h"
@@ -44,7 +44,7 @@ task read_ultrasonic_sensor() {
 // is running
 task heartbeat() {
     while(true) {
-        PlayTone(500, 100);
+        ShortBeep();
         Wait(5000);
     }
 }
@@ -73,11 +73,43 @@ task edge_detection() {
            else {
                TextOut(0,0,"No edge...");
            }
-           Wait(200);
+           Wait(500);
      }
 }
 
+// Task for testing edge avoidance
+task edge_avoidance() {
+    while(true) {
+        if (DetectEdge()) {
+            // Edge detected, avoid it
+            Stop_Driving();
+            // Check behind the robot
+            if (!CheckDirection(180)) {
+                // There is something behind the robot.
+                // Beep to signal, hopefully the object
+                // will move out of the way.
+                LongBeep();
+                Wait(3000);
+            }
+            Drive_Backward(50);
+            Wait(300);
+            TurnRobot(90, 50);
+        }
+        else {
+            // No edge, keep driving
+            Drive_Forward(50);
+        }
+        Wait(50);
+    }
+}
+
 task main() {
-     start heartbeat;
-     start edge_detection;
+    Light_Sens_Init(LIGHT_SENSOR_IN);
+    Range_Sens_Init(ULTRASONIC_IN);
+    Touch_Init(SENSOR_TOUCH_FRONT);
+    Touch_Init(SENSOR_TOUCH_BACK);
+    Wait(100); // Need to wait after sensor init
+    
+    start heartbeat;
+    start edge_avoidance;
 }
