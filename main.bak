@@ -1,8 +1,9 @@
 #include "constants.h"
+#include "basic_functions/functions.h"
+#include "initialise.h"
 #include "Sensors testing/hardware_testing.nxc"
 #include "edge_detection.h"
 #include "scanner.h"
-#include "basic_functions/functions.h"
 
 bool edge_detected = false;
 bool obstacle_detected = false;
@@ -24,6 +25,9 @@ void handle_edge_detected() {
 }
 
 void handle_obstacle_detected() {
+    Stop_Driving();
+    angle = UltrasonicScan();
+    TurnRobot(angle, pwr);
 }
 
 task control() {
@@ -43,16 +47,25 @@ task control() {
 
 task detect_obstacles() {
     while(true) {
-//        if(DetectObstacle()) {
-//
-//        }
+      if(SensorUS(range_sensor) < ULTRASONIC_THRESHOLD){
+        obstacle_detected = true;
+      }
+      else {
+        obstacle_detected = false;
+      }
         Wait(100);
     }
 }
 
 task detect_edges() {
     while(true) {
-        edge_detected = DetectEdge();
+        if (DetectEdge()) {
+            TextOut(0,0,"Edge detected");
+            edge_detected = true;
+        } else {
+            TextOut(0,0,"No edge");
+            edge_detected = false;
+        }
         Wait(100);
     }
 }
@@ -61,7 +74,7 @@ task main() {
     TestSensors();
     
     start control;
-    //start detect_obstacles;
+    start detect_obstacles;
     start detect_edges;
 }
 

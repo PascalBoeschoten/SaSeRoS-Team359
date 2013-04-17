@@ -1,9 +1,3 @@
-#include "../constants.h"
-#include "../basic_functions/functions.h"
-#include "../edge_detection.h"
-#include "../initialise.h"
-#include "../scanner.h"
-
 #define Scan_Range 10
 #define pwr 50
 
@@ -73,6 +67,8 @@ task Object_Detection() {
         Stop_Driving();
         reverse = false;
         angle = UltrasonicScan();
+        NumOut(1, 1, angle);
+
         TurnRobot(angle, pwr);
         Drive_Forward(pwr);
         LongBeep();
@@ -81,10 +77,14 @@ task Object_Detection() {
   }
 }
 
-task main() {
-    initialise();
-    Drive_Forward(pwr);
-    start Object_Detection;
+//task main() {
+//     while(true){
+//     TurnRobot(90, pwr);
+//     TurnRobot(-90, pwr);
+//     }
+//    initialise();
+//    Drive_Forward(pwr);
+//    start Object_Detection;
 //    start Look_Around;
-    start Look_Back;
-}
+//    start Look_Back;
+//}
