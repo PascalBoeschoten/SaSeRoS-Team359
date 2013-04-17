@@ -7,4 +7,4 @@
 
 #define MOTOR_RIGHT_OUT OUT_A
 #define MOTOR_LEFT_OUT OUT_B
-#define MOTOR_TURRET_OUT OUT_C
+

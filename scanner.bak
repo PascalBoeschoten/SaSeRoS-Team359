@@ -1,6 +1,8 @@
 // Note: For the scanner to work, the turret has to be set manually by the
 // user to point straight ahead before starting the robot.
 
+#include "constants.h"
+
 #define TURRET_ROTATION_DELAY 300
 
 #define MOTOR_TURRET_PWR 30
