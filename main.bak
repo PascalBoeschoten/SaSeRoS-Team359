@@ -52,13 +52,7 @@ task detect_obstacles() {
 
 task detect_edges() {
     while(true) {
-        if (DetectEdge()) {
-            TextOut(0,0,"Edge detected");
-            edge_detected = true;
-        } else {
-            TextOut(0,0,"No edge");
-            edge_detected = false;
-        }
+        edge_detected = DetectEdge();
         Wait(100);
     }
 }
