@@ -1,40 +1,37 @@
 #include "NBCCommon.h"
 #include "NXCDefs.h"
+#include "functions.h"
 
-int x;
-int pwr = 10;                                  //pwr should be anywhere between 0 and 100
-void Touch_Init(int Port){
- SetSensorType(Port, SENSOR_TYPE_TOUCH);
- SetSensorMode(Port, SENSOR_MODE_BOOL);
-}
-
-void Range_Sens_Init(int Port){
- SetSensorUltrasonic(Port);
- SetSensorMode(Port, SENSOR_MODE_RAW);
-}
-
-void Light_Sens_Init(int Port){
- SetSensorLight(Port);
- SetSensorMode(Port, SENSOR_MODE_RAW);
-}
-
-void Turn(int deg){
- RotateMotor(OUT_A, pwr, deg);
- RotateMotor(OUT_B, pwr, -deg);
-}
-
-void Stop_Driving(){
-Off(OUT_A);
-Off(OUT_B);
-}
-
-
+int Range;
+int Light;
 
 task main()
 {
-Touch_Init(IN_1);
-Range_Sens_Init(IN_2);
-Light_Sens_Init(IN_3);
-
-}
+ Touch_Init(IN_1);
+ Wait(1000);
+TextOut(0, 1, "Push front bumper");
+     while(Sensor(IN_1)){}
+     ClearLine(1);
+TextOut(0, 1, "Sensor works");
+ Wait(5000);
+     ClearLine(1);
+ Touch_Init(IN_3);
+  Wait(1000);
+     while(Sensor(IN_3)){}
+     ClearLine(1);
+TextOut(0, 1, "Sensor works");
+Range_Sens_Init(IN_4);
+ Wait(1000);
+Range = Sensor(IN_4);
+     ClearLine(1);
+TextOut(0, 1, "Test Range Sensor");
+     while((Sensor(IN_4) < (Range - 10)) | (Sensor(IN_4) > (Range + 10))){}
+     ClearLine(1);
+TextOut(0, 1, "Sensor works");
+ Light_Sens_Init(IN_2);
+ Wait(1000);
+Light = Sensor(IN_2);
+     while((Sensor(IN_2) < (Light - 10)) | (Sensor(IN_2) > (Light + 10))){}
+     ClearLine(1);
+TextOut(0, 1, "Sensor works");
 }
