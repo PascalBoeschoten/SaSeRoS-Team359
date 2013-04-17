@@ -27,15 +27,11 @@ bool CheckDirection(int dir) {
     TurnTurret(dir);
     Wait(TURRET_ROTATION_DELAY);
     if (SensorUS(ULTRASONIC_IN) > ULTRASONIC_THRESHOLD) {
-        ClearScreen();
-        TextOut(0,0,"Direction is FREE!");
         TurnTurret(-dir);
         return true;
     }
     else {
         TurnTurret(-dir);
-        ClearScreen();
-        TextOut(0,0,"Direction is BLOCKED!");
         return false;
     }
 }
@@ -59,10 +55,6 @@ int UltrasonicScan() {
         
         // Measure distance with the sensor
         sensor_value = SensorUS(ULTRASONIC_IN);
-        
-        // (for testing) Print the value on the LCD
-        ClearScreen();
-        NumOut(0, 0, SensorUS(ULTRASONIC_IN));
 
         // Check if the value is above the threshold
         if (sensor_value > ULTRASONIC_THRESHOLD) {
