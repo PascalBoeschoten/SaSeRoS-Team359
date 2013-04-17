@@ -26,7 +26,7 @@ void handle_edge_detected() {
 void handle_obstacle_detected() {
 }
 
-task move() {
+task control() {
     while(true) {
         if(edge_detected) {
             handle_edge_detected();
@@ -61,7 +61,7 @@ task detect_edges() {
 task main() {
     TestSensors();
     
-    start move_random;
+    start control;
     start detect_obstacles;
     start detect_edges;
 }
