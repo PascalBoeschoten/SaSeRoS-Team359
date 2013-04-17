@@ -1,0 +1,94 @@
+/*
+Function prototype: void TestSensors(void);
+
+Operation: This function is used to test if the sensors are working
+properly at the beginning when the robot is powered up. If there is not any
+failure detected, the main task will be able to proceed.
+Programmer: Vu Nguyen - Helsinki Metropolia UAS
+Date: 16 April 2013
+*/
+
+bool prevFront = 1;
+bool prevBack = 1;
+
+bool TestFrontTouchSensor() {
+     bool button = 1;
+
+     button = SENSOR_1;
+     if (button == 1 && prevFront == 1)
+        return 0;
+     else if (button == 0 && prevFront == 1) {
+         prevFront = 0;
+         return 1;
+     } else
+         return 1;
+}
+
+bool TestBackTouchSensor() {
+     bool button = 1;
+     
+     button = SENSOR_3;
+     if (button == 1 && prevBack == 1)
+        return 0;
+     else if (button == 0 && prevBack == 1) {
+         prevBack = 0;
+         return 1;
+     } else
+         return 1;
+}
+
+bool TestLightSensor() {
+     int lightValue;
+     
+     lightValue = Sensor(IN_2);
+     if (lightValue == 0)
+        return 0;
+     else
+        return 1;
+}
+
+bool TestUsSensor(){
+     int distance;
+     
+     distance = SensorUS(IN_4);
+     if(distance == 0)
+         return 0;
+     else
+         return 1;
+}
+
+void TestSensors(void) {
+     bool touchSensorFront = 0;
+     bool lightSensor = 0;
+     bool touchSensorBack = 0;
+     bool usSensor = 0;
+
+     SetSensorTouch(IN_1);
+     SetSensorLight(IN_2);
+     SetSensorTouch(IN_3);
+     SetSensorUltrasonic(IN_4);
+
+     do {
+        touchSensorFront = TestFrontTouchSensor();
+        lightSensor = TestLightSensor();
+        touchSensorBack = TestBackTouchSensor();
+        usSensor = TestUsSensor();
+        PlaySound(SOUND_DOUBLE_BEEP);
+     } while (!touchSensorFront || !touchSensorBack || !lightSensor || !usSensor);
+}
+
+sub move() {
+    while (1) {
+        OnFwd(OUT_A, 25);
+    }
+}
+
+//Test application
+task main() {
+     TestSensors();
+     
+     //All the sensors work properly, proceed with other tasks
+     move();// this is a sample subroutine
+}
+
+
