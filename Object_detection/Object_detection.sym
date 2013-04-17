@@ -1,0 +1,1796 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__DU0Object_Detection	5	1	0	4	2
+1	__D0ShortBeep	6	1	4	4	3
+2	__D0TurnMotor	6	1	8	4	7
+3	__D0LongBeep	6	1	12	4	3
+4	__D0Look_Back	6	1	16	4	15
+5	__D0Object_Detection	6	1	20	4	9
+6	__DU0SetSensorLight_inline_Light_Sens_Init	5	1	24	4	2
+7	__D0SetSensorLowspeed_inline_SetSensorUltrasonic	6	1	28	4	6
+8	__DU0SetSensorLowspeed_inline_SetSensorUltrasonic	5	1	32	4	4
+9	__D0TurnTurret	6	1	36	4	2
+10	__D0UltrasonicScan	6	1	40	4	17
+11	__D0SetSensorLight_inline_Light_Sens_Init	6	1	44	4	3
+12	__CLSRMutex3	9	0	48	4	2
+13	__TextOutMutex	9	0	52	4	36
+14	__PointOutMutex	9	0	56	4	2
+15	__ResetSensorMutex	9	0	60	4	6
+16	__CLSCSMutex3	9	0	64	4	2
+17	__CLSWMutex3	9	0	68	4	2
+18	__D0Drive_Backward	6	1	72	4	4
+19	__D0Drive_Forward	6	1	76	4	4
+20	__D0initialise	6	1	80	4	35
+21	__RLSBmutex3	9	0	84	4	12
+22	__SPTArgsMutex	9	0	88	4	4
+23	__D0CenterTurret	6	1	92	4	2
+24	__signed_stack_001CenterTurret	6	1	96	4	2
+25	__signed_stack_004TurnMotor	6	1	100	4	4
+26	__signed_stack_001TurnTurret	6	1	104	4	2
+27	__signed_stack_001UltrasonicScan	6	1	108	4	6
+28	__signed_stack_001TurnMotor	6	1	112	4	6
+29	__signed_stack_002TurnMotor	6	1	116	4	4
+30	__signed_stack_003TurnMotor	6	1	120	4	4
+31	__Wait_7qG2_ms_7qG2_000_inline_UltrasonicScan	5	1	124	4	2
+32	__Wait_7qG2_ms_7qG2_000_inline_Look_Back	5	1	128	4	2
+33	__Wait_7qG2_ms_7qG2_000_inline_Object_Detection	5	1	132	4	2
+34	__signed_stack_002UltrasonicScan	6	1	136	4	2
+35	__constValf3P5	10	0	140	4	1
+36	__Wait_7qG2_ms_7qG2_000_inline_initialise	5	1	144	4	14
+37	__signed_stack_002LongBeep	6	1	148	4	2
+38	__signed_stack_003LongBeep	6	1	152	4	2
+39	__signed_stack_001Look_Back	6	1	156	4	2
+40	__signed_stack_001initialise	6	1	160	4	26
+41	__signed_stack_002initialise	6	1	164	4	22
+42	__signed_stack_001LongBeep	6	1	168	4	2
+43	__signed_stack_001ShortBeep	6	1	172	4	2
+44	__signed_stack_002ShortBeep	6	1	176	4	2
+45	__signed_stack_003ShortBeep	6	1	180	4	2
+46	__signed_stack_002Look_Back	6	1	184	4	2
+47	__unsigned_stack_001Look_Back	5	1	188	4	4
+48	__signed_stack_001Object_Detection	6	1	192	4	2
+49	__rotateMutex2	9	0	196	4	4
+50	__OnRevMutex	9	0	200	4	4
+51	__rotate_theAngle2	5	1	204	4	2
+52	__rotate_angle3	6	1	208	4	6
+53	__rotate_theAngle3	5	1	212	4	2
+54	__rotate_angle2	6	1	216	4	6
+55	__TurnMotor_7qG2_deg_7qG2_000	4	1	220	2	4
+56	__Drive_Backward_7qG2_pwr_7qG2_000	4	1	222	2	4
+57	__Range_Sens_Init_7qG2_Port_7qG2_000	4	1	224	2	3
+58	__initialise_7qG2_Range_7qG2_000	4	1	226	2	3
+59	__rotate_RotCount2	4	1	228	2	4
+60	__TurnMotor_7qG2_pwr_7qG2_000	4	1	230	2	3
+61	__TurnRobot_7qG2_pwr_7qG2_000	4	1	232	2	4
+62	__constVal200	4	0	234	2	2
+63	__TurnRobot_7qG2_deg_7qG2_000	4	1	236	2	4
+64	__Drive_Forward_7qG2_pwr_7qG2_000	4	1	238	2	6
+65	__rotate_OldRotCount3	4	1	240	2	2
+66	__rotate_RotCount3	4	1	242	2	4
+67	__initialise_7qG2_Light_7qG2_000	4	1	244	2	3
+68	__Light_Sens_Init_7qG2_Port_7qG2_000	4	1	246	2	3
+69	__constValNeg180	4	0	248	2	1
+70	scanner_currentRotation	4	1	250	2	6
+71	__Touch_Init_7qG2_Port_7qG2_000	4	1	252	2	4
+72	__TurnTurret_7qG2_deg_7qG2_000	4	1	254	2	4
+73	__UltrasonicScan_7qG2_sensor_value_7qG2_000	4	1	256	2	3
+74	__rotate_OldRotCount2	4	1	258	2	2
+75	angle	4	1	260	2	2
+76	__SetSensorLight_7qG2_port_7qG2_000_inline_Light_Sens_Init	1	1	262	1	4
+77	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_Range_Sens_Init	1	1	263	1	2
+78	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_Range_Sens_Init	1	1	264	1	2
+79	__SetSensorLight_7qG2_bActive_7qG2_000_inline_Light_Sens_Init	1	1	265	1	2
+80	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_Range_Sens_Init	1	1	266	1	2
+81	__Light_Sens_Init_return	1	1	267	1	3
+82	__SetSensorMode_7qG2_mode_7qG2_000_inline_Range_Sens_Init	1	1	268	1	2
+83	__SetSensorMode_7qG2_port_7qG2_000_inline_Range_Sens_Init	1	1	269	1	2
+84	__SetSensorMode_7qG2_port_7qG2_000_inline_Touch_Init	1	1	270	1	2
+85	__SetSensorMode_7qG2_mode_7qG2_000_inline_Touch_Init	1	1	271	1	2
+86	stuck	1	1	272	1	3
+87	__Touch_Init_return	1	1	273	1	4
+88	__SetSensorType_7qG2_port_7qG2_000_inline_Touch_Init	1	1	274	1	2
+89	__SetSensorType_7qG2_type_7qG2_000_inline_Touch_Init	1	1	275	1	2
+90	__rotate_firstPort2	1	1	276	1	5
+91	__rotate_sync2	1	1	277	1	3
+92	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_Range_Sens_Init	1	1	278	1	2
+93	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_Range_Sens_Init	1	1	279	1	2
+94	__Range_Sens_Init_return	1	1	280	1	3
+95	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_Range_Sens_Init	1	1	281	1	4
+96	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_SetSensorUltrasonic_inline_Range_Sens_Init	1	1	282	1	2
+97	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_UltrasonicScan	1	1	283	1	2
+98	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_UltrasonicScan	1	1	284	1	2
+99	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_UltrasonicScan	1	1	285	1	2
+100	__ClearLine_7qG2_line_7qG2_000_inline_initialise	1	1	286	1	14
+101	__ShortBeep_return	1	1	287	1	3
+102	__LongBeep_return	1	1	288	1	3
+103	__initialise_return	1	1	289	1	3
+104	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_SetSensorUltrasonic_inline_UltrasonicScan	1	1	290	1	2
+105	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_UltrasonicScan	1	1	291	1	2
+106	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_UltrasonicScan	1	1	292	1	2
+107	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_UltrasonicScan	1	1	293	1	4
+108	__TurnTurret_return	1	1	294	1	4
+109	__CenterTurret_return	1	1	295	1	4
+110	__UltrasonicScan_return	1	1	296	1	6
+111	__Drive_Backward_return	1	1	297	1	4
+112	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_Light_Sens_Init	1	1	298	1	2
+113	__SetSensorMode_7qG2_port_7qG2_000_inline_Light_Sens_Init	1	1	299	1	2
+114	__SetSensorMode_7qG2_mode_7qG2_000_inline_Light_Sens_Init	1	1	300	1	2
+115	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_Light_Sens_Init	1	1	301	1	2
+116	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_Light_Sens_Init	1	1	302	1	2
+117	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_Light_Sens_Init	1	1	303	1	2
+118	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_Light_Sens_Init	1	1	304	1	2
+119	__Stop_Driving_return	1	1	305	1	7
+120	__constVal63	2	0	306	1	6
+121	__Drive_Forward_return	1	1	307	1	6
+122	__rotate_power2	1	1	308	1	5
+123	__TurnMotor_return	1	1	309	1	3
+124	__constVal96	2	0	310	1	10
+125	__TurnRobot_return	1	1	311	1	5
+126	__RLSBResult3	2	1	312	1	7
+127	__RLSBytesCount3	1	1	313	1	12
+128	__RLSBIterations3	1	1	314	1	4
+129	____initialize_global_data_return	1	1	315	1	3
+130	__constVal15	2	0	316	1	14
+131	__constVal2	2	0	317	1	5
+132	____ReadLSBytes3_return	1	1	318	1	8
+133	__constVal10	2	0	319	1	2
+134	__rotate_rs3	1	1	320	1	2
+135	__rotate_theRVD3	1	1	321	1	3
+136	__zfinitialise	1	1	322	1	18
+137	__rotate_thePower3	2	1	323	1	4
+138	__constVal100	2	0	324	1	2
+139	__constValNeg100	2	0	325	1	1
+140	__PFTmp	1	1	326	1	1
+141	____RotateMotor2_return	1	1	327	1	4
+142	__ResetSensorPort	1	1	328	1	5
+143	__ResetSensorTmp	1	1	329	1	2
+144	__constVal3	2	0	330	1	7
+145	____RotateMotor2_sign_tmp	2	1	331	1	4
+146	____RotateMotor3_return	1	1	332	1	4
+147	____RotateMotor3_sign_tmp	2	1	333	1	4
+148	____ResetSensorSubroutine_return	1	1	334	1	5
+149	__Look_Back_Spawner_return	1	1	335	1	1
+150	__rotate_theTurnPct3	2	1	336	1	4
+151	__Object_Detection_Spawner_return	1	1	337	1	1
+152	__constVal32	2	0	338	1	28
+153	__constVal50	2	0	339	1	2
+154	__constVal0	2	1	340	1	61
+155	__constVal1	2	0	341	1	18
+156	__rotate_theRVI3	1	1	342	1	3
+157	__rotate_thePower2	2	1	343	1	4
+158	__rotate_theTurnPct2	2	1	344	1	4
+159	__rotate_theRVD2	1	1	345	1	3
+160	__rotate_rs2	1	1	346	1	2
+161	reverse	1	1	347	1	4
+162	__zfSetSensorLight_inline_Light_Sens_Init	1	1	348	1	2
+163	__rotate_power3	1	1	349	1	5
+164	__zfSetSensorLowspeed_inline_SetSensorUltrasonic	1	1	350	1	4
+165	__rotate_theUF2	1	1	351	1	6
+166	__rotate_theOM2	1	1	352	1	7
+167	__rotate_stop2	1	1	353	1	3
+168	__rotate_turnpct2	2	1	354	1	4
+169	__rotate_theRVP2	1	1	355	1	3
+170	__rotate_theRVI2	1	1	356	1	3
+171	__rotate_theRM2	1	1	357	1	4
+172	__rotate_theRS2	1	1	358	1	3
+173	__rotate_firstPort3	1	1	359	1	5
+174	__rotate_theUF3	1	1	360	1	6
+175	__rotate_theRS3	1	1	361	1	3
+176	__OnRev_Tmp	2	1	362	1	4
+177	__zfObject_Detection	1	1	363	1	7
+178	__rotate_theRM3	1	1	364	1	4
+179	__rotate_theOM3	1	1	365	1	7
+180	__zfTurnMotor	1	1	366	1	3
+181	__rotate_sync3	1	1	367	1	3
+182	__rotate_stop3	1	1	368	1	3
+183	__zfUltrasonicScan	1	1	369	1	6
+184	__zfLook_Back	1	1	370	1	10
+185	__rotate_turnpct3	2	1	371	1	4
+186	__rotate_theRVP3	1	1	372	1	3
+187	__SPTArgs	8	0	5	8	12
+188	__SPTArgs.Result	2	1	376	1	12
+189	__SPTArgs.Frequency	3	1	378	2	12
+190	__SPTArgs.Duration	3	1	380	2	12
+191	__SPTArgs.Loop	1	1	382	1	12
+192	__SPTArgs.Volume	1	1	383	1	12
+193	__TextOutArgs	8	0	4	16	101
+194	__TextOutArgs.Result	2	1	384	1	101
+195	__TextOutArgs.Location	8	0	2	4	101
+196	__TextOutArgs.Location.X	4	1	388	2	101
+197	__TextOutArgs.Location.Y	4	1	390	2	101
+198	__TextOutArgs.Text	7	0	392	4	101
+199	__TextOutArgs.Text.Text_type	1	0	0	1	0
+200	__TextOutArgs.Options	5	1	396	4	101
+201	__PointOutArgs	8	0	3	12	4
+202	__PointOutArgs.Result	2	1	400	1	4
+203	__PointOutArgs.Location	8	0	2	4	4
+204	__PointOutArgs.Location.X	4	1	404	2	4
+205	__PointOutArgs.Location.Y	4	1	406	2	4
+206	__PointOutArgs.Options	5	1	408	4	4
+207	__CLSRArgs3	8	0	4	12	5
+208	__CLSRArgs3.Result	2	1	412	1	5
+209	__CLSRArgs3.Port	1	1	413	1	5
+210	__CLSRArgs3.Buffer	7	0	414	4	5
+211	__CLSRArgs3.Buffer.Buffer_type	1	0	0	1	0
+212	__CLSRArgs3.BufferLen	1	1	416	1	5
+213	__CLSCSArgs3	8	0	3	4	4
+214	__CLSCSArgs3.Result	2	1	420	1	4
+215	__CLSCSArgs3.Port	1	1	421	1	4
+216	__CLSCSArgs3.BytesReady	1	1	422	1	4
+217	__CLSWArgs3	8	0	4	12	5
+218	__CLSWArgs3.Result	2	1	424	1	5
+219	__CLSWArgs3.Port	1	1	425	1	5
+220	__CLSWArgs3.Buffer	7	0	426	4	5
+221	__CLSWArgs3.Buffer.Buffer_type	1	0	0	1	0
+222	__CLSWArgs3.ReturnLen	1	1	428	1	5
+223	__constStr0017	7	0	430	4	1
+224	__constStr0017.__constStr0017_type	1	1	0	1	0
+225	__OUT_AB	7	0	432	4	2
+226	__OUT_AB.__OUT_AB_type	1	0	0	1	0
+227	__strbufinitialise	7	0	434	4	18
+228	__strbufinitialise.__strbufinitialise_type	1	0	0	1	0
+229	__strbufLook_Back	7	0	436	4	2
+230	__strbufLook_Back.__strbufLook_Back_type	1	0	0	1	0
+231	__rotate_ports3	7	0	438	4	7
+232	__rotate_ports3.__rotate_ports3_type	1	0	0	1	0
+233	__RLSReadBuf3	7	0	440	4	18
+234	__RLSReadBuf3.__RLSReadBuf3_type	1	0	0	1	0
+235	__BlankLine	7	0	442	4	7
+236	__BlankLine.__BlankLine_type	1	0	0	1	0
+237	__RLSBbufLSWrite1	7	0	444	4	6
+238	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
+239	__RLSLastGoodRead3	7	0	446	4	2
+240	__RLSLastGoodRead3.__RLSLastGoodRead3_type	1	0	0	1	0
+241	__constStr0012	7	0	448	4	1
+242	__constStr0012.__constStr0012_type	1	1	0	1	0
+243	__constStr0013	7	0	450	4	1
+244	__constStr0013.__constStr0013_type	1	1	0	1	0
+245	__constStr0014	7	0	452	4	1
+246	__constStr0014.__constStr0014_type	1	1	0	1	0
+247	__constStr0011	7	0	454	4	1
+248	__constStr0011.__constStr0011_type	1	1	0	1	0
+249	__rotate_ports2	7	0	456	4	7
+250	__rotate_ports2.__rotate_ports2_type	1	0	0	1	0
+251	__constStr0009	7	0	458	4	1
+252	__constStr0009.__constStr0009_type	1	1	0	1	0
+253	__constStr0010	7	0	460	4	4
+254	__constStr0010.__constStr0010_type	1	1	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	85	0	#line 85 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+0	86	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	85	2	#line 85 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+0	86	2	#line 86 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+0	87	2		subcall initialise, __initialise_return
+0	86	4	#line 86 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+0	86	4	#line 86 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+0	87	4		set __Drive_Forward_7qG2_pwr_7qG2_000, 50
+0	86	7	#line 86 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+0	87	7	#line 87 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+0	88	7		subcall Drive_Forward, __Drive_Forward_return
+0	87	9	#line 87 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+0	89	9	#line 89 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+0	90	9		subcall __Object_Detection_Spawner, __Object_Detection_Spawner_return
+0	89	12	#line 89 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+0	90	12	#line 90 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+0	91	12		subcall __Look_Back_Spawner, __Look_Back_Spawner_return
+0	90	14	#line 90 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+0	91	14		exit -1, -1
+1	4582	0		brtst 4, __rotate_Done2, __rotate_angle2
+1	4583	3		set ____RotateMotor2_sign_tmp, 0
+1	4583	6		brtst EQ, __sign_2, __rotate_angle2
+1	4583	9		set ____RotateMotor2_sign_tmp, -1
+1	4583	12		brtst LT, __sign_2, __rotate_angle2
+1	4583	15		set ____RotateMotor2_sign_tmp, 1
+1	4583	18	__sign_2:	mov __rotate_thePower2, ____RotateMotor2_sign_tmp
+1	4584	20		abs __rotate_theAngle2, __rotate_angle2
+1	4585	23		mul __rotate_thePower2, __rotate_thePower2, __rotate_power2
+1	4587	27		set __rotate_theUF2, 23
+1	4588	30		brtst 4, __rotate_NoSync2, __rotate_sync2
+1	4589	33		set __rotate_theOM2, 7
+1	4590	36		set __rotate_theRM2, 2
+1	4591	39		mov __rotate_theTurnPct2, __rotate_turnpct2
+1	4592	41		brtst 4, __rotate_Start2, __rotate_theTurnPct2
+1	4593	44		add __rotate_theUF2, __rotate_theUF2, __constVal32
+1	4594	48		jmp __rotate_Start2
+1	4596	50		set __rotate_theOM2, 3
+1	4597	53		set __rotate_theRM2, 0
+1	4598	56		set __rotate_theTurnPct2, 0
+1	4600	59		set __rotate_theRS2, 32
+1	4601	62		setout __rotate_ports2, 1, __rotate_theOM2, 8, __rotate_theRM2, 5, __rotate_theAngle2, 6, __rotate_theRS2, 10, __rotate_theRVP2, 11, __rotate_theRVI2, 12, __rotate_theRVD2, 2, __rotate_thePower2, 7, __rotate_turnpct2, 0, __rotate_theUF2
+1	4604	85		index __rotate_firstPort2, __rotate_ports2, 65535
+1	4606	89		getout __rotate_power2, __rotate_firstPort2, 2
+1	4607	93		brtst 4, __rotate_doneRunning2, __rotate_power2
+1	4608	96		getout __rotate_rs2, __rotate_firstPort2, 6
+1	4609	100		brcmp 4, __rotate_Running2, __rotate_rs2, __constVal32
+1	4611	104		brtst 4, __rotate_Reset2, __rotate_stop2
+1	4613	107		set __rotate_theOM2, 7
+1	4614	110		set __rotate_theUF2, 7
+1	4615	113		setout __rotate_ports2, 1, __rotate_theOM2, 8, __constVal1, 6, __rotate_theRS2, 2, __constVal0, 5, __constVal0, 0, __rotate_theUF2
+1	4617	128		getout __rotate_RotCount2, __rotate_firstPort2, 14
+1	4619	132		mov __rotate_OldRotCount2, __rotate_RotCount2
+1	4620	134		wait2 NA, __constVal50
+1	4622	137		getout __rotate_RotCount2, __rotate_firstPort2, 14
+1	4623	141		brcmp 5, __rotate_Stabilize2, __rotate_OldRotCount2, __rotate_RotCount2
+1	4624	145		set __rotate_theOM2, 4
+1	4625	148		setout __rotate_ports2, 8, __rotate_theRM2, 6, __constVal0, 1, __rotate_theOM2, 0, __constVal1
+1	4628	159		brtst 4, __rotate_Done2, __rotate_theTurnPct2
+1	4629	162		setout __rotate_ports2, 0, __constVal32
+1	4631	167		subret ____RotateMotor2_return
+2	4635	0		brtst 4, __rotate_Done3, __rotate_angle3
+2	4636	3		set ____RotateMotor3_sign_tmp, 0
+2	4636	6		brtst EQ, __sign_3, __rotate_angle3
+2	4636	9		set ____RotateMotor3_sign_tmp, -1
+2	4636	12		brtst LT, __sign_3, __rotate_angle3
+2	4636	15		set ____RotateMotor3_sign_tmp, 1
+2	4636	18	__sign_3:	mov __rotate_thePower3, ____RotateMotor3_sign_tmp
+2	4637	20		abs __rotate_theAngle3, __rotate_angle3
+2	4638	23		mul __rotate_thePower3, __rotate_thePower3, __rotate_power3
+2	4640	27		set __rotate_theUF3, 23
+2	4641	30		brtst 4, __rotate_NoSync3, __rotate_sync3
+2	4642	33		set __rotate_theOM3, 7
+2	4643	36		set __rotate_theRM3, 2
+2	4644	39		mov __rotate_theTurnPct3, __rotate_turnpct3
+2	4645	41		brtst 4, __rotate_Start3, __rotate_theTurnPct3
+2	4646	44		add __rotate_theUF3, __rotate_theUF3, __constVal32
+2	4647	48		jmp __rotate_Start3
+2	4649	50		set __rotate_theOM3, 3
+2	4650	53		set __rotate_theRM3, 0
+2	4651	56		set __rotate_theTurnPct3, 0
+2	4653	59		set __rotate_theRS3, 32
+2	4654	62		setout __rotate_ports3, 1, __rotate_theOM3, 8, __rotate_theRM3, 5, __rotate_theAngle3, 6, __rotate_theRS3, 10, __rotate_theRVP3, 11, __rotate_theRVI3, 12, __rotate_theRVD3, 2, __rotate_thePower3, 7, __rotate_turnpct3, 0, __rotate_theUF3
+2	4657	85		index __rotate_firstPort3, __rotate_ports3, 65535
+2	4659	89		getout __rotate_power3, __rotate_firstPort3, 2
+2	4660	93		brtst 4, __rotate_doneRunning3, __rotate_power3
+2	4661	96		getout __rotate_rs3, __rotate_firstPort3, 6
+2	4662	100		brcmp 4, __rotate_Running3, __rotate_rs3, __constVal32
+2	4664	104		brtst 4, __rotate_Reset3, __rotate_stop3
+2	4666	107		set __rotate_theOM3, 7
+2	4667	110		set __rotate_theUF3, 7
+2	4668	113		setout __rotate_ports3, 1, __rotate_theOM3, 8, __constVal1, 6, __rotate_theRS3, 2, __constVal0, 5, __constVal0, 0, __rotate_theUF3
+2	4670	128		getout __rotate_RotCount3, __rotate_firstPort3, 14
+2	4672	132		mov __rotate_OldRotCount3, __rotate_RotCount3
+2	4673	134		wait2 NA, __constVal50
+2	4675	137		getout __rotate_RotCount3, __rotate_firstPort3, 14
+2	4676	141		brcmp 5, __rotate_Stabilize3, __rotate_OldRotCount3, __rotate_RotCount3
+2	4677	145		set __rotate_theOM3, 4
+2	4678	148		setout __rotate_ports3, 8, __rotate_theRM3, 6, __constVal0, 1, __rotate_theOM3, 0, __constVal1
+2	4681	159		brtst 4, __rotate_Done3, __rotate_theTurnPct3
+2	4682	162		setout __rotate_ports3, 0, __constVal32
+2	4684	167		subret ____RotateMotor3_return
+3	4885	0		setin __constVal1, __ResetSensorPort, 5
+3	4887	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+3	4888	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+3	4889	11		subret ____ResetSensorSubroutine_return
+4	5784	0	#pragma macro 25
+4	5784	0		acquire __CLSWMutex3
+4	5784	1		set __CLSWArgs3.Port, 3
+4	5784	4		mov __CLSWArgs3.ReturnLen, __RLSBytesCount3
+4	5784	6		mov __CLSWArgs3.Buffer, __RLSReadBuf3
+4	5784	8		syscall 21, __CLSWArgs3
+4	5784	11		mov __RLSBResult3, __CLSWArgs3.Result
+4	5784	13		release __CLSWMutex3
+4	5784	14	#line 5784 "NXTDefs.h"
+4	5785	14		brtst 4, __RLSBReturn3, __RLSBytesCount3
+4	5786	17		arrinit __RLSReadBuf3, __constVal0, __RLSBytesCount3
+4	5787	21		brtst 5, __RLSBError3, __RLSBResult3
+4	5788	24		set __RLSBIterations3, 4
+4	5790	27	#pragma macro 23
+4	5790	27		acquire __CLSCSMutex3
+4	5790	28		set __CLSCSArgs3.Port, 3
+4	5790	31		syscall 23, __CLSCSArgs3
+4	5790	34		mov __RLSBytesCount3, __CLSCSArgs3.BytesReady
+4	5790	36		mov __RLSBResult3, __CLSCSArgs3.Result
+4	5790	38		release __CLSCSMutex3
+4	5790	39	#line 5790 "NXTDefs.h"
+4	5791	39		sub __RLSBIterations3, __RLSBIterations3, __constVal1
+4	5792	43		brtst 2, __RLSBError3, __RLSBIterations3
+4	5793	46		brtst 0, __RLSBError3, __RLSBResult3
+4	5794	49		brtst 4, __RLSBReadyToRead3, __RLSBResult3
+4	5796	52		wait2 NA, __constVal15
+4	5797	55		jmp __RLSBDoCheckStatus3
+4	5800	57	#pragma macro 25
+4	5800	57		acquire __CLSRMutex3
+4	5800	58		set __CLSRArgs3.Port, 3
+4	5800	61		mov __CLSRArgs3.BufferLen, __RLSBytesCount3
+4	5800	63		syscall 22, __CLSRArgs3
+4	5800	66		mov __RLSReadBuf3, __CLSRArgs3.Buffer
+4	5800	68		mov __RLSBResult3, __CLSRArgs3.Result
+4	5800	70		release __CLSRMutex3
+4	5800	71	#line 5800 "NXTDefs.h"
+4	5801	71		brtst 5, __RLSBError3, __RLSBResult3
+4	5802	74		mov __RLSLastGoodRead3, __RLSReadBuf3
+4	5803	76		jmp __RLSBDone3
+4	5805	78		mov __RLSReadBuf3, __RLSLastGoodRead3
+4	5807	80		arrsize __RLSBytesCount3, __RLSReadBuf3
+4	5809	83		subret ____ReadLSBytes3_return
+5	4	0	#line 4 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+5	5	0		mov __SetSensorType_7qG2_port_7qG2_000_inline_Touch_Init, __Touch_Init_7qG2_Port_7qG2_000
+5	4	2	#line 4 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+5	4	2	#line 4 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+5	5	2		set __SetSensorType_7qG2_type_7qG2_000_inline_Touch_Init, 1
+5	4	5	#line 4 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+5	3663	5	#line 3663 "NXCDefs.h"
+5	3664	5		setin __SetSensorType_7qG2_type_7qG2_000_inline_Touch_Init, __SetSensorType_7qG2_port_7qG2_000_inline_Touch_Init, 0
+5	3663	9	#line 3663 "NXCDefs.h"
+5	5	9	#line 5 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+5	5	9	#line 5 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+5	6	9		mov __SetSensorMode_7qG2_port_7qG2_000_inline_Touch_Init, __Touch_Init_7qG2_Port_7qG2_000
+5	5	11	#line 5 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+5	5	11	#line 5 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+5	6	11		set __SetSensorMode_7qG2_mode_7qG2_000_inline_Touch_Init, 32
+5	5	14	#line 5 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+5	3676	14	#line 3676 "NXCDefs.h"
+5	3677	14		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_Touch_Init, __SetSensorMode_7qG2_port_7qG2_000_inline_Touch_Init, 1
+5	3676	18	#line 3676 "NXCDefs.h"
+5	6	18	#line 6 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+5	8	18	#line 8 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+5	9	18		subret __Touch_Init_return
+6	9	0	#line 9 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+6	9	0	#line 9 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+6	3768	0	#line 3768 "NXCDefs.h"
+6	3769	0		mov __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_Range_Sens_Init, __Range_Sens_Init_7qG2_Port_7qG2_000
+6	3768	2	#line 3768 "NXCDefs.h"
+6	3768	2	#line 3768 "NXCDefs.h"
+6	3769	2		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_SetSensorUltrasonic_inline_Range_Sens_Init, __constVal1
+6	3758	4	#line 3758 "NXCDefs.h"
+6	3759	4		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_Range_Sens_Init, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_Range_Sens_Init
+6	3758	6	#line 3758 "NXCDefs.h"
+6	3758	6	#line 3758 "NXCDefs.h"
+6	3759	6		mov __DU0SetSensorLowspeed_inline_SetSensorUltrasonic, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_SetSensorUltrasonic_inline_Range_Sens_Init
+6	3758	8	#line 3758 "NXCDefs.h"
+6	3759	8		tst 5, __zfSetSensorLowspeed_inline_SetSensorUltrasonic, __DU0SetSensorLowspeed_inline_SetSensorUltrasonic
+6	3758	11	#line 3758 "NXCDefs.h"
+6	3759	11		brtst 4, __001__001__NXC_Label_36, __zfSetSensorLowspeed_inline_SetSensorUltrasonic
+6	3758	14	#line 3758 "NXCDefs.h"
+6	3759	14		set __D0SetSensorLowspeed_inline_SetSensorUltrasonic, 11
+6	3758	17	#line 3758 "NXCDefs.h"
+6	3759	17		jmp __001__001__NXC_Label_37
+6	3758	19	#line 3758 "NXCDefs.h"
+6	3759	19		set __D0SetSensorLowspeed_inline_SetSensorUltrasonic, 10
+6	3758	22	#line 3758 "NXCDefs.h"
+6	3759	22		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_Range_Sens_Init, __D0SetSensorLowspeed_inline_SetSensorUltrasonic
+6	3663	24	#line 3663 "NXCDefs.h"
+6	3664	24		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_Range_Sens_Init, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_Range_Sens_Init, 0
+6	3663	28	#line 3663 "NXCDefs.h"
+6	3759	28	#line 3759 "NXCDefs.h"
+6	3759	28	#line 3759 "NXCDefs.h"
+6	3760	28		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_Range_Sens_Init, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_Range_Sens_Init
+6	3759	30	#line 3759 "NXCDefs.h"
+6	3759	30	#line 3759 "NXCDefs.h"
+6	3760	30		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_Range_Sens_Init, 0
+6	3759	33	#line 3759 "NXCDefs.h"
+6	3676	33	#line 3676 "NXCDefs.h"
+6	3677	33		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_Range_Sens_Init, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_Range_Sens_Init, 1
+6	3676	37	#line 3676 "NXCDefs.h"
+6	3760	37	#line 3760 "NXCDefs.h"
+6	3760	37	#line 3760 "NXCDefs.h"
+6	3761	37		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_Range_Sens_Init, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_Range_Sens_Init
+6	3760	39	#line 3760 "NXCDefs.h"
+6	3694	39	#line 3694 "NXCDefs.h"
+6	3695	39	#pragma macro 4
+6	3695	39		acquire __ResetSensorMutex
+6	3695	40		mov __ResetSensorPort, __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_Range_Sens_Init
+6	3695	42		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+6	3695	45		release __ResetSensorMutex
+6	5558	46	#line 5558 "NXCDefs.h"
+6	3694	46	#line 3694 "NXCDefs.h"
+6	3761	46	#line 3761 "NXCDefs.h"
+6	3768	46	#line 3768 "NXCDefs.h"
+6	10	46	#line 10 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+6	10	46	#line 10 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+6	11	46		mov __SetSensorMode_7qG2_port_7qG2_000_inline_Range_Sens_Init, __Range_Sens_Init_7qG2_Port_7qG2_000
+6	10	48	#line 10 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+6	10	48	#line 10 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+6	11	48		set __SetSensorMode_7qG2_mode_7qG2_000_inline_Range_Sens_Init, 0
+6	10	51	#line 10 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+6	3676	51	#line 3676 "NXCDefs.h"
+6	3677	51		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_Range_Sens_Init, __SetSensorMode_7qG2_port_7qG2_000_inline_Range_Sens_Init, 1
+6	3676	55	#line 3676 "NXCDefs.h"
+6	11	55	#line 11 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+6	13	55	#line 13 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+6	14	55		subret __Range_Sens_Init_return
+7	14	0	#line 14 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+7	15	0		mov __SetSensorLight_7qG2_port_7qG2_000_inline_Light_Sens_Init, __Light_Sens_Init_7qG2_Port_7qG2_000
+7	14	2	#line 14 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+7	15	2	#line 15 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+7	16	2		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_Light_Sens_Init, __constVal1
+7	3729	4	#line 3729 "NXCDefs.h"
+7	3730	4		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_Light_Sens_Init, __SetSensorLight_7qG2_port_7qG2_000_inline_Light_Sens_Init
+7	3729	6	#line 3729 "NXCDefs.h"
+7	3729	6	#line 3729 "NXCDefs.h"
+7	3730	6		mov __DU0SetSensorLight_inline_Light_Sens_Init, __SetSensorLight_7qG2_bActive_7qG2_000_inline_Light_Sens_Init
+7	3729	8	#line 3729 "NXCDefs.h"
+7	3730	8		tst 5, __zfSetSensorLight_inline_Light_Sens_Init, __DU0SetSensorLight_inline_Light_Sens_Init
+7	3729	11	#line 3729 "NXCDefs.h"
+7	3730	11		brtst 4, __001__NXC_Label_4, __zfSetSensorLight_inline_Light_Sens_Init
+7	3729	14	#line 3729 "NXCDefs.h"
+7	3730	14		set __D0SetSensorLight_inline_Light_Sens_Init, 5
+7	3729	17	#line 3729 "NXCDefs.h"
+7	3730	17		jmp __001__NXC_Label_5
+7	3729	19	#line 3729 "NXCDefs.h"
+7	3730	19		set __D0SetSensorLight_inline_Light_Sens_Init, 6
+7	3729	22	#line 3729 "NXCDefs.h"
+7	3730	22		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_Light_Sens_Init, __D0SetSensorLight_inline_Light_Sens_Init
+7	3663	24	#line 3663 "NXCDefs.h"
+7	3664	24		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_Light_Sens_Init, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_Light_Sens_Init, 0
+7	3663	28	#line 3663 "NXCDefs.h"
+7	3730	28	#line 3730 "NXCDefs.h"
+7	3730	28	#line 3730 "NXCDefs.h"
+7	3731	28		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_Light_Sens_Init, __SetSensorLight_7qG2_port_7qG2_000_inline_Light_Sens_Init
+7	3730	30	#line 3730 "NXCDefs.h"
+7	3730	30	#line 3730 "NXCDefs.h"
+7	3731	30		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_Light_Sens_Init, 128
+7	3730	33	#line 3730 "NXCDefs.h"
+7	3676	33	#line 3676 "NXCDefs.h"
+7	3677	33		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_Light_Sens_Init, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_Light_Sens_Init, 1
+7	3676	37	#line 3676 "NXCDefs.h"
+7	3731	37	#line 3731 "NXCDefs.h"
+7	3731	37	#line 3731 "NXCDefs.h"
+7	3732	37		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_Light_Sens_Init, __SetSensorLight_7qG2_port_7qG2_000_inline_Light_Sens_Init
+7	3731	39	#line 3731 "NXCDefs.h"
+7	3694	39	#line 3694 "NXCDefs.h"
+7	3695	39	#pragma macro 4
+7	3695	39		acquire __ResetSensorMutex
+7	3695	40		mov __ResetSensorPort, __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_Light_Sens_Init
+7	3695	42		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+7	3695	45		release __ResetSensorMutex
+7	5687	46	#line 5687 "NXCDefs.h"
+7	3694	46	#line 3694 "NXCDefs.h"
+7	3732	46	#line 3732 "NXCDefs.h"
+7	15	46	#line 15 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+7	15	46	#line 15 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+7	16	46		mov __SetSensorMode_7qG2_port_7qG2_000_inline_Light_Sens_Init, __Light_Sens_Init_7qG2_Port_7qG2_000
+7	15	48	#line 15 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+7	15	48	#line 15 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+7	16	48		set __SetSensorMode_7qG2_mode_7qG2_000_inline_Light_Sens_Init, 0
+7	15	51	#line 15 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+7	3676	51	#line 3676 "NXCDefs.h"
+7	3677	51		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_Light_Sens_Init, __SetSensorMode_7qG2_port_7qG2_000_inline_Light_Sens_Init, 1
+7	3676	55	#line 3676 "NXCDefs.h"
+7	16	55	#line 16 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+7	19	55	#line 19 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+7	20	55		subret __Light_Sens_Init_return
+8	20	0	#line 20 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+8	21	0		mov __signed_stack_001TurnMotor, __TurnMotor_7qG2_deg_7qG2_000
+8	20	2	#line 20 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+8	20	2	#line 20 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+8	21	2		set __D0TurnMotor, 0
+8	20	5	#line 20 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+8	21	5		cmp 0, __zfTurnMotor, __signed_stack_001TurnMotor, __D0TurnMotor
+8	20	9	#line 20 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+8	21	9		mov __D0TurnMotor, __zfTurnMotor
+8	21	12	#line 21 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+8	22	12		brtst 4, __NXC_Label_511, __zfTurnMotor
+8	21	15	#line 21 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+8	21	15	#line 21 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+8	21	15	#line 21 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+8	21	15	#line 21 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+8	22	15		sub __signed_stack_001TurnMotor, __constVal0, __TurnMotor_7qG2_pwr_7qG2_000
+8	21	19	#line 21 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+8	21	19	#line 21 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+8	22	19		mov __signed_stack_002TurnMotor, __TurnMotor_7qG2_deg_7qG2_000
+8	21	21	#line 21 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+8	21	21	#line 21 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+8	22	21		mov __signed_stack_003TurnMotor, __constValNeg100
+8	21	23	#line 21 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+8	21	23	#line 21 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+8	22	23		set __signed_stack_004TurnMotor, 1
+8	21	26	#line 21 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+8	21	26	#line 21 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+8	22	26		set __D0TurnMotor, 1
+8	22	29	#line 22 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+8	23	29	#pragma macro 35
+8	23	29		mov __rotate_ports3, __OUT_AB
+8	23	31		mov __rotate_power3, __signed_stack_001TurnMotor
+8	23	34		mov __rotate_angle3, __signed_stack_002TurnMotor
+8	23	36		mov __rotate_turnpct3, __signed_stack_003TurnMotor
+8	23	39		mov __rotate_sync3, __signed_stack_004TurnMotor
+8	23	42		mov __rotate_stop3, __D0TurnMotor
+8	23	45		mov __rotate_theRVP3, __constVal32
+8	23	47		mov __rotate_theRVI3, __constVal0
+8	23	49		mov __rotate_theRVD3, __constVal96
+8	23	51		subcall __RotateMotor3, ____RotateMotor3_return
+8	5777	54	#line 5777 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+8	22	54	#line 22 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+8	24	54	#line 24 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+8	25	54		jmp __NXC_Label_522
+8	24	56	#line 24 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+8	24	56	#line 24 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+8	24	56	#line 24 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+8	24	56	#line 24 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+8	25	56		sub __signed_stack_001TurnMotor, __constVal0, __TurnMotor_7qG2_pwr_7qG2_000
+8	24	60	#line 24 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+8	24	60	#line 24 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+8	25	60		mov __signed_stack_002TurnMotor, __TurnMotor_7qG2_deg_7qG2_000
+8	24	62	#line 24 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+8	24	62	#line 24 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+8	25	62		set __signed_stack_003TurnMotor, 100
+8	24	65	#line 24 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+8	24	65	#line 24 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+8	25	65		set __signed_stack_004TurnMotor, 1
+8	24	68	#line 24 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+8	24	68	#line 24 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+8	25	68		set __D0TurnMotor, 1
+8	25	71	#line 25 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+8	26	71	#pragma macro 35
+8	26	71		mov __rotate_ports3, __OUT_AB
+8	26	73		mov __rotate_power3, __signed_stack_001TurnMotor
+8	26	76		mov __rotate_angle3, __signed_stack_002TurnMotor
+8	26	78		mov __rotate_turnpct3, __signed_stack_003TurnMotor
+8	26	81		mov __rotate_sync3, __signed_stack_004TurnMotor
+8	26	84		mov __rotate_stop3, __D0TurnMotor
+8	26	87		mov __rotate_theRVP3, __constVal32
+8	26	89		mov __rotate_theRVI3, __constVal0
+8	26	91		mov __rotate_theRVD3, __constVal96
+8	26	93		subcall __RotateMotor3, ____RotateMotor3_return
+8	5817	96	#line 5817 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+8	25	96	#line 25 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+8	29	96	#line 29 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+8	29	96	#line 29 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+8	30	96		subret __TurnMotor_return
+9	30	0	#line 30 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+9	30	0	#line 30 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+9	30	0	#line 30 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+9	30	0	#line 30 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+9	31	0		mul __TurnMotor_7qG2_deg_7qG2_000, __TurnRobot_7qG2_deg_7qG2_000, __constValf3P5
+9	30	4	#line 30 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+9	30	4	#line 30 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+9	31	4		mov __TurnMotor_7qG2_pwr_7qG2_000, __TurnRobot_7qG2_pwr_7qG2_000
+9	30	6	#line 30 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+9	31	6	#line 31 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+9	32	6		subcall TurnMotor, __TurnMotor_return
+9	31	8	#line 31 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+9	33	8	#line 33 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+9	34	8		subret __TurnRobot_return
+10	35	0	#line 35 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+10	36	0	#pragma macro 7
+10	36	0		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+10	5861	23	#line 5861 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+10	35	23	#line 35 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+10	36	23	#line 36 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+10	37	23	#pragma macro 7
+10	37	23		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+10	5864	46	#line 5864 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+10	36	46	#line 36 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+10	38	46	#line 38 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+10	39	46		subret __Stop_Driving_return
+11	39	0	#line 39 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+11	39	0	#line 39 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+11	39	0	#line 39 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+11	39	0	#line 39 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+11	40	0		sub __D0Drive_Forward, __constVal0, __Drive_Forward_7qG2_pwr_7qG2_000
+11	40	4	#line 40 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+11	41	4	#pragma macro 7
+11	41	4		setout __constVal0, 2, __D0Drive_Forward, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+11	5886	27	#line 5886 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+11	40	27	#line 40 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+11	40	27	#line 40 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+11	40	27	#line 40 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+11	40	27	#line 40 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+11	40	27	#line 40 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+11	41	27		sub __D0Drive_Forward, __constVal0, __Drive_Forward_7qG2_pwr_7qG2_000
+11	41	31	#line 41 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+11	42	31	#pragma macro 7
+11	42	31		setout __constVal1, 2, __D0Drive_Forward, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+11	5899	54	#line 5899 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+11	41	54	#line 41 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+11	43	54	#line 43 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+11	44	54		subret __Drive_Forward_return
+12	44	0	#line 44 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+12	44	0	#line 44 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+12	44	0	#line 44 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+12	44	0	#line 44 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+12	45	0		sub __D0Drive_Backward, __constVal0, __Drive_Backward_7qG2_pwr_7qG2_000
+12	45	4	#line 45 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+12	46	4	#pragma macro 10
+12	46	4		acquire __OnRevMutex
+12	46	5		neg __OnRev_Tmp, __D0Drive_Backward
+12	46	8		setout __constVal0, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+12	46	31		release __OnRevMutex
+12	5921	32	#line 5921 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+12	45	32	#line 45 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+12	45	32	#line 45 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+12	45	32	#line 45 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+12	45	32	#line 45 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+12	45	32	#line 45 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+12	46	32		sub __D0Drive_Backward, __constVal0, __Drive_Backward_7qG2_pwr_7qG2_000
+12	46	36	#line 46 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+12	47	36	#pragma macro 10
+12	47	36		acquire __OnRevMutex
+12	47	37		neg __OnRev_Tmp, __D0Drive_Backward
+12	47	40		setout __constVal1, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+12	47	63		release __OnRevMutex
+12	5934	64	#line 5934 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+12	46	64	#line 46 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+12	48	64	#line 48 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+12	49	64		subret __Drive_Backward_return
+13	49	0	#line 49 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+13	50	0		set __signed_stack_001ShortBeep, 500
+13	49	3	#line 49 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+13	49	3	#line 49 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+13	50	3		set __signed_stack_002ShortBeep, 100
+13	49	6	#line 49 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+13	49	6	#line 49 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+13	50	6		set __signed_stack_003ShortBeep, 4
+13	49	9	#line 49 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+13	49	9	#line 49 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+13	50	9		set __D0ShortBeep, 0
+13	50	12	#line 50 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+13	51	12		acquire __SPTArgsMutex
+13	50	13	#line 50 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+13	51	13		mov __SPTArgs.Frequency, __signed_stack_001ShortBeep
+13	50	16	#line 50 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+13	51	16		mov __SPTArgs.Duration, __signed_stack_002ShortBeep
+13	50	19	#line 50 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+13	51	19		mov __SPTArgs.Volume, __signed_stack_003ShortBeep
+13	50	22	#line 50 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+13	51	22		mov __SPTArgs.Loop, __D0ShortBeep
+13	50	25	#line 50 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+13	51	25		syscall 10, __SPTArgs
+13	50	28	#line 50 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+13	51	28		mov __D0ShortBeep, __SPTArgs.Result
+13	50	31	#line 50 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+13	51	31		release __SPTArgsMutex
+13	50	32	#line 50 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+13	52	32	#line 52 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+13	53	32		subret __ShortBeep_return
+14	53	0	#line 53 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+14	54	0		set __signed_stack_001LongBeep, 500
+14	53	3	#line 53 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+14	53	3	#line 53 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+14	54	3		set __signed_stack_002LongBeep, 1000
+14	53	6	#line 53 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+14	53	6	#line 53 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+14	54	6		set __signed_stack_003LongBeep, 4
+14	53	9	#line 53 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+14	53	9	#line 53 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+14	54	9		set __D0LongBeep, 0
+14	54	12	#line 54 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+14	55	12		acquire __SPTArgsMutex
+14	54	13	#line 54 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+14	55	13		mov __SPTArgs.Frequency, __signed_stack_001LongBeep
+14	54	16	#line 54 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+14	55	16		mov __SPTArgs.Duration, __signed_stack_002LongBeep
+14	54	19	#line 54 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+14	55	19		mov __SPTArgs.Volume, __signed_stack_003LongBeep
+14	54	22	#line 54 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+14	55	22		mov __SPTArgs.Loop, __D0LongBeep
+14	54	25	#line 54 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+14	55	25		syscall 10, __SPTArgs
+14	54	28	#line 54 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+14	55	28		mov __D0LongBeep, __SPTArgs.Result
+14	54	31	#line 54 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+14	55	31		release __SPTArgsMutex
+14	54	32	#line 54 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+14	55	32	#line 55 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h"
+14	56	32		subret __LongBeep_return
+15	13	0	#line 13 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	14	0		set __Touch_Init_7qG2_Port_7qG2_000, 0
+15	13	3	#line 13 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	14	3	#line 14 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	15	3		subcall Touch_Init, __Touch_Init_return
+15	14	5	#line 14 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	14	5	#line 14 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	15	5		set __Wait_7qG2_ms_7qG2_000_inline_initialise, 1000
+15	14	8	#line 14 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	7921	8	#line 7921 "NXCDefs.h"
+15	7922	8		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_initialise
+15	7921	11	#line 7921 "NXCDefs.h"
+15	15	11	#line 15 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	15	11	#line 15 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	16	11		set __signed_stack_001initialise, 0
+15	15	14	#line 15 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	15	14	#line 15 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	16	14		set __signed_stack_002initialise, 1
+15	15	17	#line 15 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	15	17	#line 15 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	16	17		strcat __strbufinitialise, __constStr0009
+15	16	21	#line 16 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	17	21		acquire __TextOutMutex
+15	16	22	#line 16 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	17	22		mov __TextOutArgs.Location.X, __signed_stack_001initialise
+15	16	25	#line 16 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	17	25		mov __TextOutArgs.Location.Y, __signed_stack_002initialise
+15	16	28	#line 16 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	17	28		set __TextOutArgs.Options, 0
+15	16	31	#line 16 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	17	31		mov __TextOutArgs.Text, __strbufinitialise
+15	16	33	#line 16 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	17	33		syscall 13, __TextOutArgs
+15	16	36	#line 16 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	17	36		mov __D0initialise, __TextOutArgs.Result
+15	16	39	#line 16 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	17	39		release __TextOutMutex
+15	16	40	#line 16 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	16	40	#line 16 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	17	40		getin __D0initialise, __constVal0, 4
+15	16	44	#line 16 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	17	44		tst 5, __zfinitialise, __D0initialise
+15	16	47	#line 16 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	17	47		brtst 4, __NXC_Label_578, __zfinitialise
+15	17	50	#line 17 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	18	50		jmp __NXC_Label_577
+15	17	52	#line 17 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	17	52	#line 17 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	18	52		set __ClearLine_7qG2_line_7qG2_000_inline_initialise, 1
+15	17	55	#line 17 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	6076	55	#line 6076 "NXCDefs.h"
+15	6077	55	#pragma macro 7
+15	6077	55		acquire __TextOutMutex
+15	6077	56		mov __TextOutArgs.Location.X, __constVal0
+15	6077	58		mov __TextOutArgs.Location.Y, __ClearLine_7qG2_line_7qG2_000_inline_initialise
+15	6077	60		mov __TextOutArgs.Options, __constVal0
+15	6077	62		mov __TextOutArgs.Text, __BlankLine
+15	6077	64		syscall 13, __TextOutArgs
+15	6077	67		release __TextOutMutex
+15	6165	68	#line 6165 "NXCDefs.h"
+15	6076	68	#line 6076 "NXCDefs.h"
+15	18	68	#line 18 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	18	68	#line 18 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	19	68		set __signed_stack_001initialise, 0
+15	18	71	#line 18 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	18	71	#line 18 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	19	71		set __signed_stack_002initialise, 1
+15	18	74	#line 18 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	18	74	#line 18 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	19	74		strcat __strbufinitialise, __constStr0010
+15	19	78	#line 19 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	20	78		acquire __TextOutMutex
+15	19	79	#line 19 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	20	79		mov __TextOutArgs.Location.X, __signed_stack_001initialise
+15	19	82	#line 19 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	20	82		mov __TextOutArgs.Location.Y, __signed_stack_002initialise
+15	19	85	#line 19 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	20	85		set __TextOutArgs.Options, 0
+15	19	88	#line 19 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	20	88		mov __TextOutArgs.Text, __strbufinitialise
+15	19	90	#line 19 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	20	90		syscall 13, __TextOutArgs
+15	19	93	#line 19 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	20	93		mov __D0initialise, __TextOutArgs.Result
+15	19	96	#line 19 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	20	96		release __TextOutMutex
+15	19	97	#line 19 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	19	97	#line 19 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	20	97		set __Wait_7qG2_ms_7qG2_000_inline_initialise, 5000
+15	19	100	#line 19 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	7921	100	#line 7921 "NXCDefs.h"
+15	7922	100		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_initialise
+15	7921	103	#line 7921 "NXCDefs.h"
+15	20	103	#line 20 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	20	103	#line 20 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	21	103		set __ClearLine_7qG2_line_7qG2_000_inline_initialise, 1
+15	20	106	#line 20 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	6076	106	#line 6076 "NXCDefs.h"
+15	6077	106	#pragma macro 7
+15	6077	106		acquire __TextOutMutex
+15	6077	107		mov __TextOutArgs.Location.X, __constVal0
+15	6077	109		mov __TextOutArgs.Location.Y, __ClearLine_7qG2_line_7qG2_000_inline_initialise
+15	6077	111		mov __TextOutArgs.Options, __constVal0
+15	6077	113		mov __TextOutArgs.Text, __BlankLine
+15	6077	115		syscall 13, __TextOutArgs
+15	6077	118		release __TextOutMutex
+15	6216	119	#line 6216 "NXCDefs.h"
+15	6076	119	#line 6076 "NXCDefs.h"
+15	21	119	#line 21 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	21	119	#line 21 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	22	119		set __Touch_Init_7qG2_Port_7qG2_000, 2
+15	21	122	#line 21 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	22	122	#line 22 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	23	122		subcall Touch_Init, __Touch_Init_return
+15	22	124	#line 22 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	22	124	#line 22 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	23	124		set __Wait_7qG2_ms_7qG2_000_inline_initialise, 1000
+15	22	127	#line 22 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	7921	127	#line 7921 "NXCDefs.h"
+15	7922	127		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_initialise
+15	7921	130	#line 7921 "NXCDefs.h"
+15	23	130	#line 23 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	23	130	#line 23 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	24	130		set __signed_stack_001initialise, 0
+15	23	133	#line 23 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	23	133	#line 23 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	24	133		set __signed_stack_002initialise, 1
+15	23	136	#line 23 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	23	136	#line 23 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	24	136		strcat __strbufinitialise, __constStr0011
+15	24	140	#line 24 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	25	140		acquire __TextOutMutex
+15	24	141	#line 24 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	25	141		mov __TextOutArgs.Location.X, __signed_stack_001initialise
+15	24	144	#line 24 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	25	144		mov __TextOutArgs.Location.Y, __signed_stack_002initialise
+15	24	147	#line 24 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	25	147		set __TextOutArgs.Options, 0
+15	24	150	#line 24 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	25	150		mov __TextOutArgs.Text, __strbufinitialise
+15	24	152	#line 24 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	25	152		syscall 13, __TextOutArgs
+15	24	155	#line 24 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	25	155		mov __D0initialise, __TextOutArgs.Result
+15	24	158	#line 24 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	25	158		release __TextOutMutex
+15	24	159	#line 24 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	24	159	#line 24 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	25	159		getin __D0initialise, __constVal2, 4
+15	24	163	#line 24 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	25	163		tst 5, __zfinitialise, __D0initialise
+15	24	166	#line 24 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	25	166		brtst 4, __NXC_Label_600, __zfinitialise
+15	25	169	#line 25 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	26	169		jmp __NXC_Label_599
+15	25	171	#line 25 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	25	171	#line 25 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	26	171		set __ClearLine_7qG2_line_7qG2_000_inline_initialise, 1
+15	25	174	#line 25 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	6076	174	#line 6076 "NXCDefs.h"
+15	6077	174	#pragma macro 7
+15	6077	174		acquire __TextOutMutex
+15	6077	175		mov __TextOutArgs.Location.X, __constVal0
+15	6077	177		mov __TextOutArgs.Location.Y, __ClearLine_7qG2_line_7qG2_000_inline_initialise
+15	6077	179		mov __TextOutArgs.Options, __constVal0
+15	6077	181		mov __TextOutArgs.Text, __BlankLine
+15	6077	183		syscall 13, __TextOutArgs
+15	6077	186		release __TextOutMutex
+15	6289	187	#line 6289 "NXCDefs.h"
+15	6076	187	#line 6076 "NXCDefs.h"
+15	26	187	#line 26 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	26	187	#line 26 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	27	187		set __signed_stack_001initialise, 0
+15	26	190	#line 26 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	26	190	#line 26 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	27	190		set __signed_stack_002initialise, 1
+15	26	193	#line 26 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	26	193	#line 26 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	27	193		strcat __strbufinitialise, __constStr0010
+15	27	197	#line 27 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	28	197		acquire __TextOutMutex
+15	27	198	#line 27 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	28	198		mov __TextOutArgs.Location.X, __signed_stack_001initialise
+15	27	201	#line 27 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	28	201		mov __TextOutArgs.Location.Y, __signed_stack_002initialise
+15	27	204	#line 27 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	28	204		set __TextOutArgs.Options, 0
+15	27	207	#line 27 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	28	207		mov __TextOutArgs.Text, __strbufinitialise
+15	27	209	#line 27 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	28	209		syscall 13, __TextOutArgs
+15	27	212	#line 27 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	28	212		mov __D0initialise, __TextOutArgs.Result
+15	27	215	#line 27 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	28	215		release __TextOutMutex
+15	27	216	#line 27 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	27	216	#line 27 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	28	216		set __Range_Sens_Init_7qG2_Port_7qG2_000, 3
+15	27	219	#line 27 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	28	219	#line 28 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	29	219		subcall Range_Sens_Init, __Range_Sens_Init_return
+15	28	221	#line 28 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	28	221	#line 28 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	29	221		set __Wait_7qG2_ms_7qG2_000_inline_initialise, 1000
+15	28	224	#line 28 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	7921	224	#line 7921 "NXCDefs.h"
+15	7922	224		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_initialise
+15	7921	227	#line 7921 "NXCDefs.h"
+15	29	227	#line 29 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	29	227	#line 29 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	30	227	#pragma macro 26
+15	30	227		acquire __RLSBmutex3
+15	30	228		mov __RLSReadBuf3, __RLSBbufLSWrite1
+15	30	230		set __RLSBytesCount3, 1
+15	30	233		wait2 NA, __constVal15
+15	30	236		subcall __ReadLSBytes3, ____ReadLSBytes3_return
+15	30	238		index __D0initialise, __RLSReadBuf3, 65535
+15	30	242		release __RLSBmutex3
+15	6343	243	#line 6343 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	29	243	#line 29 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	30	243		mov __initialise_7qG2_Range_7qG2_000, __D0initialise
+15	29	245	#line 29 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	29	245	#line 29 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	30	245	#line 30 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	31	245		set __ClearLine_7qG2_line_7qG2_000_inline_initialise, 1
+15	30	248	#line 30 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	6076	248	#line 6076 "NXCDefs.h"
+15	6077	248	#pragma macro 7
+15	6077	248		acquire __TextOutMutex
+15	6077	249		mov __TextOutArgs.Location.X, __constVal0
+15	6077	251		mov __TextOutArgs.Location.Y, __ClearLine_7qG2_line_7qG2_000_inline_initialise
+15	6077	253		mov __TextOutArgs.Options, __constVal0
+15	6077	255		mov __TextOutArgs.Text, __BlankLine
+15	6077	257		syscall 13, __TextOutArgs
+15	6077	260		release __TextOutMutex
+15	6357	261	#line 6357 "NXCDefs.h"
+15	6076	261	#line 6076 "NXCDefs.h"
+15	31	261	#line 31 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	31	261	#line 31 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	32	261		set __signed_stack_001initialise, 0
+15	31	264	#line 31 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	31	264	#line 31 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	32	264		set __signed_stack_002initialise, 1
+15	31	267	#line 31 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	31	267	#line 31 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	32	267		strcat __strbufinitialise, __constStr0012
+15	32	271	#line 32 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	33	271		acquire __TextOutMutex
+15	32	272	#line 32 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	33	272		mov __TextOutArgs.Location.X, __signed_stack_001initialise
+15	32	275	#line 32 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	33	275		mov __TextOutArgs.Location.Y, __signed_stack_002initialise
+15	32	278	#line 32 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	33	278		set __TextOutArgs.Options, 0
+15	32	281	#line 32 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	33	281		mov __TextOutArgs.Text, __strbufinitialise
+15	32	283	#line 32 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	33	283		syscall 13, __TextOutArgs
+15	32	286	#line 32 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	33	286		mov __D0initialise, __TextOutArgs.Result
+15	32	289	#line 32 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	33	289		release __TextOutMutex
+15	32	290	#line 32 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	32	290	#line 32 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	33	290	#pragma macro 26
+15	33	290		acquire __RLSBmutex3
+15	33	291		mov __RLSReadBuf3, __RLSBbufLSWrite1
+15	33	293		set __RLSBytesCount3, 1
+15	33	296		wait2 NA, __constVal15
+15	33	299		subcall __ReadLSBytes3, ____ReadLSBytes3_return
+15	33	301		index __D0initialise, __RLSReadBuf3, 65535
+15	33	305		release __RLSBmutex3
+15	6393	306	#line 6393 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	32	306	#line 32 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	33	306		mov __signed_stack_001initialise, __D0initialise
+15	32	308	#line 32 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	32	308	#line 32 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	32	308	#line 32 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	32	308	#line 32 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	33	308		sub __D0initialise, __initialise_7qG2_Range_7qG2_000, __constVal10
+15	32	312	#line 32 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	33	312		cmp 1, __zfinitialise, __signed_stack_001initialise, __D0initialise
+15	32	316	#line 32 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	33	316		mov __D0initialise, __zfinitialise
+15	32	318	#line 32 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	33	318		brtst 4, __NXC_Label_624, __zfinitialise
+15	32	321	#line 32 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	33	321		mov __signed_stack_001initialise, __D0initialise
+15	32	323	#line 32 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	33	323	#pragma macro 26
+15	33	323		acquire __RLSBmutex3
+15	33	324		mov __RLSReadBuf3, __RLSBbufLSWrite1
+15	33	326		set __RLSBytesCount3, 1
+15	33	329		wait2 NA, __constVal15
+15	33	332		subcall __ReadLSBytes3, ____ReadLSBytes3_return
+15	33	334		index __D0initialise, __RLSReadBuf3, 65535
+15	33	338		release __RLSBmutex3
+15	6417	339	#line 6417 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	32	339	#line 32 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	33	339		mov __signed_stack_002initialise, __D0initialise
+15	32	341	#line 32 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	32	341	#line 32 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	32	341	#line 32 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	32	341	#line 32 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	33	341		add __D0initialise, __initialise_7qG2_Range_7qG2_000, __constVal10
+15	32	345	#line 32 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	33	345		cmp 0, __zfinitialise, __signed_stack_002initialise, __D0initialise
+15	32	349	#line 32 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	32	349	#line 32 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	33	349		and __D0initialise, __signed_stack_001initialise, __zfinitialise
+15	32	353	#line 32 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	33	353		tst 5, __zfinitialise, __D0initialise
+15	32	356	#line 32 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	33	356		brtst 4, __NXC_Label_622, __zfinitialise
+15	33	359	#line 33 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	34	359		jmp __NXC_Label_621
+15	33	361	#line 33 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	33	361	#line 33 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	34	361		set __ClearLine_7qG2_line_7qG2_000_inline_initialise, 1
+15	33	364	#line 33 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	6076	364	#line 6076 "NXCDefs.h"
+15	6077	364	#pragma macro 7
+15	6077	364		acquire __TextOutMutex
+15	6077	365		mov __TextOutArgs.Location.X, __constVal0
+15	6077	367		mov __TextOutArgs.Location.Y, __ClearLine_7qG2_line_7qG2_000_inline_initialise
+15	6077	369		mov __TextOutArgs.Options, __constVal0
+15	6077	371		mov __TextOutArgs.Text, __BlankLine
+15	6077	373		syscall 13, __TextOutArgs
+15	6077	376		release __TextOutMutex
+15	6455	377	#line 6455 "NXCDefs.h"
+15	6076	377	#line 6076 "NXCDefs.h"
+15	34	377	#line 34 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	34	377	#line 34 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	35	377		set __signed_stack_001initialise, 0
+15	34	380	#line 34 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	34	380	#line 34 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	35	380		set __signed_stack_002initialise, 1
+15	34	383	#line 34 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	34	383	#line 34 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	35	383		strcat __strbufinitialise, __constStr0010
+15	35	387	#line 35 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	36	387		acquire __TextOutMutex
+15	35	388	#line 35 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	36	388		mov __TextOutArgs.Location.X, __signed_stack_001initialise
+15	35	391	#line 35 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	36	391		mov __TextOutArgs.Location.Y, __signed_stack_002initialise
+15	35	394	#line 35 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	36	394		set __TextOutArgs.Options, 0
+15	35	397	#line 35 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	36	397		mov __TextOutArgs.Text, __strbufinitialise
+15	35	399	#line 35 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	36	399		syscall 13, __TextOutArgs
+15	35	402	#line 35 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	36	402		mov __D0initialise, __TextOutArgs.Result
+15	35	405	#line 35 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	36	405		release __TextOutMutex
+15	35	406	#line 35 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	35	406	#line 35 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	36	406		set __Wait_7qG2_ms_7qG2_000_inline_initialise, 5000
+15	35	409	#line 35 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	7921	409	#line 7921 "NXCDefs.h"
+15	7922	409		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_initialise
+15	7921	412	#line 7921 "NXCDefs.h"
+15	36	412	#line 36 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	36	412	#line 36 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	37	412		set __Light_Sens_Init_7qG2_Port_7qG2_000, 1
+15	36	415	#line 36 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	37	415	#line 37 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	38	415		subcall Light_Sens_Init, __Light_Sens_Init_return
+15	37	417	#line 37 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	37	417	#line 37 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	38	417		set __Wait_7qG2_ms_7qG2_000_inline_initialise, 1000
+15	37	420	#line 37 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	7921	420	#line 7921 "NXCDefs.h"
+15	7922	420		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_initialise
+15	7921	423	#line 7921 "NXCDefs.h"
+15	38	423	#line 38 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	38	423	#line 38 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	39	423		getin __initialise_7qG2_Light_7qG2_000, __constVal1, 4
+15	38	427	#line 38 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	38	427	#line 38 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	38	427	#line 38 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	39	427	#line 39 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	40	427		set __signed_stack_001initialise, 0
+15	39	430	#line 39 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	39	430	#line 39 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	40	430		set __signed_stack_002initialise, 1
+15	39	433	#line 39 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	39	433	#line 39 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	40	433		strcat __strbufinitialise, __constStr0013
+15	41	437	#line 41 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	42	437		acquire __TextOutMutex
+15	41	438	#line 41 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	42	438		mov __TextOutArgs.Location.X, __signed_stack_001initialise
+15	41	441	#line 41 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	42	441		mov __TextOutArgs.Location.Y, __signed_stack_002initialise
+15	41	444	#line 41 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	42	444		set __TextOutArgs.Options, 0
+15	41	447	#line 41 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	42	447		mov __TextOutArgs.Text, __strbufinitialise
+15	41	449	#line 41 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	42	449		syscall 13, __TextOutArgs
+15	41	452	#line 41 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	42	452		mov __D0initialise, __TextOutArgs.Result
+15	41	455	#line 41 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	42	455		release __TextOutMutex
+15	41	456	#line 41 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	41	456	#line 41 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	42	456		getin __signed_stack_001initialise, __constVal1, 4
+15	41	460	#line 41 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	41	460	#line 41 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	41	460	#line 41 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	41	460	#line 41 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	41	460	#line 41 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	42	460		sub __D0initialise, __initialise_7qG2_Light_7qG2_000, __constVal100
+15	41	464	#line 41 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	42	464		cmp 1, __zfinitialise, __signed_stack_001initialise, __D0initialise
+15	41	468	#line 41 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	42	468		mov __D0initialise, __zfinitialise
+15	41	470	#line 41 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	42	470		brtst 4, __NXC_Label_654, __zfinitialise
+15	41	473	#line 41 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	42	473		mov __signed_stack_001initialise, __D0initialise
+15	41	475	#line 41 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	42	475		getin __signed_stack_002initialise, __constVal1, 4
+15	41	479	#line 41 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	41	479	#line 41 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	41	479	#line 41 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	41	479	#line 41 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	41	479	#line 41 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	42	479		add __D0initialise, __initialise_7qG2_Light_7qG2_000, __constVal100
+15	41	483	#line 41 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	42	483		cmp 0, __zfinitialise, __signed_stack_002initialise, __D0initialise
+15	41	487	#line 41 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	41	487	#line 41 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	42	487		and __D0initialise, __signed_stack_001initialise, __zfinitialise
+15	41	491	#line 41 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	42	491		tst 5, __zfinitialise, __D0initialise
+15	41	494	#line 41 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	42	494		brtst 4, __NXC_Label_652, __zfinitialise
+15	42	497	#line 42 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	43	497		jmp __NXC_Label_651
+15	42	499	#line 42 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	42	499	#line 42 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	43	499		set __ClearLine_7qG2_line_7qG2_000_inline_initialise, 1
+15	42	502	#line 42 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	6076	502	#line 6076 "NXCDefs.h"
+15	6077	502	#pragma macro 7
+15	6077	502		acquire __TextOutMutex
+15	6077	503		mov __TextOutArgs.Location.X, __constVal0
+15	6077	505		mov __TextOutArgs.Location.Y, __ClearLine_7qG2_line_7qG2_000_inline_initialise
+15	6077	507		mov __TextOutArgs.Options, __constVal0
+15	6077	509		mov __TextOutArgs.Text, __BlankLine
+15	6077	511		syscall 13, __TextOutArgs
+15	6077	514		release __TextOutMutex
+15	6621	515	#line 6621 "NXCDefs.h"
+15	6076	515	#line 6076 "NXCDefs.h"
+15	43	515	#line 43 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	43	515	#line 43 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	44	515		set __signed_stack_001initialise, 0
+15	43	518	#line 43 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	43	518	#line 43 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	44	518		set __signed_stack_002initialise, 1
+15	43	521	#line 43 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	43	521	#line 43 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	44	521		strcat __strbufinitialise, __constStr0010
+15	44	525	#line 44 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	45	525		acquire __TextOutMutex
+15	44	526	#line 44 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	45	526		mov __TextOutArgs.Location.X, __signed_stack_001initialise
+15	44	529	#line 44 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	45	529		mov __TextOutArgs.Location.Y, __signed_stack_002initialise
+15	44	532	#line 44 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	45	532		set __TextOutArgs.Options, 0
+15	44	535	#line 44 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	45	535		mov __TextOutArgs.Text, __strbufinitialise
+15	44	537	#line 44 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	45	537		syscall 13, __TextOutArgs
+15	44	540	#line 44 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	45	540		mov __D0initialise, __TextOutArgs.Result
+15	44	543	#line 44 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	45	543		release __TextOutMutex
+15	44	544	#line 44 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	44	544	#line 44 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	45	544		set __Wait_7qG2_ms_7qG2_000_inline_initialise, 5000
+15	44	547	#line 44 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	7921	547	#line 7921 "NXCDefs.h"
+15	7922	547		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_initialise
+15	7921	550	#line 7921 "NXCDefs.h"
+15	45	550	#line 45 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	45	550	#line 45 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	46	550		set __ClearLine_7qG2_line_7qG2_000_inline_initialise, 1
+15	45	553	#line 45 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	6076	553	#line 6076 "NXCDefs.h"
+15	6077	553	#pragma macro 7
+15	6077	553		acquire __TextOutMutex
+15	6077	554		mov __TextOutArgs.Location.X, __constVal0
+15	6077	556		mov __TextOutArgs.Location.Y, __ClearLine_7qG2_line_7qG2_000_inline_initialise
+15	6077	558		mov __TextOutArgs.Options, __constVal0
+15	6077	560		mov __TextOutArgs.Text, __BlankLine
+15	6077	562		syscall 13, __TextOutArgs
+15	6077	565		release __TextOutMutex
+15	6672	566	#line 6672 "NXCDefs.h"
+15	6076	566	#line 6076 "NXCDefs.h"
+15	46	566	#line 46 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	46	566	#line 46 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	47	566		set __signed_stack_001initialise, 0
+15	46	569	#line 46 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	46	569	#line 46 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	47	569		set __signed_stack_002initialise, 1
+15	46	572	#line 46 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	46	572	#line 46 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	47	572		strcat __strbufinitialise, __constStr0014
+15	47	576	#line 47 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	48	576		acquire __TextOutMutex
+15	47	577	#line 47 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	48	577		mov __TextOutArgs.Location.X, __signed_stack_001initialise
+15	47	580	#line 47 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	48	580		mov __TextOutArgs.Location.Y, __signed_stack_002initialise
+15	47	583	#line 47 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	48	583		set __TextOutArgs.Options, 0
+15	47	586	#line 47 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	48	586		mov __TextOutArgs.Text, __strbufinitialise
+15	47	588	#line 47 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	48	588		syscall 13, __TextOutArgs
+15	47	591	#line 47 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	48	591		mov __D0initialise, __TextOutArgs.Result
+15	47	594	#line 47 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	48	594		release __TextOutMutex
+15	47	595	#line 47 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	48	595	#line 48 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h"
+15	49	595		subret __initialise_return
+16	19	0	#line 19 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+16	20	0		set __signed_stack_001TurnTurret, 30
+16	19	3	#line 19 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+16	19	3	#line 19 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+16	20	3		mov __D0TurnTurret, __TurnTurret_7qG2_deg_7qG2_000
+16	20	5	#line 20 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+16	21	5	#pragma macro 33
+16	21	5		acquire __rotateMutex2
+16	21	6		arrbuild __rotate_ports2, __constVal2
+16	21	10		mov __rotate_power2, __signed_stack_001TurnTurret
+16	21	12		mov __rotate_angle2, __D0TurnTurret
+16	21	14		mov __rotate_turnpct2, __constVal0
+16	21	16		mov __rotate_sync2, __constVal0
+16	21	18		mov __rotate_stop2, __constVal1
+16	21	20		mov __rotate_theRVP2, __constVal32
+16	21	22		mov __rotate_theRVI2, __constVal0
+16	21	24		mov __rotate_theRVD2, __constVal96
+16	21	26		subcall __RotateMotor2, ____RotateMotor2_return
+16	21	29		release __rotateMutex2
+16	6734	30	#line 6734 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+16	20	30	#line 20 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+16	21	30	#line 21 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+16	21	30	#line 21 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+16	22	30		add scanner_currentRotation, scanner_currentRotation, __TurnTurret_7qG2_deg_7qG2_000
+16	21	34	#line 21 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+16	23	34	#line 23 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+16	24	34		subret __TurnTurret_return
+17	25	0	#line 25 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+17	26	0		set __signed_stack_001CenterTurret, 30
+17	25	3	#line 25 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+17	25	3	#line 25 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+17	25	3	#line 25 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+17	25	3	#line 25 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+17	25	3	#line 25 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+17	26	3		sub __D0CenterTurret, __constVal0, scanner_currentRotation
+17	26	7	#line 26 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+17	27	7	#pragma macro 33
+17	27	7		acquire __rotateMutex2
+17	27	8		arrbuild __rotate_ports2, __constVal2
+17	27	12		mov __rotate_power2, __signed_stack_001CenterTurret
+17	27	14		mov __rotate_angle2, __D0CenterTurret
+17	27	16		mov __rotate_turnpct2, __constVal0
+17	27	18		mov __rotate_sync2, __constVal0
+17	27	20		mov __rotate_stop2, __constVal1
+17	27	22		mov __rotate_theRVP2, __constVal32
+17	27	24		mov __rotate_theRVI2, __constVal0
+17	27	26		mov __rotate_theRVD2, __constVal96
+17	27	28		subcall __RotateMotor2, ____RotateMotor2_return
+17	27	31		release __rotateMutex2
+17	6765	32	#line 6765 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+17	26	32	#line 26 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+17	27	32	#line 27 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+17	28	32		set scanner_currentRotation, 0
+17	27	35	#line 27 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+17	27	35	#line 27 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+17	30	35	#line 30 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+17	31	35		subret __CenterTurret_return
+18	52	0	#line 52 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	53	0		set __UltrasonicScan_7qG2_sensor_value_7qG2_000, 0
+18	52	3	#line 52 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	52	3	#line 52 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	52	3	#line 52 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	3768	3	#line 3768 "NXCDefs.h"
+18	3769	3		mov __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_UltrasonicScan, __constVal3
+18	3768	5	#line 3768 "NXCDefs.h"
+18	3768	5	#line 3768 "NXCDefs.h"
+18	3769	5		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_SetSensorUltrasonic_inline_UltrasonicScan, __constVal1
+18	3758	7	#line 3758 "NXCDefs.h"
+18	3759	7		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_UltrasonicScan, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_UltrasonicScan
+18	3758	9	#line 3758 "NXCDefs.h"
+18	3758	9	#line 3758 "NXCDefs.h"
+18	3759	9		mov __DU0SetSensorLowspeed_inline_SetSensorUltrasonic, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_SetSensorUltrasonic_inline_UltrasonicScan
+18	3758	11	#line 3758 "NXCDefs.h"
+18	3759	11		tst 5, __zfSetSensorLowspeed_inline_SetSensorUltrasonic, __DU0SetSensorLowspeed_inline_SetSensorUltrasonic
+18	3758	14	#line 3758 "NXCDefs.h"
+18	3759	14		brtst 4, __001__002__NXC_Label_36, __zfSetSensorLowspeed_inline_SetSensorUltrasonic
+18	3758	17	#line 3758 "NXCDefs.h"
+18	3759	17		set __D0SetSensorLowspeed_inline_SetSensorUltrasonic, 11
+18	3758	20	#line 3758 "NXCDefs.h"
+18	3759	20		jmp __001__002__NXC_Label_37
+18	3758	22	#line 3758 "NXCDefs.h"
+18	3759	22		set __D0SetSensorLowspeed_inline_SetSensorUltrasonic, 10
+18	3758	25	#line 3758 "NXCDefs.h"
+18	3759	25		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_UltrasonicScan, __D0SetSensorLowspeed_inline_SetSensorUltrasonic
+18	3663	27	#line 3663 "NXCDefs.h"
+18	3664	27		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_UltrasonicScan, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_UltrasonicScan, 0
+18	3663	31	#line 3663 "NXCDefs.h"
+18	3759	31	#line 3759 "NXCDefs.h"
+18	3759	31	#line 3759 "NXCDefs.h"
+18	3760	31		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_UltrasonicScan, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_UltrasonicScan
+18	3759	33	#line 3759 "NXCDefs.h"
+18	3759	33	#line 3759 "NXCDefs.h"
+18	3760	33		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_UltrasonicScan, 0
+18	3759	36	#line 3759 "NXCDefs.h"
+18	3676	36	#line 3676 "NXCDefs.h"
+18	3677	36		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_UltrasonicScan, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_UltrasonicScan, 1
+18	3676	40	#line 3676 "NXCDefs.h"
+18	3760	40	#line 3760 "NXCDefs.h"
+18	3760	40	#line 3760 "NXCDefs.h"
+18	3761	40		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_UltrasonicScan, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_UltrasonicScan
+18	3760	42	#line 3760 "NXCDefs.h"
+18	3694	42	#line 3694 "NXCDefs.h"
+18	3695	42	#pragma macro 4
+18	3695	42		acquire __ResetSensorMutex
+18	3695	43		mov __ResetSensorPort, __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_UltrasonicScan
+18	3695	45		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+18	3695	48		release __ResetSensorMutex
+18	7059	49	#line 7059 "NXCDefs.h"
+18	3694	49	#line 3694 "NXCDefs.h"
+18	3761	49	#line 3761 "NXCDefs.h"
+18	3768	49	#line 3768 "NXCDefs.h"
+18	55	49	#line 55 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	55	49	#line 55 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	56	49		mov __TurnTurret_7qG2_deg_7qG2_000, __constValNeg180
+18	55	51	#line 55 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	57	51	#line 57 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	58	51		subcall TurnTurret, __TurnTurret_return
+18	57	53	#line 57 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	57	53	#line 57 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	58	53		mov __signed_stack_001UltrasonicScan, scanner_currentRotation
+18	57	55	#line 57 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	57	55	#line 57 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	58	55		set __D0UltrasonicScan, 180
+18	57	58	#line 57 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	58	58		cmp 0, __zfUltrasonicScan, __signed_stack_001UltrasonicScan, __D0UltrasonicScan
+18	57	62	#line 57 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	58	62		mov __D0UltrasonicScan, __zfUltrasonicScan
+18	59	65	#line 59 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	60	65		brtst 4, __NXC_Label_720, __zfUltrasonicScan
+18	59	68	#line 59 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	60	68		set __TurnTurret_7qG2_deg_7qG2_000, 20
+18	59	71	#line 59 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	62	71	#line 62 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	63	71		subcall TurnTurret, __TurnTurret_return
+18	62	73	#line 62 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	62	73	#line 62 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	63	73		set __Wait_7qG2_ms_7qG2_000_inline_UltrasonicScan, 300
+18	62	76	#line 62 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	7921	76	#line 7921 "NXCDefs.h"
+18	7922	76		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_UltrasonicScan
+18	7921	79	#line 7921 "NXCDefs.h"
+18	65	79	#line 65 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	65	79	#line 65 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	66	79	#pragma macro 26
+18	66	79		acquire __RLSBmutex3
+18	66	80		mov __RLSReadBuf3, __RLSBbufLSWrite1
+18	66	82		set __RLSBytesCount3, 1
+18	66	85		wait2 NA, __constVal15
+18	66	88		subcall __ReadLSBytes3, ____ReadLSBytes3_return
+18	66	90		index __D0UltrasonicScan, __RLSReadBuf3, 65535
+18	66	94		release __RLSBmutex3
+18	7112	95	#line 7112 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	65	95	#line 65 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	66	95		mov __UltrasonicScan_7qG2_sensor_value_7qG2_000, __D0UltrasonicScan
+18	65	97	#line 65 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	65	97	#line 65 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	6069	97	#line 6069 "NXCDefs.h"
+18	6070	97	#pragma macro 6
+18	6070	97		acquire __PointOutMutex
+18	6070	98		mov __PointOutArgs.Location.X, __constVal200
+18	6070	101		mov __PointOutArgs.Location.Y, __constVal200
+18	6070	104		mov __PointOutArgs.Options, __constVal1
+18	6070	106		syscall 14, __PointOutArgs
+18	6070	109		release __PointOutMutex
+18	7120	110	#line 7120 "NXCDefs.h"
+18	6069	110	#line 6069 "NXCDefs.h"
+18	69	110	#line 69 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	69	110	#line 69 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	70	110		set __signed_stack_001UltrasonicScan, 0
+18	69	113	#line 69 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	69	113	#line 69 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	70	113		set __signed_stack_002UltrasonicScan, 0
+18	69	116	#line 69 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	69	116	#line 69 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	70	116	#pragma macro 26
+18	70	116		acquire __RLSBmutex3
+18	70	117		mov __RLSReadBuf3, __RLSBbufLSWrite1
+18	70	119		set __RLSBytesCount3, 1
+18	70	122		wait2 NA, __constVal15
+18	70	125		subcall __ReadLSBytes3, ____ReadLSBytes3_return
+18	70	127		index __D0UltrasonicScan, __RLSReadBuf3, 65535
+18	70	131		release __RLSBmutex3
+18	7136	132	#line 7136 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	72	132	#line 72 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	73	132		acquire __TextOutMutex
+18	72	133	#line 72 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	73	133		mov __TextOutArgs.Location.X, __signed_stack_001UltrasonicScan
+18	72	136	#line 72 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	73	136		mov __TextOutArgs.Location.Y, __signed_stack_002UltrasonicScan
+18	72	139	#line 72 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	73	139		set __TextOutArgs.Options, 0
+18	72	142	#line 72 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	73	142		numtostr __TextOutArgs.Text, __D0UltrasonicScan
+18	72	145	#line 72 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	73	145		syscall 13, __TextOutArgs
+18	72	148	#line 72 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	73	148		mov __D0UltrasonicScan, __TextOutArgs.Result
+18	72	151	#line 72 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	73	151		release __TextOutMutex
+18	72	152	#line 72 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	72	152	#line 72 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	72	152	#line 72 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	73	152		mov __signed_stack_001UltrasonicScan, __UltrasonicScan_7qG2_sensor_value_7qG2_000
+18	72	154	#line 72 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	72	154	#line 72 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	73	154		set __D0UltrasonicScan, 30
+18	72	157	#line 72 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	73	157		cmp 1, __zfUltrasonicScan, __signed_stack_001UltrasonicScan, __D0UltrasonicScan
+18	72	161	#line 72 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	73	161		mov __D0UltrasonicScan, __zfUltrasonicScan
+18	74	164	#line 74 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	75	164		brtst 4, __NXC_Label_737, __zfUltrasonicScan
+18	75	167	#line 75 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	76	167		subcall CenterTurret, __CenterTurret_return
+18	75	169	#line 75 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	76	169	#line 76 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	77	169		mov __D0UltrasonicScan, scanner_currentRotation
+18	76	171	#line 76 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	77	171		subret __UltrasonicScan_return
+18	76	173	#line 76 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	81	173	#line 81 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	81	173	#line 81 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	82	173		jmp __NXC_Label_719
+18	81	175	#line 81 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	82	175	#line 82 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	83	175		subcall CenterTurret, __CenterTurret_return
+18	82	177	#line 82 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	83	177	#line 83 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	84	177		set __D0UltrasonicScan, 0
+18	83	180	#line 83 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	84	180		subret __UltrasonicScan_return
+18	83	182	#line 83 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	84	182	#line 84 "C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h"
+18	85	182		subret __UltrasonicScan_return
+19	41	0	#line 41 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	42	0		mov __unsigned_stack_001Look_Back, reverse
+19	41	2	#line 41 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	41	2	#line 41 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	42	2		set __D0Look_Back, 0
+19	41	5	#line 41 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	42	5		cmp 4, __zfLook_Back, __unsigned_stack_001Look_Back, __D0Look_Back
+19	41	9	#line 41 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	42	9		mov __D0Look_Back, __zfLook_Back
+19	42	12	#line 42 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	43	12		brtst 4, __NXC_Label_786, __zfLook_Back
+19	42	15	#line 42 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	43	15		getin __D0Look_Back, __constVal2, 4
+19	42	19	#line 42 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	43	19		not __D0Look_Back, __D0Look_Back
+19	43	22	#line 43 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	44	22		tst 5, __zfLook_Back, __D0Look_Back
+19	43	25	#line 43 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	44	25		brtst 4, __NXC_Label_791, __zfLook_Back
+19	44	28	#line 44 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	45	28		subcall Stop_Driving, __Stop_Driving_return
+19	44	30	#line 44 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	44	30	#line 44 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	45	30		set __Drive_Backward_7qG2_pwr_7qG2_000, 50
+19	44	33	#line 44 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	45	33	#line 45 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	46	33		subcall Drive_Backward, __Drive_Backward_return
+19	45	35	#line 45 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	45	35	#line 45 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	46	35		set __TurnRobot_7qG2_deg_7qG2_000, 360
+19	45	38	#line 45 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	45	38	#line 45 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	46	38		set __TurnRobot_7qG2_pwr_7qG2_000, 50
+19	45	41	#line 45 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	46	41	#line 46 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	47	41		subcall TurnRobot, __TurnRobot_return
+19	46	43	#line 46 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	46	43	#line 46 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	47	43		set __Wait_7qG2_ms_7qG2_000_inline_Look_Back, 1000
+19	46	46	#line 46 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	7921	46	#line 7921 "NXCDefs.h"
+19	7922	46		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_Look_Back
+19	7921	49	#line 7921 "NXCDefs.h"
+19	47	49	#line 47 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	48	49	#line 48 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	49	49		subcall Stop_Driving, __Stop_Driving_return
+19	48	51	#line 48 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	48	51	#line 48 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	49	51		set __Drive_Forward_7qG2_pwr_7qG2_000, 50
+19	48	54	#line 48 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	49	54	#line 49 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	50	54		subcall Drive_Forward, __Drive_Forward_return
+19	49	56	#line 49 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	51	56	#line 51 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	51	56	#line 51 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	52	56		jmp __NXC_Label_785
+19	51	58	#line 51 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	51	58	#line 51 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	52	58		mov __unsigned_stack_001Look_Back, reverse
+19	51	60	#line 51 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	51	60	#line 51 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	52	60		set __D0Look_Back, 1
+19	51	63	#line 51 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	52	63		cmp 4, __zfLook_Back, __unsigned_stack_001Look_Back, __D0Look_Back
+19	51	67	#line 51 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	52	67		mov __D0Look_Back, __zfLook_Back
+19	52	70	#line 52 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	53	70		brtst 4, __NXC_Label_803, __zfLook_Back
+19	52	73	#line 52 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	53	73		getin __D0Look_Back, __constVal2, 4
+19	52	77	#line 52 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	53	77		not __D0Look_Back, __D0Look_Back
+19	53	80	#line 53 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	54	80		tst 5, __zfLook_Back, __D0Look_Back
+19	53	83	#line 53 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	54	83		brtst 4, __NXC_Label_808, __zfLook_Back
+19	54	86	#line 54 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	55	86		set stuck, 1
+19	54	89	#line 54 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	54	89	#line 54 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	54	89	#line 54 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	55	89		set __signed_stack_001Look_Back, 1
+19	54	92	#line 54 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	54	92	#line 54 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	55	92		set __signed_stack_002Look_Back, 1
+19	54	95	#line 54 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	54	95	#line 54 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	55	95		strcat __strbufLook_Back, __constStr0017
+19	55	99	#line 55 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	56	99		acquire __TextOutMutex
+19	55	100	#line 55 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	56	100		mov __TextOutArgs.Location.X, __signed_stack_001Look_Back
+19	55	103	#line 55 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	56	103		mov __TextOutArgs.Location.Y, __signed_stack_002Look_Back
+19	55	106	#line 55 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	56	106		set __TextOutArgs.Options, 0
+19	55	109	#line 55 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	56	109		mov __TextOutArgs.Text, __strbufLook_Back
+19	55	111	#line 55 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	56	111		syscall 13, __TextOutArgs
+19	55	114	#line 55 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	56	114		mov __D0Look_Back, __TextOutArgs.Result
+19	55	117	#line 55 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	56	117		release __TextOutMutex
+19	55	118	#line 55 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	57	118	#line 57 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	59	118	#line 59 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	60	118		jmp __NXC_Label_802
+19	59	120	#line 59 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+19	60	120		exit -1, -1
+20	60	0	#line 60 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	60	0	#line 60 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	61	0		not __DU0Object_Detection, stuck
+20	61	3	#line 61 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	62	3		tst 5, __zfObject_Detection, __DU0Object_Detection
+20	61	6	#line 61 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	62	6		brtst 4, __NXC_Label_816, __zfObject_Detection
+20	61	9	#line 61 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	62	9	#pragma macro 26
+20	62	9		acquire __RLSBmutex3
+20	62	10		mov __RLSReadBuf3, __RLSBbufLSWrite1
+20	62	12		set __RLSBytesCount3, 1
+20	62	15		wait2 NA, __constVal15
+20	62	18		subcall __ReadLSBytes3, ____ReadLSBytes3_return
+20	62	20		index __D0Object_Detection, __RLSReadBuf3, 65535
+20	62	24		release __RLSBmutex3
+20	7571	25	#line 7571 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	61	25	#line 61 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	62	25		mov __signed_stack_001Object_Detection, __D0Object_Detection
+20	61	27	#line 61 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	62	27		set __D0Object_Detection, 30
+20	61	30	#line 61 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	62	30		cmp 0, __zfObject_Detection, __signed_stack_001Object_Detection, __D0Object_Detection
+20	61	34	#line 61 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	62	34		mov __D0Object_Detection, __zfObject_Detection
+20	62	37	#line 62 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	63	37		brtst 4, __NXC_Label_821, __zfObject_Detection
+20	63	40	#line 63 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	64	40		subcall Stop_Driving, __Stop_Driving_return
+20	63	42	#line 63 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	64	42	#line 64 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	65	42		subcall UltrasonicScan, __UltrasonicScan_return
+20	64	44	#line 64 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	65	44		mov angle, __D0UltrasonicScan
+20	64	46	#line 64 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	64	46	#line 64 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	64	46	#line 64 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	65	46		mov __TurnRobot_7qG2_deg_7qG2_000, __D0UltrasonicScan
+20	64	48	#line 64 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	64	48	#line 64 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	65	48		set __TurnRobot_7qG2_pwr_7qG2_000, 50
+20	64	51	#line 64 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	65	51	#line 65 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	66	51		subcall TurnRobot, __TurnRobot_return
+20	65	53	#line 65 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	65	53	#line 65 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	66	53		set __Drive_Forward_7qG2_pwr_7qG2_000, 50
+20	65	56	#line 65 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	66	56	#line 66 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	67	56		subcall Drive_Forward, __Drive_Forward_return
+20	66	58	#line 66 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	67	58	#line 67 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	68	58		subcall ShortBeep, __ShortBeep_return
+20	67	60	#line 67 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	68	60	#line 68 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	68	60	#line 68 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	69	60		getin __D0Object_Detection, __constVal0, 4
+20	68	64	#line 68 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	69	64		not __D0Object_Detection, __D0Object_Detection
+20	69	67	#line 69 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	70	67		tst 5, __zfObject_Detection, __D0Object_Detection
+20	69	70	#line 69 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	70	70		brtst 4, __NXC_Label_832, __zfObject_Detection
+20	70	73	#line 70 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	71	73		subcall Stop_Driving, __Stop_Driving_return
+20	70	75	#line 70 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	71	75	#line 71 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	72	75		set reverse, 1
+20	71	78	#line 71 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	71	78	#line 71 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	71	78	#line 71 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	72	78		set __Drive_Backward_7qG2_pwr_7qG2_000, 50
+20	71	81	#line 71 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	72	81	#line 72 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	73	81		subcall Drive_Backward, __Drive_Backward_return
+20	72	83	#line 72 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	72	83	#line 72 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	73	83		set __Wait_7qG2_ms_7qG2_000_inline_Object_Detection, 1000
+20	72	86	#line 72 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	7921	86	#line 7921 "NXCDefs.h"
+20	7922	86		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_Object_Detection
+20	7921	89	#line 7921 "NXCDefs.h"
+20	73	89	#line 73 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	74	89	#line 74 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	75	89		subcall Stop_Driving, __Stop_Driving_return
+20	74	91	#line 74 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	75	91	#line 75 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	76	91		set reverse, 0
+20	75	94	#line 75 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	75	94	#line 75 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	76	94	#line 76 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	77	94		subcall UltrasonicScan, __UltrasonicScan_return
+20	76	96	#line 76 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	77	96		mov angle, __D0UltrasonicScan
+20	76	98	#line 76 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	76	98	#line 76 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	76	98	#line 76 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	77	98		mov __TurnRobot_7qG2_deg_7qG2_000, __D0UltrasonicScan
+20	76	100	#line 76 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	76	100	#line 76 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	77	100		set __TurnRobot_7qG2_pwr_7qG2_000, 50
+20	76	103	#line 76 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	77	103	#line 77 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	78	103		subcall TurnRobot, __TurnRobot_return
+20	77	105	#line 77 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	77	105	#line 77 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	78	105		set __Drive_Forward_7qG2_pwr_7qG2_000, 50
+20	77	108	#line 77 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	78	108	#line 78 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	79	108		subcall Drive_Forward, __Drive_Forward_return
+20	78	110	#line 78 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	79	110	#line 79 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	80	110		subcall LongBeep, __LongBeep_return
+20	79	112	#line 79 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	82	112	#line 82 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	84	112	#line 84 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	85	112		jmp __NXC_Label_815
+20	84	114	#line 84 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+20	85	114		exit -1, -1
+21	0	0		subret __Object_Detection_Spawner_return
+22	0	0		exit 0, 1
+23	0	0		subret __Look_Back_Spawner_return
+24	0	0		exit 0, 1
+25	93	0	#line 93 "C:\Users\kjeld\AppData\Local\Temp\temp.nxc"
+25	94	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\kjeld\AppData\Local\Temp\temp.nxc
+1	__RotateMotor2	17	NXTDefs.h
+2	__RotateMotor3	186	NXTDefs.h
+3	__ResetSensorSubroutine	355	NXTDefs.h
+4	__ReadLSBytes3	368	NXTDefs.h
+5	Touch_Init	453	C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h
+6	Range_Sens_Init	473	C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h
+7	Light_Sens_Init	530	C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h
+8	TurnMotor	587	C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h
+9	TurnRobot	685	C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h
+10	Stop_Driving	695	C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h
+11	Drive_Forward	743	C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h
+12	Drive_Backward	799	C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h
+13	ShortBeep	865	C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h
+14	LongBeep	899	C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../functions.h
+15	initialise	933	C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../initialise.h
+16	TurnTurret	1530	C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h
+17	CenterTurret	1566	C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h
+18	UltrasonicScan	1603	C:\Users\kjeld\Documents\GitHub\SaSeRoS-Team359\Object_detection\../scanner.h
+19	Look_Back	1787	C:\Users\kjeld\AppData\Local\Temp\temp.nxc
+20	Object_Detection	1910	C:\Users\kjeld\AppData\Local\Temp\temp.nxc
+21	__Object_Detection_Returner	2027	C:\Users\kjeld\AppData\Local\Temp\temp.nxc
+22	__Object_Detection_Spawner	2029	C:\Users\kjeld\AppData\Local\Temp\temp.nxc
+23	__Look_Back_Returner	2032	C:\Users\kjeld\AppData\Local\Temp\temp.nxc
+24	__Look_Back_Spawner	2034	C:\Users\kjeld\AppData\Local\Temp\temp.nxc
+25	__initialize_global_data	2037	C:\Users\kjeld\AppData\Local\Temp\temp.nxc

@@ -1,0 +1,91 @@
+
+#include "../constants.h"
+#include "../functions.h"
+#include "../edge_detection.h"
+#include "../initialise.h"
+#include "../scanner.h"
+
+#define Scan_Range 10
+#define pwr 50
+
+int angle;
+int turret_angle;
+bool stuck = false;
+bool reverse = false;
+
+task Look_Around() {
+   while(!stuck){
+   if(turret_angle == 0){
+    TurnTurret(Scan_Range);
+    angle = Scan_Range;
+    turret_angle = 1;
+   }
+   else if(turret_angle == 1){
+    TurnTurret(Scan_Range);
+    angle = 0;
+    turret_angle = 2;
+   }
+   else if(turret_angle == 2){
+    TurnTurret(-Scan_Range);
+    angle = -Scan_Range;
+    turret_angle = 3;
+   }
+   else if(turret_angle == 3){
+    TurnTurret(Scan_Range);
+    angle = 0;
+    turret_angle = 0;
+   }
+   }
+}
+
+task Look_Back() {
+   while(reverse == 0){
+        if(!Sensor(back_bumper)){
+        Stop_Driving();
+        Drive_Backward(pwr);
+        TurnRobot(360, pwr);
+        Wait(1000);
+        Stop_Driving();
+        Drive_Forward(pwr);
+     }
+   }
+   while(reverse == 1){
+      if(!Sensor(back_bumper)){
+           stuck = true;
+           TextOut(1, 1, "Stuck restart required");
+      }
+   }
+}
+
+task Object_Detection() {
+    while(!stuck){
+     if(SensorUS(range_sensor) < ULTRASONIC_THRESHOLD){
+        Stop_Driving();
+        angle = UltrasonicScan();
+        TurnRobot(angle, pwr);
+        Drive_Forward(pwr);
+        ShortBeep();
+     }
+     if(!Sensor(front_bumper)){
+        Stop_Driving();
+        reverse = true;
+        Drive_Backward(pwr);
+        Wait(1000);
+        Stop_Driving();
+        reverse = false;
+        angle = UltrasonicScan();
+        TurnRobot(angle, pwr);
+        Drive_Forward(pwr);
+        LongBeep();
+     }
+
+  }
+}
+
+task main() {
+    initialise();
+    Drive_Forward(pwr);
+    start Object_Detection;
+//    start Look_Around;
+    start Look_Back;
+}
