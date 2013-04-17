@@ -1,0 +1,25 @@
+#include "constants.h"
+#include "Sensors testing/hardware_testing.nxc"
+#include "edge_detection.h"
+#include "scanner.h"
+#include "basic_functions/functions.h"
+
+
+task move_random() {
+}
+
+task detect_obstacles() {
+}
+
+task detect_edges() {
+}
+
+task main() {
+    TestSensors();
+    
+    start move_random;
+    start detect_obstacles;
+    start detect_edges;
+}
+
+
