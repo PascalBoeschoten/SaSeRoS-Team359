@@ -4,19 +4,28 @@
 #include "Sensors testing/hardware_testing.nxc"
 #include "edge_detection.h"
 #include "scanner.h"
-
-#include "Object_detection/Object_detection.nxc"
-
+#include "object_detection.h"
 
 bool edge_detected = false;
 bool obstacle_detected = false;
+
+void go_random_direction() {
+    int angle;
+    do {
+        angle = Random_Angle();
+    }
+    while(CheckDirection(angle));
+    
+    TurnRobot(angle, ENGINE_POWER);
+    Drive_Forward(ENGINE_POWER);
+}
 
 void handle_edge_detected() {
     // Edge detected, avoid it
     Stop_Driving();
     LongBeep();
     // Check behind the robot
-    if (!CheckDirection(180)) {
+    while (!CheckDirection(180)) {
         // There is something behind the robot.
         // Beep to signal, hopefully the object
         // will move out of the way.
@@ -31,8 +40,7 @@ void handle_edge_detected() {
 void handle_obstacle_detected() {
     Stop_Driving();
     LongBeep();
-    angle = UltrasonicScan();
-    TurnRobot(angle, pwr);
+    go_random_direction();
 }
 
 task control() {
