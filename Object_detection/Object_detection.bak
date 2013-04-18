@@ -5,6 +5,7 @@ int angle;
 int turret_angle;
 bool stuck = false;
 bool reverse = false;
+bool direction = false;
 
 task Look_Around() {
    while(!stuck){
@@ -32,7 +33,7 @@ task Look_Around() {
 }
 
 task Look_Back() {
-   while(reverse == 0){
+   while(reverse){
         if(!Sensor(back_bumper)){
         Stop_Driving();
         Drive_Backward(pwr);
@@ -42,7 +43,7 @@ task Look_Back() {
         Drive_Forward(pwr);
      }
    }
-   while(reverse == 1){
+   while(reverse){
       if(!Sensor(back_bumper)){
            stuck = true;
            TextOut(1, 1, "Stuck restart required");
@@ -54,9 +55,16 @@ task Object_Detection() {
     while(!stuck){
      if(SensorUS(range_sensor) < ULTRASONIC_THRESHOLD){
         Stop_Driving();
-        angle = UltrasonicScan();
+        while(direction){
+           angle = Random() % 360;
+           angle -= 180;
+           direction = !CheckDirection(angle);
+        }
+        ClearScreen();
+        NumOut(1, 1, angle);
         TurnRobot(angle, pwr);
         Drive_Forward(pwr);
+        direction = true;
         ShortBeep();
      }
      if(!Sensor(front_bumper)){
@@ -66,25 +74,24 @@ task Object_Detection() {
         Wait(1000);
         Stop_Driving();
         reverse = false;
-        angle = UltrasonicScan();
+        while(direction){
+           angle = Random() % 360;
+           angle -= 180;
+           direction = !CheckDirection(angle);
+        }
+        ClearScreen();
         NumOut(1, 1, angle);
-
         TurnRobot(angle, pwr);
         Drive_Forward(pwr);
+        direction = true;
         LongBeep();
      }
 
   }
 }
 
-//task main() {
-//     while(true){
-//     TurnRobot(90, pwr);
-//     TurnRobot(-90, pwr);
-//     }
-//    initialise();
-//    Drive_Forward(pwr);
-//    start Object_Detection;
-//    start Look_Around;
-//    start Look_Back;
-//}
+task main() {
+    initialise();
+    Drive_Forward(pwr);
+    start Object_Detection;
+}
