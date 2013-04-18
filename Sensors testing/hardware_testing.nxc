@@ -77,18 +77,5 @@ void TestSensors(void) {
      } while (!touchSensorFront || !touchSensorBack || !lightSensor || !usSensor);
 }
 
-sub move() {
-    while (1) {
-        OnFwd(OUT_A, 25);
-    }
-}
-
-//Test application
-//task main() {
-//     TestSensors();
-     
-     //All the sensors work properly, proceed with other tasks
-//     move();// this is a sample subroutine
-//}
 
 
