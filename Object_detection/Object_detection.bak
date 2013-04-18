@@ -3,18 +3,28 @@
 #include "../edge_detection.h"
 #include "../initialise.h"
 #include "../scanner.h"
+#include "../object_detection.h"
 
-#define Scan_Range 10
-#define pwr 50
+#define Scan_Range ULTRASONIC_THRESHOLD
 
-int angle;
-int turret_angle;
-bool stuck = false;
-bool reverse = false;
-bool direction = false;
-
-int Random_Angle(){
- return (Random() % 360);
+task EdgeDetection(){
+  while(true){
+     if(DetectEdge()){
+        Stop_Driving();
+        Drive_Backward(ENGINE_POWER);
+        Wait(1000);
+        Stop_Driving();
+        while(direction){
+           angle = Random_Angle();
+           direction = !CheckDirection(angle);
+        }
+//        ClearScreen();
+//        NumOut(1, 1, angle);
+        TurnRobot(angle, ENGINE_POWER);
+        Drive_Forward(ENGINE_POWER);
+        direction = true;
+     }
+  }
 }
 
 task Look_Around() {
@@ -42,67 +52,11 @@ task Look_Around() {
    }
 }
 
-task Look_Back() {
-   while(!reverse){
-        if(!Sensor(back_bumper)){
-        Stop_Driving();
-        Drive_Backward(pwr);
-        TurnRobot(360, pwr);
-        Wait(1000);
-        Stop_Driving();
-        Drive_Forward(pwr);
-     }
-   }
-   while(reverse){
-      if(!Sensor(back_bumper)){
-           stuck = true;
-           TextOut(1, 1, "Stuck restart required");
-      }
-   }
-}
 
-task Object_Detection() {
-    while(!stuck){
-     if(SensorUS(range_sensor) < ULTRASONIC_THRESHOLD){
-        Stop_Driving();
-        while(direction){
-           angle = Random() % 360;
-           angle -= 180;
-           direction = !CheckDirection(angle);
-        }
-        ClearScreen();
-        NumOut(1, 1, angle);
-        TurnRobot(angle, pwr);
-        Drive_Forward(pwr);
-        direction = true;
-        ShortBeep();
-     }
-     if(!Sensor(front_bumper)){
-        Stop_Driving();
-        reverse = true;
-        Drive_Backward(pwr);
-        Wait(1000);
-        Stop_Driving();
-        reverse = false;
-        while(direction){
-           angle = Random_Angle();
-           angle -= 180;
-           direction = !CheckDirection(angle);
-        }
-        ClearScreen();
-        NumOut(1, 1, angle);
-        TurnRobot(angle, pwr);
-        Drive_Forward(pwr);
-        direction = true;
-        LongBeep();
-     }
-
-  }
-}
 
 task main() {
     initialise();
-    Drive_Forward(pwr);
+    Drive_Forward(ENGINE_POWER);
     start Object_Detection;
 //    start Look_Around;
     start Look_Back;
