@@ -1,3 +1,9 @@
+#include "../constants.h"
+#include "../basic_functions/functions.h"
+#include "../edge_detection.h"
+#include "../initialise.h"
+#include "../scanner.h"
+
 #define Scan_Range 10
 #define pwr 50
 
@@ -6,6 +12,10 @@ int turret_angle;
 bool stuck = false;
 bool reverse = false;
 bool direction = false;
+
+int Random_Angle(){
+ return (Random() % 360);
+}
 
 task Look_Around() {
    while(!stuck){
@@ -33,7 +43,7 @@ task Look_Around() {
 }
 
 task Look_Back() {
-   while(reverse){
+   while(!reverse){
         if(!Sensor(back_bumper)){
         Stop_Driving();
         Drive_Backward(pwr);
@@ -75,7 +85,7 @@ task Object_Detection() {
         Stop_Driving();
         reverse = false;
         while(direction){
-           angle = Random() % 360;
+           angle = Random_Angle();
            angle -= 180;
            direction = !CheckDirection(angle);
         }
@@ -94,4 +104,6 @@ task main() {
     initialise();
     Drive_Forward(pwr);
     start Object_Detection;
+//    start Look_Around;
+    start Look_Back;
 }

@@ -1,12 +1,3 @@
-#include "../constants.h"
-#include "../basic_functions/functions.h"
-#include "../edge_detection.h"
-#include "../initialise.h"
-#include "../scanner.h"
-
-#define Scan_Range 10
-#define pwr 50
-
 int angle;
 int turret_angle;
 bool stuck = false;
@@ -20,40 +11,15 @@ int Random_Angle(){             //returns a random value between -180 and 180
  return x;
 }
 
-task Look_Around() {
-   while(!stuck){
-   if(turret_angle == 0){
-    TurnTurret(Scan_Range);
-    angle = Scan_Range;
-    turret_angle = 1;
-   }
-   else if(turret_angle == 1){
-    TurnTurret(Scan_Range);
-    angle = 0;
-    turret_angle = 2;
-   }
-   else if(turret_angle == 2){
-    TurnTurret(-Scan_Range);
-    angle = -Scan_Range;
-    turret_angle = 3;
-   }
-   else if(turret_angle == 3){
-    TurnTurret(Scan_Range);
-    angle = 0;
-    turret_angle = 0;
-   }
-   }
-}
-
 task Look_Back() {
    while(!reverse){
         if(!Sensor(back_bumper)){
         Stop_Driving();
-        Drive_Backward(pwr);
-        TurnRobot(360, pwr);
+        Drive_Backward(ENGINE_POWER);
+//        TurnRobot(360, ENGINE_POWER);
         Wait(1000);
         Stop_Driving();
-        Drive_Forward(pwr);
+        Drive_Forward(ENGINE_POWER);
      }
    }
    while(reverse){
@@ -72,17 +38,17 @@ task Object_Detection() {
            angle = Random_Angle();
            direction = !CheckDirection(angle);
         }
-        ClearScreen();
-        NumOut(1, 1, angle);
-        TurnRobot(angle, pwr);
-        Drive_Forward(pwr);
+//        ClearScreen();
+//        NumOut(1, 1, angle);
+        TurnRobot(angle, ENGINE_POWER);
+        Drive_Forward(ENGINE_POWER);
         direction = true;
         ShortBeep();
      }
      if(!Sensor(front_bumper)){
         Stop_Driving();
         reverse = true;
-        Drive_Backward(pwr);
+        Drive_Backward(ENGINE_POWER);
         Wait(1000);
         Stop_Driving();
         reverse = false;
@@ -90,21 +56,13 @@ task Object_Detection() {
            angle = Random_Angle();
            direction = !CheckDirection(angle);
         }
-        ClearScreen();
-        NumOut(1, 1, angle);
-        TurnRobot(angle, pwr);
-        Drive_Forward(pwr);
+//        ClearScreen();
+//        NumOut(1, 1, angle);
+        TurnRobot(angle, ENGINE_POWER);
+        Drive_Forward(ENGINE_POWER);
         direction = true;
         LongBeep();
      }
 
   }
-}
-
-task main() {
-    initialise();
-    Drive_Forward(pwr);
-    start Object_Detection;
-//    start Look_Around;
-    start Look_Back;
 }

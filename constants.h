@@ -8,3 +8,5 @@
 #define MOTOR_RIGHT_OUT OUT_A
 #define MOTOR_LEFT_OUT OUT_B
 
+#define ENGINE_POWER 50
+
