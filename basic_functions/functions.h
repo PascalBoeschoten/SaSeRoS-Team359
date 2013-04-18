@@ -52,7 +52,7 @@ void ShortBeep() {
 }
 
 void LongBeep() {
-    PlayTone(500,1000);
+    PlayTone(200,1000);
 }
 
 bool FrontBumperPressed() {
