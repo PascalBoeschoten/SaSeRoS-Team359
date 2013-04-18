@@ -12,8 +12,9 @@ bool edge_detected = false;
 bool obstacle_detected = false;
 
 void handle_edge_detected() {
-// Edge detected, avoid it
+    // Edge detected, avoid it
     Stop_Driving();
+    LongBeep();
     // Check behind the robot
     if (!CheckDirection(180)) {
         // There is something behind the robot.
@@ -29,6 +30,7 @@ void handle_edge_detected() {
 
 void handle_obstacle_detected() {
     Stop_Driving();
+    LongBeep();
     angle = UltrasonicScan();
     TurnRobot(angle, pwr);
 }
@@ -74,6 +76,14 @@ task detect_edges() {
 }
 
 task main() {
+     while(true) {
+         Drive_Forward(50);
+         Wait(1000);
+         //Drive_Backward(50);
+         //Wait(1000);
+         ShortBeep();
+     }
+
     TestSensors();
     
     start control;
