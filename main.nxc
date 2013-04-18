@@ -50,6 +50,7 @@ void handle_front_bumper_press() {
     LongBeep();
     Drive_Backward(ENGINE_POWER);
     Wait(300);
+    Stop_Driving();
     go_random_direction();
 }
 
@@ -63,19 +64,24 @@ task control() {
     while(true) {
         if(edge_detected) {
             handle_edge_detected();
+            edge_detected = false;
         }
         else if(obstacle_detected) {
             handle_obstacle_detected();
+            obstacle_detected = false;
         }
         else if(front_touch_detected) {
             handle_front_bumper_press();
+            front_touch_detected = false;
         }
         else if(rear_touch_detected) {
             handle_rear_bumper_press();
+            rear_touch_detected = false;
         }
         else {
             Drive_Forward(50);
         }
+        Wait(100);
     }
 }
 
@@ -90,20 +96,20 @@ task detect_touch() {
     while(true) {
         front_touch_detected = FrontBumperPressed();
         rear_touch_detected = RearBumperPressed();
-        Wait(10);
+        Wait(100);
     }
 }
 
 task detect_edges() {
     while(true) {
         if (DetectEdge()) {
-            TextOut(0,0,"Edge detected");
+            //TextOut(0,0,"Edge detected");
             edge_detected = true;
         } else {
-            TextOut(0,0,"No edge");
+            //TextOut(0,0,"No edge");
             edge_detected = false;
         }
-        Wait(10);
+        Wait(100);
     }
 }
 
