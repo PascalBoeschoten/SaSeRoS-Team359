@@ -54,3 +54,13 @@ void ShortBeep() {
 void LongBeep() {
     PlayTone(500,1000);
 }
+
+bool FrontBumperPressed() {
+	// Inverted because the sensor is off when bumper is pressed.
+	return !Sensor(SENSOR_TOUCH_FRONT_IN); 
+}
+
+bool RearBumperPressed() {
+	// Inverted because the sensor is off when bumper is pressed.
+	return !Sensor(SENSOR_TOUCH_BACK_IN); 
+}

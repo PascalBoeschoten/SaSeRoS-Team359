@@ -18,6 +18,10 @@ void TurnTurret(int deg) {
     scanner_currentRotation += deg;
 }
 
+bool ObstacleSighted() {
+    return SensorUS(ULTRASONIC_IN) < ULTRASONIC_THRESHOLD;
+}
+
 void CenterTurret() {
     RotateMotor(MOTOR_TURRET_OUT, MOTOR_TURRET_PWR,
      -scanner_currentRotation);
@@ -28,7 +32,7 @@ void CenterTurret() {
 bool CheckDirection(int dir) {
     TurnTurret(dir);
     Wait(TURRET_ROTATION_DELAY);
-    if (SensorUS(ULTRASONIC_IN) > ULTRASONIC_THRESHOLD) {
+    if (ObstacleSighted()) {
         TurnTurret(-dir);
         return true;
     }
@@ -54,12 +58,9 @@ int UltrasonicScan() {
 
         // Wait for turret to rotate and the sensor to get a value
         Wait(TURRET_ROTATION_DELAY);
-        
-        // Measure distance with the sensor
-        sensor_value = SensorUS(ULTRASONIC_IN);
-
-        // Check if the value is above the threshold
-        if (sensor_value > ULTRASONIC_THRESHOLD) {
+    
+        // Check if there is an obstacle
+        if (ObstacleSighted()) {
             // Return the found direction
             int returnval = scanner_currentRotation;
             CenterTurret();
