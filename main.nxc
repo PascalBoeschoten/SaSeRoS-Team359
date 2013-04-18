@@ -76,14 +76,6 @@ task detect_edges() {
 }
 
 task main() {
-     while(true) {
-         Drive_Forward(50);
-         Wait(1000);
-         //Drive_Backward(50);
-         //Wait(1000);
-         ShortBeep();
-     }
-
     TestSensors();
     
     start control;
