@@ -8,6 +8,8 @@
 
 bool edge_detected = false;
 bool obstacle_detected = false;
+bool front_touch_detected = false;
+bool rear_touch_detected = false;
 
 void go_random_direction() {
     int angle;
@@ -32,15 +34,29 @@ void handle_edge_detected() {
         LongBeep();
         Wait(3000);
     }
-    Drive_Backward(50);
+    Drive_Backward(ENGINE_POWER);
     Wait(300);
-    TurnRobot(90, 50);
+    TurnRobot(90, ENGINE_POWER);
 }
 
 void handle_obstacle_detected() {
     Stop_Driving();
     LongBeep();
     go_random_direction();
+}
+
+void handle_front_bumper_press() {
+    Stop_Driving();
+    LongBeep();
+    Drive_Backward(ENGINE_POWER);
+    Wait(300);
+    go_random_direction();
+}
+
+void handle_rear_bumper_press() {
+    Stop_Driving();
+    LongBeep();
+    Wait(2000);
 }
 
 task control() {
@@ -51,22 +67,30 @@ task control() {
         else if(obstacle_detected) {
             handle_obstacle_detected();
         }
+        else if(front_touch_detected) {
+            handle_front_bumper_press();
+        }
+        else if(rear_touch_detected) {
+            handle_rear_bumper_press();
+        }
         else {
             Drive_Forward(50);
         }
-        Wait(100);
     }
 }
 
 task detect_obstacles() {
     while(true) {
-      if(SensorUS(range_sensor) < ULTRASONIC_THRESHOLD){
-        obstacle_detected = true;
-      }
-      else {
-        obstacle_detected = false;
-      }
-        Wait(100);
+        obstacle_detected = ObstacleSighted();
+        Wait(500);
+    }
+}
+
+task detect_touch() {
+    while(true) {
+        front_touch_detected = FrontBumperPressed();
+        rear_touch_detected = RearBumperPressed();
+        Wait(10);
     }
 }
 
@@ -79,7 +103,7 @@ task detect_edges() {
             TextOut(0,0,"No edge");
             edge_detected = false;
         }
-        Wait(100);
+        Wait(10);
     }
 }
 
@@ -89,6 +113,7 @@ task main() {
     start control;
     start detect_obstacles;
     start detect_edges;
+    start detect_touch;
 }
 
 
